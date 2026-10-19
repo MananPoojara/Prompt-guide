@@ -10,7 +10,7 @@ The audit below was performed on 2026-10-19. **Initial** means a local explanati
 |---|---|---|
 | How do I ask for a useful result? | First example, templates, three everyday cases | A complete planning example; ambiguity and clarification examples |
 | What happens to my input? | Tokens/sampling plus embeddings/attention recordings | Connect the two visuals; explain context limits and truncation with a checked example |
-| Which prompt technique should I try? | Original prompts and two controlled extraction pilots | Example order/selection, decomposition, and structured-output repair with retained failures |
+| Which prompt technique should I try? | Original prompts, two controlled extraction pilots, and bounded output repair | Example order/selection and decomposition comparisons |
 | How do I supply relevant evidence? | Five evidence conditions plus lexical/embedding retrieval on ten developer docs | Broader real-document evaluation, equal-context-budget comparisons, and answer generation |
 | How should memory work? | Context/memory chapter and handoff explanation | Executed write/retrieve/update example with stale-memory handling |
 | When should tools or an agent be used? | Local MCP connection and resumed read-only agent | Comparable single-call/workflow/agent tasks; recovery and proposed-action approval demonstrations |

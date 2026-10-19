@@ -13,3 +13,4 @@ labs/natural-notes/results/** -whitespace
 labs/evidence-grounding/results/** -whitespace
 
 labs/bounded-agent/results/** -whitespace
+labs/output-repair/results/** -whitespace

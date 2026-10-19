@@ -1,0 +1,110 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "sha256": {
+    "fixtures.json": "b0d78ae27234975ddca66b55143731ff8511cd22cc3c243e7c7db762ff7f0001",
+    "prompt.txt": "7107c88684fe9e325ac5b6ebd41b3cc69192662f8d44eae1cd70457267b9919e",
+    "contract.py": "511f97966fd740d8fa5ff1f895151f1481e5639a3ea0866451f062eb20aa16b7",
+    "run.py": "b806ecf66b3827283e7a401e97e128d564fe0cb2a9df30333e90444c39f78604",
+    "PROTOCOL.md": "81fdca366f8fef98733e3b16ff2cb831315c7a503c6562e4a23c600f018ff8b5"
+  },
+  "trials": [
+    {
+      "id": "trailing-comma",
+      "status": 0,
+      "elapsed_seconds": 11.77,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-repair-8h8108hd",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/output-repair/results/pilot-2026-10-19/trailing-comma.output.txt",
+        "-"
+      ],
+      "before": {
+        "contract_errors": [
+          "Response must be one JSON object with unique keys"
+        ],
+        "reference_match": false
+      },
+      "after": {
+        "contract_errors": [],
+        "reference_match": true
+      }
+    },
+    {
+      "id": "valid-but-invented",
+      "status": 0,
+      "elapsed_seconds": 6.247,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-repair-cn4n_anl",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/output-repair/results/pilot-2026-10-19/valid-but-invented.output.txt",
+        "-"
+      ],
+      "before": {
+        "contract_errors": [],
+        "reference_match": false
+      },
+      "after": {
+        "contract_errors": [],
+        "reference_match": true
+      }
+    },
+    {
+      "id": "missing-evidence",
+      "status": 0,
+      "elapsed_seconds": 9.439,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-repair-l1ba1al2",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/output-repair/results/pilot-2026-10-19/missing-evidence.output.txt",
+        "-"
+      ],
+      "before": {
+        "contract_errors": [
+          "No evidence: return needs_review with no records"
+        ],
+        "reference_match": false
+      },
+      "after": {
+        "contract_errors": [],
+        "reference_match": true
+      }
+    }
+  ]
+}

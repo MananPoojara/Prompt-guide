@@ -1,0 +1,60 @@
+[
+  {
+    "id": "trailing-comma",
+    "origin": "Authored damaged response, not a model-produced failure",
+    "documents": [
+      {
+        "id": "note-1",
+        "text": "Task: export. Morgan proposed taking ownership and suggested 2027-02-10. Nobody accepted ownership or a deadline."
+      }
+    ],
+    "candidate": "{\"status\": \"ready\", \"records\": [{\"task\": \"export\", \"owner\": null, \"deadline\": null, \"sources\": [\"note-1\"]}],}",
+    "expected": {
+      "status": "ready",
+      "records": [
+        {
+          "task": "export",
+          "owner": null,
+          "deadline": null,
+          "sources": [
+            "note-1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "valid-but-invented",
+    "origin": "Authored schema-valid response with unsupported commitments",
+    "documents": [
+      {
+        "id": "note-1",
+        "text": "Task: export. Morgan proposed taking ownership and suggested 2027-02-10. Nobody accepted ownership or a deadline."
+      }
+    ],
+    "candidate": "{\"status\": \"ready\", \"records\": [{\"task\": \"export\", \"owner\": \"Morgan\", \"deadline\": \"2027-02-10\", \"sources\": [\"note-1\"]}]}",
+    "expected": {
+      "status": "ready",
+      "records": [
+        {
+          "task": "export",
+          "owner": null,
+          "deadline": null,
+          "sources": [
+            "note-1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "missing-evidence",
+    "origin": "Authored response claiming evidence that is unavailable",
+    "documents": [],
+    "candidate": "{\"status\": \"ready\", \"records\": [{\"task\": \"export\", \"owner\": \"Morgan\", \"deadline\": \"2027-02-10\", \"sources\": [\"note-1\"]}]}",
+    "expected": {
+      "status": "needs_review",
+      "records": []
+    }
+  }
+]

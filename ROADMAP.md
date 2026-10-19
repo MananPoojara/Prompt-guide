@@ -46,7 +46,9 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Also demonstrated:** [developer-document retrieval](labs/retrieval/README.md) compares BM25 and MiniLM on two chunk sizes plus a truncated-document baseline, retaining every vector and rank.
 
-**Still needed:** broader prompt comparisons, example selection/order, decomposition, structured-output repair, and realistic adversarial evaluation beyond authored corpora.
+**Also demonstrated:** [bounded output repair](labs/output-repair/README.md) separates schema acceptance from reference correctness and missing-evidence review.
+
+**Still needed:** broader prompt comparisons, example selection/order, decomposition, and realistic adversarial evaluation beyond authored corpora.
 
 **Practical judgment:** choose whether to change instructions, add examples, retrieve evidence, or fix the surrounding software.
 

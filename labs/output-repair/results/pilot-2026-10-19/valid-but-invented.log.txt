@@ -1,0 +1,35 @@
+{"status":"ready","records":[{"task":"export","owner":null,"deadline":null,"sources":["note-1"]}]}
+
+OpenAI Codex v0.163.0
+--------
+workdir: /tmp/prompt-guide-repair-cn4n_anl
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: low
+reasoning summaries: none
+session id: 01a153fc-936f-70d1-a3ab-607bbb4abbce
+--------
+user
+Repair a task-extraction response using only the supplied documents. Do not use tools, outside facts, or the damaged response as evidence. Return exactly one JSON object without Markdown.
+Contract: {"status":"ready"|"needs_review","records":[{"task":string,"owner":string|null,"deadline":"YYYY-MM-DD"|null,"sources":[document IDs]}]}.
+Use the task name stated in the document. Record an owner or deadline only if explicitly accepted, not merely suggested. Use null for unconfirmed values. Cite supplied document IDs. If no documents are supplied, return status needs_review and an empty records array. Do not reconstruct missing evidence. Only status and records are permitted at the top level; only task, owner, deadline, sources are permitted per record.
+The host's validation errors check format and provenance, not factual correctness. Independently check the candidate against the supplied evidence even if the error list is empty. One repair attempt is allowed.
+
+INPUT:
+{
+  "documents": [
+    {
+      "id": "note-1",
+      "text": "Task: export. Morgan proposed taking ownership and suggested 2027-02-10. Nobody accepted ownership or a deadline."
+    }
+  ],
+  "candidate": "{\"status\": \"ready\", \"records\": [{\"task\": \"export\", \"owner\": \"Morgan\", \"deadline\": \"2027-02-10\", \"sources\": [\"note-1\"]}]}",
+  "validation_errors": []
+}
+
+codex
+{"status":"ready","records":[{"task":"export","owner":null,"deadline":null,"sources":["note-1"]}]}
+tokens used
+6,611

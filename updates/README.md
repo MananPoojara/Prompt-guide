@@ -10,6 +10,7 @@ This page is the home for reviewed updates to Prompt Guide. Each entry should ex
 
 | Date | Update | What changed |
 |---|---|---|
+| 2026-10-19 | [Bounded output repair](2026-10-19-output-repair.md) | Three actual repairs distinguish format, factual support, and missing evidence |
 | 2026-10-19 | [Developer retrieval lab](2026-10-19-retrieval.md) | Lexical/dense comparisons expose incomplete evidence despite correct document hits |
 | 2026-10-19 | [Embeddings and attention](2026-10-19-representations.md) | Full vectors, 144 attention matrices, and an offline visual |
 | 2026-10-19 | [Context7 error handling](2026-10-19-context7-errors.md) | First collected upstream change reviewed and integrated |

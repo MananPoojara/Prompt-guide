@@ -61,3 +61,7 @@ The goal is a resource where readers can trace a claim to an input, an output, a
 ## Run the repository evidence gate
 
 The [operational evaluation guide](../evaluation/README.md) provides one offline command, recorded runtime observations, and explicit human-review and judge-calibration gaps. It distinguishes regrading saved artifacts from evaluating a new model run.
+
+## Valid output can still be wrong
+
+The [output-repair lab](../labs/output-repair/README.md) records one repair attempt for each of three injected failures. Its schema-valid invented commitment illustrates why parsing, citations, and factual support need separate checks. Missing evidence leads to an explicit review state.
