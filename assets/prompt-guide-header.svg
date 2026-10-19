@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="title desc">
+<title id="title">Prompt Guide</title><desc id="desc">Understand the prompt. See the system. Check the result.</desc>
+<rect width="960" height="260" rx="20" fill="#0d1117"/>
+<g fill="none" stroke="#6ee7b7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M444 40h-20v53h20 M516 40h20v53h-20 M463 52l14 14-14 14 M488 80h15"/>
+</g>
+<text x="480" y="156" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="-2" fill="#f0f6fc">Prompt Guide</text>
+<text x="480" y="201" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#aab8c5">Understand the prompt. See the system. Check the result.</text>
+<path d="M420 230h120" stroke="#6ee7b7" stroke-width="3" stroke-linecap="round"/>
+</svg>
