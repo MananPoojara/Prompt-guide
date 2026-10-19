@@ -121,3 +121,7 @@ The standard CI checks only the lightweight saved-data and Python tests. It does
 The retained data was generated on CPU with Python 3.10.12 and the package versions in its metadata. A separate clean `uv` environment reproduced all seven tokenizations, both first-token candidate sets, and all 20 continuations exactly. That is a local reproduction result, not a promise of bit-for-bit agreement on every platform.
 
 Eight sampling tests passed. The saved-data checker passed. Playwright exercised the page at desktop and 375-pixel mobile widths without page errors or external network requests, and both screenshots were visually inspected. The model's incorrect and repetitive outputs were kept.
+
+## Next: representations and attention
+
+Follow the same pinned model into the [embeddings and attention lab](../representations/README.md). Compare a stored token embedding with its contextual representation and inspect every attention head.

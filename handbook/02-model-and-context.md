@@ -6,7 +6,7 @@ A language model generates a response from the input available to it. It does no
 
 ![What a prompt changes: input, tokenization, generation, and verification](../diagrams/prompt-to-model.svg)
 
-This diagram is a conceptual explanation. It does not measure attention, reveal hidden reasoning, or show that one prompt performs better. The [interactive model-mechanics lab](../labs/model-mechanics/README.md) now adds actual token IDs, saved logits, and recorded continuations from a pinned small model. Further ML depth remains on the [roadmap](../ROADMAP.md).
+This diagram is a conceptual explanation. It does not measure attention, reveal hidden reasoning, or show that one prompt performs better. The [interactive model-mechanics lab](../labs/model-mechanics/README.md) now adds actual token IDs, saved logits, and recorded continuations from a pinned small model. The [embeddings and attention lab](../labs/representations/README.md) adds actual token vectors, context-dependent representations, and every attention head from two inputs. Further depth remains on the [roadmap](../ROADMAP.md).
 
 ## Training and answering are different stages
 

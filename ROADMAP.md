@@ -4,6 +4,8 @@
 
 The destination is practical judgment: identify what a task needs, choose an appropriate intervention, and measure whether it helped. Knowing many prompt phrases or installing many tools does not establish that ability.
 
+The [core coverage audit](CORE-COVERAGE.md) defines the remaining work before moving primarily to weekly maintenance.
+
 This roadmap separates material you can read now from work still needed. **Available** means explained here. **Demonstrated** means a small saved execution exists. Neither means broad reliability has been established.
 
 ## 1. Write a request someone can check
@@ -24,7 +26,9 @@ Distinguish training from inference, supplied context from learned parameters, a
 
 **Demonstrated:** the [model-mechanics lab](labs/model-mechanics/README.md) records seven tokenizations, next-token logits, and 20 greedy/sampled continuations from a pinned DistilGPT2 revision. An offline visual exposes tokens, probabilities, and saved outputs.
 
-**Still needed for deeper ML coverage:** explanations and experiments on embeddings and attention, broader model comparisons, and measured learning outcomes. Illustrative diagrams must remain distinct from measurements of proprietary models.
+**Also demonstrated:** [embeddings and attention](labs/representations/README.md), with full recorded vectors, all heads, and an offline visual.
+
+**Still needed for deeper ML coverage:** context-limit demonstrations, broader model comparisons, and measured learning outcomes. Illustrative diagrams must remain distinct from measurements of proprietary models.
 
 **Practical judgment:** distinguish missing evidence, ambiguity, model error, and application error rather than blaming every failure on wording.
 
@@ -73,7 +77,7 @@ These tracks include the first available pilot and planned expansions. The next 
 | Track | Addition | Evidence required before calling it demonstrated |
 |---|---|---|
 | 1 | Controlled prompting comparisons — [first pilot available](labs/prompt-comparison/README.md) | Add independent label review and more varied held-out cases; retain the pilot’s tie and setup failure |
-| 2 | Visual ML mechanics — [first lab available](labs/model-mechanics/README.md) | Extend into embeddings and attention; retain the measured-versus-conceptual distinction |
+| 2 | Visual ML mechanics — [first lab available](labs/model-mechanics/README.md) | Extend into context limits and broader comparisons; retain the measured-versus-conceptual distinction |
 | 3 | Context and retrieval — [first lab available](labs/evidence-grounding/README.md) | Extend beyond explicit metadata and naive lexical search to representative documents and retrieval methods |
 | 4 | Complete agent execution — [first trace available](labs/bounded-agent/README.md) | Model requests, tool calls, permission decisions, failures, budgets, and recovery traces |
 | 5 | Evaluation and deployment decisions — [first gate available](evaluation/README.md) | Judge agreement checks, uncertainty, cost/latency, regression results, and evidence for choosing prompting, retrieval, or fine-tuning |
