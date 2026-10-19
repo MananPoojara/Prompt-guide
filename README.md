@@ -10,6 +10,7 @@
 <p align="center">
   <a href="START-HERE.md"><strong>Start here →</strong></a> ·
   <a href="ROADMAP.md">Full roadmap</a> ·
+  <a href="updates/README.md">Updates</a> ·
   <a href="CONTRIBUTING.md">Contribute</a>
 </p>
 

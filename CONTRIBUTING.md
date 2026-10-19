@@ -16,7 +16,7 @@ Check relative links, read the rendered Markdown, run the relevant lab grader, a
 
 ## Maintenance
 
-Review product-specific instructions monthly and when a relevant release changes them. Recheck conceptual claims when conflicting research appears. Record superseded findings instead of silently changing historical experiment metadata. No recurring automation is installed by this document.
+Follow the planned [weekly editorial review](updates/README.md), and prioritize known breaking changes when discovered. Update the affected explanation alongside the dated update entry. Recheck conceptual claims when conflicting research appears. Preserve historical experiment metadata and record corrections explicitly. The weekly cadence is a plan; no recurring monitoring or automatic publishing job is currently installed.
 
 ## Original prompts and case studies
 

@@ -58,9 +58,9 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 ## Advanced work: the next additions
 
-These are planned additions, not completed chapters or results. Their order keeps claims dependent on evidence that actually exists.
+These tracks include the first available pilot and planned expansions. The next cycle’s delivery order is specified below; each expansion needs evidence before it is labeled demonstrated.
 
-| Priority | Addition | Evidence required before calling it demonstrated |
+| Track | Addition | Evidence required before calling it demonstrated |
 |---|---|---|
 | 1 | Controlled prompting comparisons — [first pilot available](labs/prompt-comparison/README.md) | Add independent label review and more varied held-out cases; retain the pilot’s tie and setup failure |
 | 2 | Visual ML mechanics | Runnable tokenizer and sampling examples with model/version details; conceptual graphics explicitly labeled |
@@ -75,3 +75,54 @@ A useful addition connects **a question → a technique → an observable run �
 Start at the first unfamiliar stage. Read a complete example and inspect its evidence. Move deeper when you can explain the failure being addressed and what would count as improvement. There are no homework requirements or claims of certification here; the goal is a resource you can revisit while doing real work.
 
 For a specific need, jump directly to the relevant stage. For an unfamiliar term, use the [glossary](handbook/glossary.md). To add evidence for a missing topic, follow [contributing](CONTRIBUTING.md).
+
+## Next development cycle
+
+The aim is one dependable place to learn, practice, and keep up with prompting. “Best” is an ambition, not a verified ranking. We will judge progress by whether readers can complete a task, understand the explanation locally, inspect its evidence, and tell when guidance was last checked.
+
+### Entry paths for different readers
+
+| Reader | Starting experience | Next material needed |
+|---|---|---|
+| First-time AI user | [One complete prompt](handbook/01-first-example.md), with unfamiliar words explained | Everyday writing, planning, summarizing, and learning examples that require no code |
+| Writer, student, or researcher | [Templates](prompts/README.md) and [evidence checking](handbook/09-evaluation-and-failures.md) | Complete source-grounded research and revision examples, including fabricated-claim and citation failures |
+| Developer or automation builder | [Coding verification](handbook/08-coding-and-verification.md), [MCP](handbook/06-tools-and-mcp.md), and [toolkit](toolkit/README.md) | A complete traced workflow with recovery and permission checks |
+| Advanced experimenter | [Controlled comparison](labs/prompt-comparison/README.md) and its raw artifacts | Independent label review, harder tasks, uncertainty analysis, and cost/latency measurement |
+
+Readers can enter where their task starts. The advanced path should not make basic explanations harder to find. Translation will follow stable explanations and terminology, with language review; unreviewed machine translations will not be labeled verified.
+
+### Prioritized milestones
+
+These are delivery milestones, not a promise to finish one every week. A weekly update can report a partial investigation honestly.
+
+| Order | Milestone | Deliverables | Completion evidence |
+|---|---|---|---|
+| 1 | Visual mechanics and everyday entry | Runnable tokenization and sampling demonstrations; plain-language diagrams and text alternatives; complete noncoding examples | Fresh-environment reproduction; recorded package/model versions; illustration labels; readers can follow the explanation without external articles |
+| 2 | Stronger prompt experiments | More natural notes; documented annotation disagreements; frozen development/held-out split; comparisons of examples and decomposition | Independent reviewer attribution when obtained; predeclared rubric; all trials retained; category and paired error reports; uncertainty appropriate to the design |
+| 3 | Context and retrieval | A local document set with known answers; retrieval logs; missing, stale, conflicting, and instruction-like evidence cases | Trace the retrieved material to the answer; compare retrieval and interpretation errors separately; preserve failed answers |
+| 4 | Complete agent workflow | Evolve the notes example into document lookup, extraction, and proposed updates for review; retain a full execution trace | Explicit stop conditions, invalid-call handling, permission decisions, timeout behavior, checkpoint/resume, and independent output checks |
+| 5 | Operational evaluation | Regression set; model-judge calibration; runtime and usage reporting; choosing prompting versus retrieval versus training | Disclose model/settings, billing assumptions, uncertainty, human-review procedure, and cases where an approach is unsuitable |
+
+The first milestone begins with token boundaries and sampling on an inspectable small model. The resulting visual should let a reader change an input or generation setting and see the observed output. It must separate measured behavior from a simplified diagram; it must not imply that an attention visualization reveals a complete explanation of reasoning.
+
+The everyday track uses examples such as revising a message for a defined audience, summarizing a supplied document without inventing details, and explaining a concept while checking understanding. Each needs the complete input, a usable request, an output with a provenance label, a check, and a failure case. A blank template alone does not satisfy this milestone.
+
+### Updates are part of the product
+
+The [updates index and review policy](updates/README.md) define the planned weekly process. Each meaningful update must answer: what changed, who it affects, what to do, what supports it, and which local page was revised. A source link without a practical explanation is insufficient.
+
+Start with manual editorial review. After that process has produced useful entries, automate source-change collection and stale-page checks. Keep publication reviewed. There is no scheduled scanner or automatic publication service at present.
+
+### Quality gates for every milestone
+
+- **Self-contained:** include the necessary context, explanation, example, and check in the repository; cite sources for provenance.
+- **Accessible:** define prerequisites, provide text alternatives to visuals, and distinguish reading-only access from account, installation, or compute requirements.
+- **Reproducible:** record relevant versions, commands, inputs, raw outputs, and failure cases; check the documented path in a fresh environment when executable.
+- **Honest:** identify authored illustrations, source-inspected claims, local executions, and independent review separately. Report ties and regressions.
+- **Maintainable:** assign a local home for each topic, link it from the appropriate path, state actual review dates, and include a correction path.
+
+### How we will know the resource is improving
+
+Measure reader task completion and points of confusion through consented feedback, then report the number and type of participants. Track broken examples, reproducible runs, known stale recommendations, and corrections resolved. Use stars and visits as interest signals, not evidence that the explanations work. No independent usability study has been completed yet.
+
+A finished milestone should reduce a specific reader's need to search elsewhere while preserving their ability to inspect primary sources. Coverage expands through tested additions, not a claim that every prompting technique or product update has been captured.
