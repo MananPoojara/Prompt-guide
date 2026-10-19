@@ -80,3 +80,5 @@ For repository work, saved diffs, test logs, and a concise handoff make recovery
 ## Follow a real bounded run
 
 The [bounded-agent lab](../labs/bounded-agent/README.md) retains all three model calls, tool results, and a deliberate checkpoint/resume. Inspect the host budget and read-only dispatcher alongside the model decisions. Simulated failure tests are labeled separately from the live trace.
+
+The [controlled-failure extension](../labs/agent-recovery/README.md) records a model retrying a temporary read error and abstaining after a permission denial. The host injects and enforces the failure; the model chooses its response within the remaining budget.

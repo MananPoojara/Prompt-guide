@@ -1,0 +1,77 @@
+{
+  "grounding_sha256": "ed2192329acf374e566dd6aff6edca6453f8a0b0f357e04648021658b79e1b9d",
+  "runs": [
+    {
+      "condition": "transient",
+      "calls": 4,
+      "completed": true,
+      "read_documents": [
+        "current-plan"
+      ],
+      "tool_errors": [
+        "temporary_unavailable"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 3,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      }
+    },
+    {
+      "condition": "denied",
+      "calls": 3,
+      "completed": true,
+      "read_documents": [],
+      "tool_errors": [
+        "permission_denied"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 0,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          }
+        ]
+      }
+    }
+  ]
+}

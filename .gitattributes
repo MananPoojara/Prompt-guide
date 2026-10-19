@@ -14,3 +14,4 @@ labs/evidence-grounding/results/** -whitespace
 
 labs/bounded-agent/results/** -whitespace
 labs/output-repair/results/** -whitespace
+labs/agent-recovery/results/** -whitespace

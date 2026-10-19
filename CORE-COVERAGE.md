@@ -13,7 +13,7 @@ The audit below was performed on 2026-10-19. **Initial** means a local explanati
 | Which prompt technique should I try? | Original prompts, two controlled extraction pilots, and bounded output repair | Example order/selection and decomposition comparisons |
 | How do I supply relevant evidence? | Five evidence conditions plus lexical/embedding retrieval on ten developer docs | Broader real-document evaluation, equal-context-budget comparisons, and answer generation |
 | How should memory work? | Context/memory chapter and handoff explanation | Executed write/retrieve/update example with stale-memory handling |
-| When should tools or an agent be used? | Local MCP connection and resumed read-only agent | Comparable single-call/workflow/agent tasks; recovery and proposed-action approval demonstrations |
+| When should tools or an agent be used? | Local MCP connection, resumed agent, and two controlled-failure traces | Comparable single-call/workflow/agent tasks and proposed-action approval demonstrations |
 | How do skills and plugins change behavior? | Public artifacts and source-inspected shortlist | An executed local skill/plugin comparison with a compatible host |
 | How do I handle untrusted material? | Quoted-instruction explanation and one injection case | Broader attack/failure cases and explicit host-side boundaries |
 | How do I assess changes? | Saved-output regression checks and descriptive duration reports | Independent task review, uncertainty worked example, judge calibration; actual cost accounting if billed runs are compared |
