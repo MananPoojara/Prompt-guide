@@ -4,3 +4,6 @@ __pycache__/
 .env.*
 !.env.example
 .DS_Store
+
+# Private maintainer working notes
+/FLOW.md

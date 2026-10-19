@@ -12,7 +12,7 @@ Browser OAuth completed on 2026-10-19. The direct API status check returned HTTP
 
 ## Resume procedure
 
-Read FLOW.md, verify current files and Git state, retrieve relevant memory records, and reconcile conflicts using the actual artifacts and cited sources. A retrieved summary can be stale.
+Read ROADMAP.md, verify current files and Git state, retrieve relevant memory records, and reconcile conflicts using the actual artifacts and cited sources. A retrieved summary can be stale.
 
 ## Verified storage receipts
 
@@ -35,3 +35,5 @@ The user's latest clarification is saved as a separate record, `ecarQK6mzaeUkVdF
 ## Self-contained beginner expansion
 
 The user's requirement to learn inside one repository and the resulting handbook/example expansion are saved in `bA5mfeffQRxTVQej4JdHaF`. The record reached `done` and its complete content was retrieved; see [receipts.json](receipts.json). This adds a beginner entry point while keeping original public artifacts and observed results distinct from authored explanations.
+
+Historical receipt text describes earlier repository layouts. Private maintainer working notes are no longer distributed with the project.
