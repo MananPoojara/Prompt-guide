@@ -36,6 +36,8 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Demonstrated:** a [three-arm prompt comparison](labs/prompt-comparison/README.md) with a frozen dataset and three repetitions per arm. All variants tied; the authored synthetic pilot has no independent label review.
 
+**Also demonstrated:** the [naturalistic-note follow-up](labs/natural-notes/README.md) adds twelve dialogue/context cases and a human-review packet. It also tied; independent annotation remains pending.
+
 **Still needed:** broader comparisons of zero-shot and few-shot requests; example selection and ordering; decomposition; structured-output validation and repair; retrieval failures; contradictory evidence; and prompt-injection cases with explicit trust boundaries.
 
 **Practical judgment:** choose whether to change instructions, add examples, retrieve evidence, or fix the surrounding software.

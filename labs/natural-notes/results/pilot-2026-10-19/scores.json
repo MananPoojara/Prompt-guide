@@ -1,0 +1,1085 @@
+{
+  "arms": {
+    "short": {
+      "passed": 36,
+      "total": 36,
+      "batch_exact": 3,
+      "trials": 3,
+      "per_trial_passed": [
+        12,
+        12,
+        12
+      ],
+      "schema_failures": 0,
+      "execution_failures": 0,
+      "median_elapsed_seconds": 8.18,
+      "categories": {
+        "dialogue": {
+          "passed": 6,
+          "total": 6
+        },
+        "conditional": {
+          "passed": 6,
+          "total": 6
+        },
+        "task_scope": {
+          "passed": 6,
+          "total": 6
+        },
+        "stale_quote": {
+          "passed": 6,
+          "total": 6
+        },
+        "anchored_dates": {
+          "passed": 6,
+          "total": 6
+        },
+        "unresolved": {
+          "passed": 6,
+          "total": 6
+        }
+      }
+    },
+    "rules": {
+      "passed": 36,
+      "total": 36,
+      "batch_exact": 3,
+      "trials": 3,
+      "per_trial_passed": [
+        12,
+        12,
+        12
+      ],
+      "schema_failures": 0,
+      "execution_failures": 0,
+      "median_elapsed_seconds": 7.684,
+      "categories": {
+        "dialogue": {
+          "passed": 6,
+          "total": 6
+        },
+        "conditional": {
+          "passed": 6,
+          "total": 6
+        },
+        "task_scope": {
+          "passed": 6,
+          "total": 6
+        },
+        "stale_quote": {
+          "passed": 6,
+          "total": 6
+        },
+        "anchored_dates": {
+          "passed": 6,
+          "total": 6
+        },
+        "unresolved": {
+          "passed": 6,
+          "total": 6
+        }
+      }
+    },
+    "examples": {
+      "passed": 36,
+      "total": 36,
+      "batch_exact": 3,
+      "trials": 3,
+      "per_trial_passed": [
+        12,
+        12,
+        12
+      ],
+      "schema_failures": 0,
+      "execution_failures": 0,
+      "median_elapsed_seconds": 7.865,
+      "categories": {
+        "dialogue": {
+          "passed": 6,
+          "total": 6
+        },
+        "conditional": {
+          "passed": 6,
+          "total": 6
+        },
+        "task_scope": {
+          "passed": 6,
+          "total": 6
+        },
+        "stale_quote": {
+          "passed": 6,
+          "total": 6
+        },
+        "anchored_dates": {
+          "passed": 6,
+          "total": 6
+        },
+        "unresolved": {
+          "passed": 6,
+          "total": 6
+        }
+      }
+    }
+  },
+  "paired_case_observations": {
+    "short_to_rules": {
+      "improved": 0,
+      "regressed": 0,
+      "both_pass": 36,
+      "both_fail": 0
+    },
+    "rules_to_examples": {
+      "improved": 0,
+      "regressed": 0,
+      "both_pass": 36,
+      "both_fail": 0
+    }
+  },
+  "trials": [
+    {
+      "repeat": 1,
+      "arm": "short",
+      "trial": "1-short",
+      "status": 0,
+      "elapsed_seconds": 8.18,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-exfxqj6v",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/natural-notes/results/pilot-2026-10-19/1-short.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 12,
+        "total": 12,
+        "exact": true,
+        "cases": [
+          {
+            "id": "n01",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n02",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n03",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n04",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n05",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n06",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n07",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n08",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n09",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n10",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n11",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n12",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "arm": "rules",
+      "trial": "1-rules",
+      "status": 0,
+      "elapsed_seconds": 7.344,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-9ix50iyl",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/natural-notes/results/pilot-2026-10-19/1-rules.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 12,
+        "total": 12,
+        "exact": true,
+        "cases": [
+          {
+            "id": "n01",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n02",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n03",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n04",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n05",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n06",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n07",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n08",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n09",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n10",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n11",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n12",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "arm": "examples",
+      "trial": "1-examples",
+      "status": 0,
+      "elapsed_seconds": 8.472,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-tlkcjm7r",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/natural-notes/results/pilot-2026-10-19/1-examples.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 12,
+        "total": 12,
+        "exact": true,
+        "cases": [
+          {
+            "id": "n01",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n02",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n03",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n04",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n05",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n06",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n07",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n08",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n09",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n10",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n11",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n12",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "arm": "rules",
+      "trial": "2-rules",
+      "status": 0,
+      "elapsed_seconds": 8.668,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-4lkw6_od",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/natural-notes/results/pilot-2026-10-19/2-rules.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 12,
+        "total": 12,
+        "exact": true,
+        "cases": [
+          {
+            "id": "n01",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n02",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n03",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n04",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n05",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n06",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n07",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n08",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n09",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n10",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n11",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n12",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "arm": "examples",
+      "trial": "2-examples",
+      "status": 0,
+      "elapsed_seconds": 7.865,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-5x8t17gj",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/natural-notes/results/pilot-2026-10-19/2-examples.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 12,
+        "total": 12,
+        "exact": true,
+        "cases": [
+          {
+            "id": "n01",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n02",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n03",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n04",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n05",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n06",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n07",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n08",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n09",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n10",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n11",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n12",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "arm": "short",
+      "trial": "2-short",
+      "status": 0,
+      "elapsed_seconds": 7.268,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-tben_dvo",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/natural-notes/results/pilot-2026-10-19/2-short.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 12,
+        "total": 12,
+        "exact": true,
+        "cases": [
+          {
+            "id": "n01",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n02",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n03",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n04",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n05",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n06",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n07",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n08",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n09",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n10",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n11",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n12",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "arm": "examples",
+      "trial": "3-examples",
+      "status": 0,
+      "elapsed_seconds": 6.821,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-87wryopx",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/natural-notes/results/pilot-2026-10-19/3-examples.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 12,
+        "total": 12,
+        "exact": true,
+        "cases": [
+          {
+            "id": "n01",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n02",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n03",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n04",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n05",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n06",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n07",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n08",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n09",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n10",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n11",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n12",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "arm": "short",
+      "trial": "3-short",
+      "status": 0,
+      "elapsed_seconds": 13.66,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-yq5y4emt",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/natural-notes/results/pilot-2026-10-19/3-short.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 12,
+        "total": 12,
+        "exact": true,
+        "cases": [
+          {
+            "id": "n01",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n02",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n03",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n04",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n05",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n06",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n07",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n08",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n09",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n10",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n11",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n12",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "arm": "rules",
+      "trial": "3-rules",
+      "status": 0,
+      "elapsed_seconds": 7.684,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-4q0tb7u_",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/natural-notes/results/pilot-2026-10-19/3-rules.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 12,
+        "total": 12,
+        "exact": true,
+        "cases": [
+          {
+            "id": "n01",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n02",
+            "category": "dialogue",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n03",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n04",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n05",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n06",
+            "category": "task_scope",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n07",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n08",
+            "category": "stale_quote",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n09",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n10",
+            "category": "anchored_dates",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n11",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "n12",
+            "category": "unresolved",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    }
+  ]
+}

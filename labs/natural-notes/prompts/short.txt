@@ -1,0 +1,1 @@
+Extract the confirmed owner and deadline from each independent note. If a note names a Target, extract only that task, not nearby tasks. Return only a JSON array in input order. Each object must contain exactly id, owner, deadline. Copy the note ID; owner must be a name or null, deadline an ISO date (YYYY-MM-DD) or null. Do not use tools.

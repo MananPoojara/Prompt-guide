@@ -10,6 +10,7 @@ This page is the home for reviewed updates to Prompt Guide. Each entry should ex
 
 | Date | Update | What changed |
 |---|---|---|
+| 2026-10-19 | [Naturalistic notes and review packet](2026-10-19-natural-notes.md) | A second retained tie; independent annotation explicitly pending |
 | 2026-10-19 | [Model mechanics and everyday examples](2026-10-19-model-mechanics.md) | Offline visual, actual model recordings, and three noncoding cases |
 | 2026-10-19 | [Foundations and first controlled pilot](2026-10-19.md) | Current learning material, measured results, and the next development priorities |
 
