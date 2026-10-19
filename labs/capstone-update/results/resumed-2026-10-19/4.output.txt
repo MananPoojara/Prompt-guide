@@ -1,0 +1,1 @@
+{"action":"propose","target":"plan.txt","before_sha256":"3948cc1433c1e9173a8e0c22cad7403d20899cd05cc008f2de3736d2f84017fe","content":"Start: 14:00\nCapacity: 20\n","evidence":{"document_id":"decision","revision":"v2","quote":"Approved workshop decision: change the start time to 14:00. Keep capacity at 20. This supersedes the 13:00 start."}}

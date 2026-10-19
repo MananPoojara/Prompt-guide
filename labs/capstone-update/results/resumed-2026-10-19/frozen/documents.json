@@ -1,0 +1,5 @@
+[
+  {"id":"decision", "revision":"v2", "scope":"team-a", "current":true, "text":"Approved workshop decision: change the start time to 14:00. Keep capacity at 20. This supersedes the 13:00 start."},
+  {"id":"old-decision", "revision":"v1", "scope":"team-a", "current":false, "text":"Workshop starts at 13:00 with capacity 20."},
+  {"id":"private", "revision":"v1", "scope":"team-b", "current":true, "text":"Team-b workshop starts at 18:00."}
+]

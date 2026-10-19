@@ -2,7 +2,7 @@
 
 [Practicum](PRACTICUM.md) · [Lab implementations](README.md) · [Evaluation](../evaluation/README.md)
 
-**Status: first read-only stage implemented.** The [capstone pipeline](capstone/README.md) integrates source filtering, retrieval, request packing, generation, and checks in a retained comparison. Its authored pilot is not an independent benchmark. Integrated tool-loop recovery and reviewed updates remain unfinished; component labs demonstrate those separately. Completing the reading path does not imply completing every stage of this project.
+**Status: two teaching stages implemented.** The [capstone pipeline](capstone/README.md) integrates source filtering, retrieval, request packing, generation, and checks in a retained comparison. Its authored pilot is not an independent benchmark. The [update stage](capstone-update/README.md) integrates a controlled read failure, checkpoint continuation, an evidence-linked proposal, and a scripted approval/apply fixture. These are separate small experiments, not a production implementation or a human-approval study. Completing the reading path does not imply completing every stage of this project.
 
 Build a local assistant that answers questions about a small, versioned documentation set and returns evidence or an explicit unresolved result. Begin with read-only tools. Use fictional or openly licensed documents, retaining licenses and revision identifiers.
 

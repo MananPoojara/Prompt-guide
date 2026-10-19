@@ -2,7 +2,7 @@
 
 [Capstone specification](../CAPSTONE.md) · [Results](RESULTS.md) · [Frozen protocol](PROTOCOL.md)
 
-This implements the capstone's first stage: a question goes through trusted scope/current-revision filtering, lexical retrieval, request packing, one model call, and separate schema, citation, and answer checks. Every input and final output is retained. A later stage still needs to integrate the existing loop/recovery and proposed-edit components; this lab does not claim that stage is complete.
+This implements the capstone's first stage: a question goes through trusted scope/current-revision filtering, lexical retrieval, request packing, one model call, and separate schema, citation, and answer checks. Every input and final output is retained. The [second stage](../capstone-update/README.md) now integrates loop/recovery and a proposed edit with scripted approval on a separate task. This first-stage comparison remains read-only.
 
 The documents are **authored fictional policies**, available in full in [documents.json](documents.json) under the project's [MIT license](../../LICENSE). The [questions](questions.json) include two development cases and eight evaluation cases fixed before inference. They cover direct and paraphrased questions, a chunk boundary, absent evidence, a superseded value, conflicting current decisions, quoted instruction-like text, and a restricted source. These labels have no independent human review.
 

@@ -1,0 +1,36 @@
+{
+  "evidence_type": "scripted reviewer and authored host probes; not human approval",
+  "accepted": true,
+  "events": [
+    {
+      "step": "before_approval",
+      "result": "rejected",
+      "reason": "Exact proposal has not been approved"
+    },
+    {
+      "step": "scripted_approval",
+      "digest": "18f8f812f6f7a99b7b05a84e6837eec09d82d809574601f3674ab46922143b42"
+    },
+    {
+      "step": "tampered_proposal",
+      "result": "rejected",
+      "reason": "Exact proposal has not been approved"
+    },
+    {
+      "step": "stale_target",
+      "result": "rejected",
+      "reason": "Target changed after proposal; review again"
+    },
+    {
+      "step": "apply_original",
+      "result": "applied"
+    },
+    {
+      "step": "same_process_replay",
+      "result": "already_applied"
+    }
+  ],
+  "final_content": "Start: 14:00\nCapacity: 20\n",
+  "proposal_digest": "18f8f812f6f7a99b7b05a84e6837eec09d82d809574601f3674ab46922143b42",
+  "reviewer_sha256": "83cb1cd3b4292b2dcaf96628ce93c273eb5c64c63c603c529c7dc320f2bd7a90"
+}
