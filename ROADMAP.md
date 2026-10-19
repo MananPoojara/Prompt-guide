@@ -48,6 +48,8 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Also demonstrated:** [bounded output repair](labs/output-repair/README.md) separates schema acceptance from reference correctness and missing-evidence review.
 
+**Also demonstrated:** an [executed memory lifecycle](labs/memory-lifecycle/README.md), including durable corrections, expired values, and a generated context packet.
+
 **Still needed:** broader prompt comparisons, example selection/order, decomposition, and realistic adversarial evaluation beyond authored corpora.
 
 **Practical judgment:** choose whether to change instructions, add examples, retrieve evidence, or fix the surrounding software.

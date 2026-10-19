@@ -83,3 +83,7 @@ Delimiters and explicit instructions help describe this boundary, but a prompt a
 ## Build the retrieval stage
 
 The [developer-document retrieval lab](../labs/retrieval/README.md) implements BM25 and embedding search, preserves source offsets, and compares chunk sizes. It demonstrates why finding the right document is weaker than returning a complete evidence span. The [developer lab path](../labs/README.md) connects retrieval to grounded answering and a bounded agent.
+
+## Execute a memory correction
+
+The [memory lifecycle lab](../labs/memory-lifecycle/README.md) uses a real SQLite database to save a fact, correct it, reject a stale writer, and produce the next context packet. Expiry never revives a superseded value. The run uses no model calls and keeps application state separate from model parameters.
