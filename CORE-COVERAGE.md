@@ -32,6 +32,6 @@ For each delivery: write the question and success/failure criteria first, save t
 
 ## Maintenance gate
 
-Before calling the core ready for weekly maintenance, each row needs a self-contained explanation, a complete example, an inspectable check, and accurate prerequisites. Remaining gaps must be either resolved or explicitly excluded with a reason. Independent human review cannot be supplied by another model or inferred from repository stars. No such review has been completed yet.
+Before calling the core ready for weekly maintenance, each row needs a self-contained explanation, a complete example, an inspectable check, and accurate prerequisites. Remaining gaps must be either resolved or explicitly excluded with a reason. Independent human review cannot be supplied by another model or inferred from repository stars. No such review has been completed yet. The [reader packet](review/README.md) is ready; an [AI-simulated walkthrough](review/simulated-reader-2026-10-19.md) identified two documentation fixes but does not satisfy this gate. The [current offline audit](evaluation/report-2026-10-19-audit.json) checks saved evidence, not teaching effectiveness.
 
 Weekly maintenance then means collecting changes, assessing their impact, verifying affected examples, updating the actual guide, and publishing the evidence. The daily collector supports the collection step only. It does not continuously research, verify, or write the guide on its own.

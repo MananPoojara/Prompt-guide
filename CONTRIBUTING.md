@@ -16,7 +16,7 @@ Check relative links, read the rendered Markdown, run the relevant lab grader, a
 
 ## Maintenance
 
-Follow the planned [weekly editorial review](updates/README.md), and prioritize known breaking changes when discovered. Update the affected explanation alongside the dated update entry. Recheck conceptual claims when conflicting research appears. Preserve historical experiment metadata and record corrections explicitly. The weekly cadence is a plan; no recurring monitoring or automatic publishing job is currently installed.
+Follow the [weekly editorial review procedure](updates/README.md), and prioritize known breaking changes when discovered. Update the affected explanation alongside the dated update entry. Recheck conceptual claims when conflicting research appears. Preserve historical experiment metadata and record corrections explicitly. A daily nine-repository source collector is configured and has been verified in GitHub Actions. One editorial pass is recorded; ongoing weekly continuity remains unproven. The collector does not publish guidance automatically.
 
 ## Original prompts and case studies
 
@@ -25,6 +25,10 @@ Prefer publisher-owned repositories or a named engineer's first-person account. 
 A strong case includes the original prompt, assembled input, tool/runtime conditions, observed output, verification artifact, and a diagram of the relevant flow. A source-inspected artifact may be useful without a local reproduction; label that status plainly. Keep source bytes unchanged and adaptations separate.
 
 Archived model inputs and logs retain their original whitespace. The results directory's Git whitespace attribute prevents formatting checks from encouraging edits to historical evidence; source and authored documentation still use normal checks.
+
+## Reader and label feedback
+
+Use the [reader review packet](review/README.md) or the separate [annotation packet](labs/natural-notes/review/README.md). These are unfinished human-review gates, not completed studies. Disclose assistance and prior exposure to reference answers; obtain consent before publishing private feedback.
 
 ## License
 

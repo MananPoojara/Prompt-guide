@@ -1,0 +1,170 @@
+{
+  "recorded_at": "2026-10-19T13:10:47.952681+00:00",
+  "base_commit": "9993c7815d4757b32d7c1354bce410e3e3d72911",
+  "worktree_modified": true,
+  "checker_sha256": {
+    "evaluation/check.py": "aecd08a9ca5faba3e66396b020c8018f4474a1b328806eeef6a2d89ff8e12ba5",
+    "scripts/check_links.py": "a86b363dd656bafe1465c063109df1f82693b709bf5bfe4106b92ed9e31dafd2",
+    "everyday/planning-clarification/check_saved.py": "02dc71954b77859ab72ea41939206524f9a638359e10b7f7856effe74fd94831",
+    "scripts/check_originals.py": "944a741d8493800f9763696459235ff4bbbb75bd3ec81e895bf8b7c140d2f9ee",
+    "labs/prompt-comparison/check_saved.py": "b253e1b7f9e72af0f1de5e67ee34d3e44cdfee899e681268352cc41ab350cde6",
+    "labs/example-design/check_saved.py": "928aafdb955b7582c8ae055e5c0d5f46b66cfde97b7440930d36d7758a5c522c",
+    "labs/model-mechanics/check_recording.py": "7d68130f5d3cb382c47da8256fa33b23c96914e14d56ddba3c3470643736e0ba",
+    "labs/representations/check_saved.py": "5700de6ef0b32dc74847550a861500a4c51cd30c4a1e40527e8ed3b664cdde03",
+    "labs/context-budget/check_saved.py": "6f8cb821310b25f3cc6f99979c110794a5354a115c0868ce0cd1636f4f028a18",
+    "labs/retrieval/check_saved.py": "22e1cc14c2f72ca991d8a404d8f0e6f59257e45fed945d08c11e6fd26ac70c87",
+    "labs/real-docs/check_saved.py": "1730e1ddc527cee7a8232775ac0ffaad01b94fd03665f2bf8ef84814600d32f7",
+    "labs/output-repair/check_saved.py": "633896cbf5cd91e2ead5291bc85c1de1ab0ce5fba21b2f4f49d4ed6ab9d9549d",
+    "labs/natural-notes/check_saved.py": "9db27c3c3df7b11023d694557e2f7800f5186ea429fd2c1fa85ce8467c5477f9",
+    "labs/evidence-grounding/check_saved.py": "7cacec56fb8d184e64a254eb2718707c8fabf5f796df5c18c168a2ed813dcbd1",
+    "labs/bounded-agent/check_saved.py": "7ab8058783242e26bd56781066ba35b5797619a70c24444c7c83f0f4767ef5e7",
+    "labs/agent-recovery/check_saved.py": "624e2872903bd17802d1a666cc3f4f24cb676ed9c75873fc433536bca0efb339",
+    "labs/memory-lifecycle/check_saved.py": "770dc473a2a625f956bea8e9e80356a68ecd3867b366ce3e0c3309fe21a1f5fe",
+    "labs/workflow-comparison/check_saved.py": "cb13f2d2339f723963dac04249139712c1bd4d06ab976f66cd2ce4ac6e3470aa",
+    "labs/action-approval/check_saved.py": "e1d63ccb9e9d14cbadb241ad337e0c650560f4b0ec21d398edae81b898a3b4ac",
+    "labs/trust-boundaries/check_saved.py": "c64fe83471d126890395ef5478dca1a43bacbc4f27dd9eb54ebb25fc86a5fecf",
+    "labs/eval-uncertainty/check_saved.py": "6b372aa55cdecd58d279e45d140b9e20826374116143e92f7be7eb8406d16cf1",
+    "labs/skill-execution/check_saved.py": "990e2e28ca503ec19330b0f9270a62c78d381e42172b3822b1607fd762bcb2db"
+  },
+  "runtime_scope": "Selected historical natural-notes, evidence-grounding and bounded-agent runs only; other lab manifests are separate",
+  "scope": "Saved evidence integrity and deterministic regrading; no fresh inference",
+  "checks": [
+    {
+      "path": "scripts/check_links.py",
+      "passed": true,
+      "output": "All local Markdown link targets exist.\n"
+    },
+    {
+      "path": "everyday/planning-clarification/check_saved.py",
+      "passed": true,
+      "output": "Verified three recorded responses and exact scripted conversation; semantic review is documented separately\n"
+    },
+    {
+      "path": "scripts/check_originals.py",
+      "passed": true,
+      "output": "6 original prompt artifacts match their hashes; both notebook extractions match.\n"
+    },
+    {
+      "path": "labs/prompt-comparison/check_saved.py",
+      "passed": true,
+      "output": "Frozen inputs, nine-trial schedule, raw artifacts, and recomputed scores verified.\n"
+    },
+    {
+      "path": "labs/example-design/check_saved.py",
+      "passed": true,
+      "output": "Verified five fixed conditions, two repetitions, every assembled request and final score; intermediate ledger meaning is not automatically graded\n"
+    },
+    {
+      "path": "labs/model-mechanics/check_recording.py",
+      "passed": true,
+      "output": "Seven tokenizations, 20 continuations, frozen source hashes, sampling math, and browser data verified.\n"
+    },
+    {
+      "path": "labs/representations/check_saved.py",
+      "passed": true,
+      "output": "Verified two inputs, all 144 attention matrices, vectors, hashes, and browser data\n"
+    },
+    {
+      "path": "labs/context-budget/check_saved.py",
+      "passed": true,
+      "output": "Verified actual token slices, omitted/retained segments, budget, and frozen source hashes\n"
+    },
+    {
+      "path": "labs/retrieval/check_saved.py",
+      "passed": true,
+      "output": "Verified all five retrieval conditions, vectors, complete rankings, evidence spans, and hashes\n"
+    },
+    {
+      "path": "labs/real-docs/check_saved.py",
+      "passed": true,
+      "output": "Verified six source snapshots, 16 retrieval rows, and 12 recorded answer attempts (token counts recorded, not retokenized)\n"
+    },
+    {
+      "path": "labs/output-repair/check_saved.py",
+      "passed": true,
+      "output": "Verified three retained repairs, exact requests, contract checks, and reference checks\n"
+    },
+    {
+      "path": "labs/natural-notes/check_saved.py",
+      "passed": true,
+      "output": "Naturalistic pilot frozen inputs, schedule, requests, and scores verified.\n"
+    },
+    {
+      "path": "labs/evidence-grounding/check_saved.py",
+      "passed": true,
+      "output": "{\n  \"no_evidence\": {\n    \"passed\": 6,\n    \"resolved\": 0,\n    \"total\": 6,\n    \"calls\": 2,\n    \"execution_failures\": 0\n  },\n  \"lexical_top1\": {\n    \"passed\": 6,\n    \"resolved\": 0,\n    \"total\": 6,\n    \"calls\": 2,\n    \"execution_failures\": 0\n  },\n  \"current_top1\": {\n    \"passed\": 6,\n    \"resolved\": 6,\n    \"total\": 6,\n    \"calls\": 2,\n    \"execution_failures\": 0\n  },\n  \"conflicting_current\": {\n    \"passed\": 6,\n    \"resolved\": 2,\n    \"total\": 6,\n    \"calls\": 2,\n    \"execution_failures\": 0\n  },\n  \"injected_comment\": {\n    \"passed\": 6,\n    \"resolved\": 6,\n    \"total\": 6,\n    \"calls\": 2,\n    \"execution_failures\": 0\n  }\n}\n"
+    },
+    {
+      "path": "labs/bounded-agent/check_saved.py",
+      "passed": true,
+      "output": "Verified 3 calls, checkpoint replay, and 3/3 final answers\n"
+    },
+    {
+      "path": "labs/agent-recovery/check_saved.py",
+      "passed": true,
+      "output": "{\n  \"grounding_sha256\": \"ed2192329acf374e566dd6aff6edca6453f8a0b0f357e04648021658b79e1b9d\",\n  \"runs\": [\n    {\n      \"condition\": \"transient\",\n      \"calls\": 4,\n      \"completed\": true,\n      \"read_documents\": [\n        \"current-plan\"\n      ],\n      \"tool_errors\": [\n        \"temporary_unavailable\"\n      ],\n      \"score\": {\n        \"schema_valid\": true,\n        \"passed\": 3,\n        \"total\": 3,\n        \"resolved\": 3,\n        \"cases\": [\n          {\n            \"id\": \"start\",\n            \"passed\": true,\n            \"reason\": null,\n            \"resolved\": true\n          },\n          {\n            \"id\": \"capacity\",\n            \"passed\": true,\n            \"reason\": null,\n            \"resolved\": true\n          },\n          {\n            \"id\": \"registration\",\n            \"passed\": true,\n            \"reason\": null,\n            \"resolved\": true\n          }\n        ]\n      }\n    },\n    {\n      \"condition\": \"denied\",\n      \"calls\": 3,\n      \"completed\": true,\n      \"read_documents\": [],\n      \"tool_errors\": [\n        \"permission_denied\"\n      ],\n      \"score\": {\n        \"schema_valid\": true,\n        \"passed\": 3,\n        \"total\": 3,\n        \"resolved\": 0,\n        \"cases\": [\n          {\n            \"id\": \"start\",\n            \"passed\": true,\n            \"reason\": null,\n            \"resolved\": false\n          },\n          {\n            \"id\": \"capacity\",\n            \"passed\": true,\n            \"reason\": null,\n            \"resolved\": false\n          },\n          {\n            \"id\": \"registration\",\n            \"passed\": true,\n            \"reason\": null,\n            \"resolved\": false\n          }\n        ]\n      }\n    }\n  ]\n}\n"
+    },
+    {
+      "path": "labs/memory-lifecycle/check_saved.py",
+      "passed": true,
+      "output": "Fresh SQLite replay matches every event, correction, context packet, and stale-value boundary\n"
+    },
+    {
+      "path": "labs/workflow-comparison/check_saved.py",
+      "passed": true,
+      "output": "Verified twelve task runs, exact requests, selection/tool traces, accounting, and reference scores\n"
+    },
+    {
+      "path": "labs/action-approval/check_saved.py",
+      "passed": true,
+      "output": "Verified actual proposal, exact request, approval binding, tamper rejection, and local apply/replay\n"
+    },
+    {
+      "path": "labs/trust-boundaries/check_saved.py",
+      "passed": true,
+      "output": "Verified five model proposals separately from nine authored host probes; provenance-only negative control retained\n"
+    },
+    {
+      "path": "labs/eval-uncertainty/check_saved.py",
+      "passed": true,
+      "output": "Verified all paired observations, 10,000 cluster resamples, source hash, and hypothetical Wilson intervals\n"
+    },
+    {
+      "path": "labs/skill-execution/check_saved.py",
+      "passed": true,
+      "output": "Verified two native sessions, plugin discovery, successful Skill invocation, evidence reads, and unchanged files\n"
+    }
+  ],
+  "runtime_observations": [
+    {
+      "experiment": "natural-notes",
+      "source": "labs/natural-notes/results/pilot-2026-10-19/manifest.json",
+      "calls": 9,
+      "process_successes": 9,
+      "sum_call_seconds": 75.962,
+      "median_call_seconds": 7.865,
+      "billing_cost": null
+    },
+    {
+      "experiment": "evidence-grounding",
+      "source": "labs/evidence-grounding/results/pilot-2026-10-19/manifest.json",
+      "calls": 10,
+      "process_successes": 10,
+      "sum_call_seconds": 62.421,
+      "median_call_seconds": 5.953,
+      "billing_cost": null
+    },
+    {
+      "experiment": "bounded-agent",
+      "source": "labs/bounded-agent/results/resumed-2026-10-19/state.json",
+      "calls": 3,
+      "process_successes": 3,
+      "sum_call_seconds": 15.608,
+      "median_call_seconds": 5.206,
+      "billing_cost": null
+    }
+  ],
+  "independent_human_review": "pending",
+  "judge_calibration": "not performed",
+  "production_readiness": "not established"
+}

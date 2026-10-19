@@ -18,6 +18,8 @@ flowchart LR
     P --> R[Reference-span coverage]
 ```
 
+**Method names:** BM25 ranks chunks using matching words and term statistics (`--method bm25`). Dense retrieval compares numerical text representations; this lab uses the MiniLM embedding model to produce those vectors (`--method dense`). Neither method guarantees that the selected text answers the question. See the [glossary](../../handbook/glossary.md) for the terms.
+
 ## What stays equal
 
 Both methods rank the same 90 chunks. Each evidence packet has the same maximum of **384 MiniLM tokens**, including chunk IDs and separators. The packer considers ranked chunks in order, skips chunks that do not fit, and recounts the entire assembled packet. It never cuts a selected chunk to fill the last few tokens.
@@ -42,7 +44,7 @@ All six evaluation questions are answerable somewhere in the complete corpus. If
 
 ## Inspect or reproduce
 
-Start with the same question under both methods, without model packages or an account:
+Run these commands from the repository root (the folder containing `START-HERE.md`). Start with the same question under both methods, without model packages or an account:
 
 ```bash
 python3 labs/real-docs/view_results.py --method bm25 --question no-cancel

@@ -14,6 +14,8 @@ This roadmap separates material you can read now from work still needed. **Avail
 
 Understand task, evidence, constraints, examples, missing values, and output shape. Follow how a proposed date differs from a confirmed deadline. See the complete inputs and expected answer.
 
+**Also available:** [five complete everyday cases](everyday/README.md), including constrained planning and a scripted clarification exchange.
+
 **Demonstrated:** [shorter versus longer extraction prompts](labs/prompt-contract/README.md). Both succeeded in one trial each; this does not show an accuracy improvement.
 
 **Practical judgment:** explain what counts as a correct answer before comparing prompt versions.
@@ -47,6 +49,8 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 **Demonstrated for context:** the [evidence-availability lab](labs/evidence-grounding/README.md) retains ten calls across missing, stale, current, conflicting, and injected evidence conditions. It separates appropriate abstention from question resolution.
 
 **Also demonstrated:** [developer-document retrieval](labs/retrieval/README.md) compares BM25 and MiniLM on two chunk sizes plus a truncated-document baseline, retaining every vector and rank.
+
+**Also demonstrated:** [real-document retrieval and answer generation](labs/real-docs/README.md), with a shared evidence ceiling and twelve recorded answer calls on a pinned official specification corpus.
 
 **Also demonstrated:** [bounded output repair](labs/output-repair/README.md) separates schema acceptance from reference correctness and missing-evidence review.
 
@@ -88,19 +92,17 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Practical judgment:** distinguish “worked once,” “improved on this evaluation,” and “reliable enough for this use.” An evaluator saying PASS is one observation, not a universal correctness proof.
 
-## Advanced work: the next additions
+## Advanced tracks: delivered evidence and remaining review
 
-These tracks include the first available pilot and planned expansions. The next cycle’s delivery order is specified below; each expansion needs evidence before it is labeled demonstrated.
-
-| Track | Addition | Evidence required before calling it demonstrated |
+| Track | Demonstrated here | Remaining work or explicit limit |
 |---|---|---|
-| 1 | Controlled prompting comparisons — [first pilot available](labs/prompt-comparison/README.md) | Add independent label review and more varied held-out cases; retain the pilot’s tie and setup failure |
-| 2 | Visual ML mechanics — [first lab available](labs/model-mechanics/README.md) | Extend into context limits and broader comparisons; retain the measured-versus-conceptual distinction |
-| 3 | Context and retrieval — [first lab available](labs/evidence-grounding/README.md) | Extend the lexical/embedding pilot to independently labeled real documents and equal-budget retrieval comparisons |
-| 4 | Complete agent execution — [first trace available](labs/bounded-agent/README.md) | Model requests, tool calls, permission decisions, failures, budgets, and recovery traces |
-| 5 | Evaluation and deployment decisions — [first gate available](evaluation/README.md) | Judge agreement checks, uncertainty, cost/latency, regression results, and evidence for choosing prompting, retrieval, or fine-tuning |
+| Prompt comparisons | [Repeated extraction](labs/prompt-comparison/README.md), [natural notes](labs/natural-notes/README.md), [example order and decomposition](labs/example-design/README.md) | Independent labels and broader task difficulty; ties remain valid results |
+| Visual ML mechanics | [Tokens and sampling](labs/model-mechanics/README.md), [representations](labs/representations/README.md), [context budgets](labs/context-budget/README.md) | Small open-model measurements, not proprietary-model internals or a learning-outcome study |
+| Context and retrieval | [Lexical/dense retrieval](labs/retrieval/README.md), [equal-budget real-document answers](labs/real-docs/README.md), [memory lifecycle](labs/memory-lifecycle/README.md) | Independent labels, broader questions, repeated generation, and production source/access controls |
+| Agent execution | [Resumed loop](labs/bounded-agent/README.md), [recovery](labs/agent-recovery/README.md), [strategy comparison](labs/workflow-comparison/README.md), [approval](labs/action-approval/README.md), [trust boundaries](labs/trust-boundaries/README.md) | Local teaching hosts; authenticated production review, distributed recovery, and adaptive attack evaluation remain outside these demonstrations |
+| Evaluation | [Regression gate](evaluation/README.md), [uncertainty](labs/eval-uncertainty/README.md), per-lab durations and limits | Human review and judge calibration pending; no invoices, fine-tuning comparison, or production deployment claimed |
 
-A useful addition connects **a question → a technique → an observable run → a check → its limits**. More pages or more links alone do not fill these gaps.
+A useful addition connects **a question → a technique → an observable run → a check → its limits**. More pages or more links alone do not fill missing evidence. The [practicum](labs/PRACTICUM.md) connects these labs; the [capstone](labs/CAPSTONE.md) is a learner project specification, not a completed integrated benchmark.
 
 ## How to use the roadmap
 
@@ -114,12 +116,12 @@ The aim is one dependable place to learn, practice, and keep up with prompting. 
 
 ### Entry paths for different readers
 
-| Reader | Starting experience | Next material needed |
+| Reader | Starting experience | Continue with / remaining evidence |
 |---|---|---|
-| First-time AI user | [One complete prompt](handbook/01-first-example.md), with unfamiliar words explained | Everyday writing, planning, summarizing, and learning examples that require no code |
+| First-time AI user | [One complete prompt](handbook/01-first-example.md), with unfamiliar words explained | [Five everyday examples](everyday/README.md); independent beginner feedback remains open |
 | Writer, student, or researcher | [Templates](prompts/README.md) and [evidence checking](handbook/09-evaluation-and-failures.md) | Complete source-grounded research and revision examples, including fabricated-claim and citation failures |
-| Developer or automation builder | [Coding verification](handbook/08-coding-and-verification.md), [MCP](handbook/06-tools-and-mcp.md), and [toolkit](toolkit/README.md) | A complete traced workflow with recovery and permission checks |
-| Advanced experimenter | [Controlled comparison](labs/prompt-comparison/README.md) and its raw artifacts | Independent label review, harder tasks, uncertainty analysis, and cost/latency measurement |
+| Developer or automation builder | [Coding verification](handbook/08-coding-and-verification.md), [MCP](handbook/06-tools-and-mcp.md), and [toolkit](toolkit/README.md) | [Traced workflow and recovery](labs/bounded-agent/README.md), [host boundaries](labs/trust-boundaries/README.md); independent developer feedback remains open |
+| Advanced experimenter | [Controlled comparison](labs/prompt-comparison/README.md) and its raw artifacts | [Uncertainty](labs/eval-uncertainty/README.md) and per-lab durations; independent labels, harder tasks, and invoice-backed cost comparisons remain open |
 
 Readers can enter where their task starts. The advanced path should not make basic explanations harder to find. Translation will follow stable explanations and terminology, with language review; unreviewed machine translations will not be labeled verified.
 
@@ -141,9 +143,9 @@ The everyday track uses examples such as revising a message for a defined audien
 
 ### Updates are part of the product
 
-The [updates index and review policy](updates/README.md) define the planned weekly process. Each meaningful update must answer: what changed, who it affects, what to do, what supports it, and which local page was revised. A source link without a practical explanation is insufficient.
+The [updates index and review policy](updates/README.md) define the weekly process, with a [first completed editorial pass](updates/reviews/2026-10-19/README.md). Each meaningful update must answer: what changed, who it affects, what to do, what supports it, and which local page was revised. A source link without a practical explanation is insufficient.
 
-Start with manual editorial review. After that process has produced useful entries, automate source-change collection and stale-page checks. Keep publication reviewed. A daily source-watch workflow now collects HEAD changes for the five toolkit repositories into an Actions report. It does not publish advice; coverage and scheduling limits are described in the updates policy.
+Keep publication reviewed. A daily source-watch workflow now collects HEAD changes for nine toolkit and primary repositories into an Actions report. Its hosted execution is verified; ongoing weekly editorial continuity is not yet established. It does not publish advice; coverage and scheduling limits are described in the updates policy.
 
 ### Quality gates for every milestone
 
@@ -155,6 +157,6 @@ Start with manual editorial review. After that process has produced useful entri
 
 ### How we will know the resource is improving
 
-Measure reader task completion and points of confusion through consented feedback, then report the number and type of participants. Track broken examples, reproducible runs, known stale recommendations, and corrections resolved. Use stars and visits as interest signals, not evidence that the explanations work. No independent usability study has been completed yet.
+Measure reader task completion and points of confusion through consented feedback, then report the number and type of participants. Track broken examples, reproducible runs, known stale recommendations, and corrections resolved. Use stars and visits as interest signals, not evidence that the explanations work. No independent usability study has been completed yet. The [reader review packet](review/README.md) provides concrete beginner/developer tasks and a consent-aware feedback form.
 
 A finished milestone should reduce a specific reader's need to search elsewhere while preserving their ability to inspect primary sources. Coverage expands through tested additions, not a claim that every prompting technique or product update has been captured.

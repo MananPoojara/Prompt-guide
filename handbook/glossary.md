@@ -16,6 +16,7 @@
 | Compaction | Condensing conversation state for continuation | Preserve decisions and unfinished work in a shorter summary |
 | Context | Material available for a particular model request | Instructions, notes, messages, tool results |
 | Context window | The request's supported token capacity under the model's accounting | Limits how much material can be processed together |
+| Dense retrieval | Search by comparing learned numerical representations of queries and passages | Rank chunk vectors by similarity to the question vector |
 | Embedding | A learned numerical representation of a token or input; retrieval embeddings are designed for comparison | A token-table row, or a vector used to search passages |
 | Evaluation / eval | A procedure for judging performance against criteria | Compare extracted owners against expected values |
 | Fixture | A deliberately prepared input used for testing | The stack implementation with a known duplicate-minimum bug |
@@ -30,6 +31,7 @@
 | Latency | Time until a response or operation completes | Time spent retrieving a note and answering |
 | MCP | A protocol for connecting hosts to capability-providing servers | Discover and call `read_note` |
 | Memory | Stored information made available across interactions | A saved project decision retrieved into a later request |
+| MiniLM | A family of compact language models; this guide uses a specific sentence-embedding model derived from it | `all-MiniLM-L6-v2` produces vectors for the dense retrieval labs |
 | Model parameters | Learned numerical values used during inference | Training changes them; a normal chat message does not |
 | Plugin | A host-specific package of capabilities | A Claude Code package containing a skill |
 | Prompt | Input that asks or instructs a model to perform work | Extract confirmed owners and deadlines |

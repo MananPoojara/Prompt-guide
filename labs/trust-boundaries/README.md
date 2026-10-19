@@ -57,7 +57,7 @@ These four attack patterns are controlled demonstrations, not an adaptive red-te
 
 ## Reproduce the evidence
 
-Python 3.10+ only, no model account required:
+Run from the repository root (the folder containing `START-HERE.md`). Python 3.10+ only, no model account required:
 
 ```bash
 python3 -m unittest discover -s labs/trust-boundaries -p 'test_*.py'

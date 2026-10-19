@@ -20,17 +20,17 @@ Python 3.10+; no model account or network required:
 python3 evaluation/check.py --output /tmp/prompt-guide-evaluation.json
 ```
 
-The command verifies source artifacts and links, recorded model mechanics, both extraction pilots, evidence-grounding scores, and the agent trace. It fails if any constituent check fails. Repository CI additionally runs unit tests and the separate MCP integration example. See the [recorded report](report-2026-10-19.json) for actual outcomes and command output.
+The command runs 21 checks covering local links, original source artifacts, everyday planning records, model-mechanics recordings, prompt comparisons, retrieval and answers, repair, memory, agent/approval boundaries, uncertainty, and native skill execution. It fails if any constituent check fails. Repository CI additionally runs unit tests and the separate MCP integration example. See the [coverage-audit report](report-2026-10-19-audit.json) for the current 21-check execution. The [initial report](report-2026-10-19.json) remains preserved as historical evidence. The new report records its base commit, whether the worktree was modified, and exact checker hashes; it does not pretend that an in-progress worktree was a clean release.
 
 ## Runtime and usage
 
-The report extracts process-call durations directly from frozen manifests. It reports call counts, process successes, summed durations, and medians separately for each experiment. These are descriptive observations from sequential local runs, including CLI/service overhead. Agent pauses are excluded. They are not a model speed benchmark or an estimate of user-facing production latency.
+The report extracts process-call durations from three selected historical manifests: natural notes, evidence grounding, and the bounded agent. It is not an aggregate of every lab in the repo. Newer labs retain their own durations and usage limits alongside their results. It reports call counts, process successes, summed durations, and medians separately for each experiment. These are descriptive observations from sequential local runs, including CLI/service overhead. Agent pauses are excluded. They are not a model speed benchmark or an estimate of user-facing production latency.
 
 Dollar cost is `null`: billing records were not collected. CLI usage counters are not assumed to be invoices. Before a paid comparison, declare the model, accounting method, input/output/cache token categories, price date, call budget, and treatment of failures. Never infer a zero cost from missing billing data.
 
 ## What would justify a stronger claim?
 
-The natural-note pilot has a [human review packet](../labs/natural-notes/review/blank.json). Independent review remains pending. A model grading another model does not fill that gap. Once reviewed labels exist, compare judge decisions with human decisions, retain the disagreement table and failure types, and evaluate on separate calibration and test sets.
+The natural-note pilot has a [human review packet](../labs/natural-notes/review/blank.json). Independent review remains pending. The [reader feedback packet](../review/README.md) separately addresses usability. A model grading another model does not fill either gap. Once reviewed labels exist, compare judge decisions with human decisions, retain the disagreement table and failure types, and evaluate on separate calibration and test sets.
 
 The repeated questions share prompts and calls, so treating each answer as an independent sample would overstate precision. We report observed counts rather than attach a misleading confidence interval. A future comparison should predeclare the unit of analysis and use paired tasks across conditions; resample at the independent task/cluster level where appropriate. The [uncertainty worked example](../labs/eval-uncertainty/README.md) demonstrates paired cluster resampling and hypothetical Wilson intervals while making the authored-data assumptions explicit.
 
