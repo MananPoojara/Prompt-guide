@@ -44,5 +44,7 @@ fig.suptitle(
     color="#555555",
 )
 fig.savefig(ROOT / "resampling.svg")
+svg = ROOT / "resampling.svg"
+svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")
 fig.savefig(ROOT / "resampling.png", dpi=150)
 print("Rendered with matplotlib", matplotlib.__version__)
