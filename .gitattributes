@@ -22,3 +22,4 @@ labs/skill-execution/results/** -whitespace
 labs/real-docs/sources/*.mdx -whitespace
 labs/real-docs/results/** -whitespace
 labs/example-design/results/** -whitespace
+labs/trust-boundaries/results/** -whitespace

@@ -45,6 +45,8 @@ jobs:
       - run: python3 labs/workflow-comparison/check_saved.py
       - run: python3 -m unittest discover -s labs/action-approval -p 'test_*.py'
       - run: python3 labs/action-approval/check_saved.py
+      - run: python3 -m unittest discover -s labs/trust-boundaries -p 'test_*.py'
+      - run: python3 labs/trust-boundaries/check_saved.py
       - run: python3 -m unittest discover -s labs/eval-uncertainty -p 'test_*.py'
       - run: python3 labs/eval-uncertainty/check_saved.py
       - run: python3 -m unittest discover -s labs/skill-execution -p 'test_*.py'

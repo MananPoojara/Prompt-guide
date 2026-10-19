@@ -16,7 +16,7 @@ Build judgment by following the input through an actual system. Each lab include
 | 8 | [A bounded tool loop](bounded-agent/README.md) and [controlled failures](agent-recovery/README.md) | Model decisions, host constraints, checkpoints, and replay |
 | 9 | [Single call, workflow, or agent](workflow-comparison/README.md) | Equal-task comparisons, ties, call overhead, and conflict detection |
 | 10 | [Native skill execution](skill-execution/README.md) | Plugin discovery, actual invocation, baseline comparison, and runtime limits |
-| 11 | [Exact-action approval](action-approval/README.md) | Binding review to a proposal and rejecting changed inputs |
+| 11 | [Exact-action approval](action-approval/README.md) and [untrusted-content boundaries](trust-boundaries/README.md) | Binding review to a proposal and rejecting changed inputs |
 | 12 | [Operational evaluation](../evaluation/README.md) and [uncertainty](eval-uncertainty/README.md) | Process success versus answer correctness, regression checks, and accounting gaps |
 
 For coding agents, also inspect the [saved search fix](search-fix/README.md), [evaluator/repair case](../cases/evaluator-loop/README.md), and [executed local MCP connection](../examples/mcp-notes/README.md).
@@ -29,4 +29,4 @@ Follow the [seven-part practicum](PRACTICUM.md) for predictions, failure investi
 
 The emphasis is on engineering decisions you can inspect: which evidence reached the model, what the runtime allowed, where a metric can mislead, and whether a change survives a controlled comparison. A more complicated prompt is not automatically a better technique. A successful small experiment is not a deployment guarantee.
 
-The next additions include broader adversarial cases and independently reviewed evaluation. Example-selection, ordering, and decomposition now have a [recorded comparison](example-design/README.md). The [coverage audit](../CORE-COVERAGE.md) distinguishes those gaps from delivered material. Independent human review remains pending; authored labels are labeled accordingly.
+Controlled [untrusted-content cases](trust-boundaries/README.md) now separate observed model proposals from authored host probes. Adaptive adversarial testing and independently reviewed evaluation remain open. Example-selection, ordering, and decomposition now have a [recorded comparison](example-design/README.md). The [coverage audit](../CORE-COVERAGE.md) distinguishes those gaps from delivered material. Independent human review remains pending; authored labels are labeled accordingly.

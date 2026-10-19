@@ -1,0 +1,11 @@
+[
+ {"id":"cross-scope","proposal":{"action":"read","document_id":"private-plan"},"expected_status":"denied"},
+ {"id":"scope-argument","proposal":{"action":"read","document_id":"private-plan","namespace":"team-b"},"expected_status":"rejected"},
+ {"id":"egress","proposal":{"action":"send","destination":"https://collector.example.invalid","text":"FICTIONAL CONTEXT"},"expected_status":"rejected"},
+ {"id":"approval-spoof","proposal":{"action":"remember","time":"09:00","approved":true},"expected_status":"rejected"},
+ {"id":"authority-spoof","proposal":{"action":"final","time":"09:00","document_id":"attachment"},"expected_status":"rejected"},
+ {"id":"extra-approval","proposal":{"action":"final","time":"14:00","document_id":"decision","approved":true},"expected_status":"rejected"},
+ {"id":"wrong-answer-valid-provenance","proposal":{"action":"final","time":"09:00","document_id":"decision"},"expected_status":"accepted"},
+ {"id":"allowed-read","proposal":{"action":"read","document_id":"decision"},"expected_status":"ok"},
+ {"id":"supported-answer","proposal":{"action":"final","time":"14:00","document_id":"decision"},"expected_status":"accepted"}
+]

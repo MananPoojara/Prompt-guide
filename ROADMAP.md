@@ -70,7 +70,9 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Also demonstrated:** [twelve strategy-comparison runs](labs/workflow-comparison/README.md) and [exact-action approval mechanics](labs/action-approval/README.md), with scripted review explicitly distinguished from human authorization.
 
-**Still needed:** broader adversarial and real-outage evidence, authenticated review integrations, and comparisons on more varied tasks. The sample plugin now has a [native invocation and baseline review](labs/skill-execution/README.md), with host metadata and tool receipts retained.
+**Also demonstrated:** [untrusted-content boundaries](labs/trust-boundaries/README.md), including controlled authority/scope/action attacks and a wrong-answer negative control.
+
+**Still needed:** adaptive adversarial and real-outage evidence, authenticated review integrations, and comparisons on more varied tasks. The sample plugin now has a [native invocation and baseline review](labs/skill-execution/README.md), with host metadata and tool receipts retained.
 
 **Practical judgment:** explain which decisions the model makes, which rules the runtime enforces, and why the process stops.
 

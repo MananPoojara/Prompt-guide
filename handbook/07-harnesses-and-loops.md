@@ -86,3 +86,5 @@ The [controlled-failure extension](../labs/agent-recovery/README.md) records a m
 ## Compare the simpler workflow and review exact actions
 
 The [strategy comparison](../labs/workflow-comparison/README.md) runs the same tasks through a single call, a fixed host rule, and an agent loop. All tied on the small reference set; the agent used more calls. The [action-approval lab](../labs/action-approval/README.md) then demonstrates an exact-proposal gate with a scripted reviewer, stale-target checks, and an explicit trusted-host boundary.
+
+The [untrusted-content lab](../labs/trust-boundaries/README.md) separates five observed model proposals from nine direct host tests. It shows why source text cannot grant scope or approval, and why provenance checks still cannot establish answer truth.
