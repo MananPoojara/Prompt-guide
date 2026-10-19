@@ -9,3 +9,5 @@ One reviewed change was integrated into the [Context7 toolkit explanation](../to
 New cookbook entries and SDK-specific documentation were triaged separately. They were not automatically endorsed, executed, or presented as reproduced results. The historical MCP retrieval corpus remains unchanged.
 
 Five collector tests and live before/after collection passed. Combined unit and live collector execution covered 98% of 49 source-watch statements; this does not measure editorial completeness. The source watch still checks repository revisions only. It makes no model calls, publishes no advice, and does not monitor all provider websites, papers, model releases, or prices.
+
+Hosted verification: the [expanded nine-source workflow](https://github.com/MananPoojara/Prompt-guide/actions/runs/39256400637) and [repository checks](https://github.com/MananPoojara/Prompt-guide/actions/runs/39256388531) passed. The downloaded report artifact contained all nine configured repositories and no query errors; its file hashes are retained in the review directory.

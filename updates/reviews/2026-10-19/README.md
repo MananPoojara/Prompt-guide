@@ -40,3 +40,5 @@ The collector publishes no advice and makes no model calls. Its successful run d
 The cookbook additions and SDK-specific runtime verification are queued extensions, not prerequisites for using the current local examples. Review them if they affect local guidance, or define a bounded reproduction before making a new recommendation. The watch list still excludes provider websites, model pricing, most papers, and repositories outside these nine. A maintainer must also check relevant primary documentation during the next editorial pass.
 
 Use the [review template](../TEMPLATE.md) for the next weekly pass. Preserve this report; do not refresh its date or silently replace its source evidence. Actual weekly continuity remains to be established by later dated reviews.
+
+Hosted verification: the [expanded nine-source workflow](https://github.com/MananPoojara/Prompt-guide/actions/runs/39256400637) and [repository checks](https://github.com/MananPoojara/Prompt-guide/actions/runs/39256388531) passed. The downloaded report artifact contained all nine configured repositories and no query errors; its file hashes are retained in the review directory.

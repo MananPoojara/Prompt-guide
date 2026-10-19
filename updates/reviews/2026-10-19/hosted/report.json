@@ -1,0 +1,69 @@
+{
+  "checked_at": "2026-10-19T12:59:47.279295+00:00",
+  "scope": "9 configured primary/toolkit repositories; HEAD changes only, no automatic content review",
+  "sources": [
+    {
+      "repository": "anthropics/skills",
+      "inspected_commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "watch_scope": "Toolkit source baseline; HEAD changes require content review",
+      "current_commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "status": "unchanged"
+    },
+    {
+      "repository": "anthropics/claude-plugins-official",
+      "inspected_commit": "ea10b213686c90bb1984b2016937310e05336cf3",
+      "watch_scope": "Toolkit source baseline; HEAD changes require content review",
+      "current_commit": "ea10b213686c90bb1984b2016937310e05336cf3",
+      "status": "unchanged"
+    },
+    {
+      "repository": "microsoft/playwright-mcp",
+      "inspected_commit": "b8b4183e099f136cbec0388a6088d4aa2f6b9685",
+      "watch_scope": "Toolkit source baseline; HEAD changes require content review",
+      "current_commit": "b8b4183e099f136cbec0388a6088d4aa2f6b9685",
+      "status": "unchanged"
+    },
+    {
+      "repository": "github/github-mcp-server",
+      "inspected_commit": "e3809fe91c7546633241006bf0b91f23b2595e28",
+      "watch_scope": "Toolkit source baseline; HEAD changes require content review",
+      "current_commit": "e3809fe91c7546633241006bf0b91f23b2595e28",
+      "status": "unchanged"
+    },
+    {
+      "repository": "upstash/context7",
+      "inspected_commit": "5a2b65145b5930d2773e79d3a223fa5fb2b308ad",
+      "watch_scope": "Toolkit source baseline; HEAD changes require content review",
+      "current_commit": "5a2b65145b5930d2773e79d3a223fa5fb2b308ad",
+      "status": "unchanged"
+    },
+    {
+      "repository": "openai/openai-cookbook",
+      "inspected_commit": "5bd6cb40b6b84b69b2032d810610aa85064102df",
+      "watch_scope": "README overview and latest commit file list; new partner example not executed",
+      "current_commit": "5bd6cb40b6b84b69b2032d810610aa85064102df",
+      "status": "unchanged"
+    },
+    {
+      "repository": "anthropics/claude-cookbooks",
+      "inspected_commit": "a162e0184e71b60290808a43961a6cbc8060123c",
+      "watch_scope": "README overview and latest commit file list; security-review notebook not executed",
+      "current_commit": "a162e0184e71b60290808a43961a6cbc8060123c",
+      "status": "unchanged"
+    },
+    {
+      "repository": "openai/openai-agents-python",
+      "inspected_commit": "9abc9182d06dbd28330af888306031269d57a175",
+      "watch_scope": "README overview and two approval-documentation patches; SDK behavior not executed",
+      "current_commit": "9abc9182d06dbd28330af888306031269d57a175",
+      "status": "unchanged"
+    },
+    {
+      "repository": "modelcontextprotocol/modelcontextprotocol",
+      "inspected_commit": "1155ca460e5097019f32769b38dcba194432e2fb",
+      "watch_scope": "README overview, repository identity and latest commit file list; historical lab remains pinned",
+      "current_commit": "1155ca460e5097019f32769b38dcba194432e2fb",
+      "status": "unchanged"
+    }
+  ]
+}
