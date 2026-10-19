@@ -1,0 +1,49 @@
+{
+  "repository": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+  "revision": "300730a13c808a11967c75efbcc1649221ac4a17",
+  "specification_version": "2025-06-18",
+  "files": [
+    {
+      "file": "LICENSE",
+      "upstream_path": "LICENSE",
+      "sha256": "346e57dc40801e3d58165e97f64d45b42c4571a68a76ecb10c3c12858acecb3f",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/300730a13c808a11967c75efbcc1649221ac4a17/LICENSE"
+    },
+    {
+      "file": "basic-lifecycle.mdx",
+      "upstream_path": "docs/specification/2025-06-18/basic/lifecycle.mdx",
+      "sha256": "1b942766dea0b55b6f170546b59108c99f40a5700ffad6cccf818fcb46eb2151",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/300730a13c808a11967c75efbcc1649221ac4a17/docs/specification/2025-06-18/basic/lifecycle.mdx"
+    },
+    {
+      "file": "basic-utilities-cancellation.mdx",
+      "upstream_path": "docs/specification/2025-06-18/basic/utilities/cancellation.mdx",
+      "sha256": "9dc8e47dfd56adf609852ab52a80287174fed7c84cfc33ce33644cdb3ae9fe52",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/300730a13c808a11967c75efbcc1649221ac4a17/docs/specification/2025-06-18/basic/utilities/cancellation.mdx"
+    },
+    {
+      "file": "basic-utilities-progress.mdx",
+      "upstream_path": "docs/specification/2025-06-18/basic/utilities/progress.mdx",
+      "sha256": "dfcede665082dae2bbd65488f037104e705249fcefd5dc86343e0e34a4768a79",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/300730a13c808a11967c75efbcc1649221ac4a17/docs/specification/2025-06-18/basic/utilities/progress.mdx"
+    },
+    {
+      "file": "server-tools.mdx",
+      "upstream_path": "docs/specification/2025-06-18/server/tools.mdx",
+      "sha256": "27663429f95c61ad1eea6b41a849d27f28e5e2c2069478c152c1ff8293a21fe3",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/300730a13c808a11967c75efbcc1649221ac4a17/docs/specification/2025-06-18/server/tools.mdx"
+    },
+    {
+      "file": "server-resources.mdx",
+      "upstream_path": "docs/specification/2025-06-18/server/resources.mdx",
+      "sha256": "64a89b990dc6f13cea0b8cca5c53b05c643f5fe0abcbcad3f8c12fdcdb976379",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/300730a13c808a11967c75efbcc1649221ac4a17/docs/specification/2025-06-18/server/resources.mdx"
+    },
+    {
+      "file": "client-roots.mdx",
+      "upstream_path": "docs/specification/2025-06-18/client/roots.mdx",
+      "sha256": "a416ce0e0f6ba309637b47f4ab60a1bfb9447b022a3847b2eb5b00e6e8c761ee",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/300730a13c808a11967c75efbcc1649221ac4a17/docs/specification/2025-06-18/client/roots.mdx"
+    }
+  ]
+}

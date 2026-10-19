@@ -18,3 +18,6 @@ labs/agent-recovery/results/** -whitespace
 labs/workflow-comparison/results/** -whitespace
 labs/action-approval/results/** -whitespace
 labs/skill-execution/results/** -whitespace
+# Unchanged upstream source snapshots and exact model inputs/outputs.
+labs/real-docs/sources/*.mdx -whitespace
+labs/real-docs/results/** -whitespace

@@ -1,0 +1,1 @@
+{"status":"answered","answer":"initialize","chunk_id":"basic-utilities-cancellation:224-352","quote":"2. The `initialize` request **MUST NOT** be cancelled by clients"}

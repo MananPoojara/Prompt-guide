@@ -10,7 +10,7 @@ Build judgment by following the input through an actual system. Each lab include
 | 2 | [Embeddings and attention](representations/README.md) and [context budgets](context-budget/README.md) | Stored vectors versus contextual computation; limits of attention pictures |
 | 3 | [Controlled prompt comparison](prompt-comparison/README.md) and [natural notes](natural-notes/README.md) | Fair comparisons, held-out cases, ceiling results, and missing independent review |
 | 4 | [Bounded output repair](output-repair/README.md) | JSON validity versus evidence correctness; stop when evidence is absent |
-| 5 | [A developer-document retriever](retrieval/README.md) | Lexical versus embedding search, chunk boundaries, and evidence coverage |
+| 5 | [A developer-document retriever](retrieval/README.md) and [real-document answers](real-docs/README.md) | Lexical versus embedding search, chunk boundaries, and evidence coverage |
 | 6 | [Evidence-grounded answering](evidence-grounding/README.md) | Missing, stale, conflicting, and instruction-like evidence; abstention versus resolution |
 | 7 | [Memory lifecycle](memory-lifecycle/README.md) | Corrections, revision conflicts, expiry, retraction, and current context |
 | 8 | [A bounded tool loop](bounded-agent/README.md) and [controlled failures](agent-recovery/README.md) | Model decisions, host constraints, checkpoints, and replay |

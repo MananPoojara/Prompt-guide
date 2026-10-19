@@ -1,0 +1,98 @@
+[
+  {
+    "id": "init-notification",
+    "split": "development",
+    "document_id": "basic-lifecycle",
+    "question": "After initialization succeeds, what notification method signals that the client is ready? Return the full method name.",
+    "answers": [
+      "notifications/initialized"
+    ],
+    "evidence": "\"method\": \"notifications/initialized\"",
+    "start": 2637,
+    "end": 2674
+  },
+  {
+    "id": "resource-missing",
+    "split": "development",
+    "document_id": "server-resources",
+    "question": "Which numeric JSON-RPC error code does this version recommend for a resource that cannot be found?",
+    "answers": [
+      "-32002"
+    ],
+    "evidence": "Resource not found: `-32002`",
+    "start": 8955,
+    "end": 8983
+  },
+  {
+    "id": "no-cancel",
+    "split": "evaluation",
+    "document_id": "basic-utilities-cancellation",
+    "question": "Which request must a client never cancel? Return just the request name.",
+    "answers": [
+      "initialize"
+    ],
+    "evidence": "The `initialize` request **MUST NOT** be cancelled by clients",
+    "start": 935,
+    "end": 996
+  },
+  {
+    "id": "progress-type",
+    "split": "evaluation",
+    "document_id": "basic-utilities-progress",
+    "question": "What two data types are allowed for a progress token? Return \"string or integer\" if those are the types.",
+    "answers": [
+      "string or integer"
+    ],
+    "evidence": "Progress tokens **MUST** be a string or integer value",
+    "start": 466,
+    "end": 519
+  },
+  {
+    "id": "root-scheme",
+    "split": "evaluation",
+    "document_id": "client-roots",
+    "question": "Which URI scheme is required for a root in this specification version? Return the scheme including ://.",
+    "answers": [
+      "file://"
+    ],
+    "evidence": "This **MUST** be a `file://` URI in the current\n  specification.",
+    "start": 2444,
+    "end": 2508
+  },
+  {
+    "id": "schema-obligation",
+    "split": "evaluation",
+    "document_id": "server-tools",
+    "question": "When a tool output schema exists, what normative keyword applies to servers providing conforming structured results? Return MUST, SHOULD, or MAY.",
+    "answers": [
+      "MUST"
+    ],
+    "evidence": "Servers **MUST** provide structured results that conform to this schema.",
+    "start": 7419,
+    "end": 7491
+  },
+  {
+    "id": "version-mismatch",
+    "split": "evaluation",
+    "document_id": "basic-lifecycle",
+    "question": "What should a client do if it cannot support the protocol version returned by the server? Return the action as one word.",
+    "answers": [
+      "disconnect"
+    ],
+    "evidence": "If the client does not support the version in the server's response, it **SHOULD**\ndisconnect.",
+    "start": 3511,
+    "end": 3605
+  },
+  {
+    "id": "internal-error",
+    "split": "evaluation",
+    "document_id": "server-resources",
+    "question": "Which numeric error code is recommended for internal errors in resource handling?",
+    "answers": [
+      "-32603"
+    ],
+    "evidence": "Internal errors: `-32603`",
+    "start": 8986,
+    "end": 9011
+  }
+]

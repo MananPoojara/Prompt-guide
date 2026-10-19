@@ -10,6 +10,7 @@ This page is the home for reviewed updates to Prompt Guide. Each entry should ex
 
 | Date | Update | What changed |
 |---|---|---|
+| 2026-10-19 | [Real-document retrieval and answers](2026-10-19-real-docs.md) | Equal evidence ceiling, twelve generated answers, and per-question quotation failures |
 | 2026-10-19 | [Advanced practicum](2026-10-19-practicum.md) | Seven guided investigations and an integrated capstone specification |
 | 2026-10-19 | [Native skill execution](2026-10-19-native-skill.md) | Actual plugin discovery and Skill invocation, compared with a baseline review |
 | 2026-10-19 | [Evaluation uncertainty](2026-10-19-uncertainty.md) | Paired cluster resampling, perfect-score limits, and explicit study assumptions |

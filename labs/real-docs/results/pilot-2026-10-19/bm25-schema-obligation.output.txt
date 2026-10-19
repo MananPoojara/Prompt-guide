@@ -1,0 +1,1 @@
+{"status":"answered","answer":"MUST","chunk_id":"server-tools:2016-2144","quote":"- Servers **MUST** provide structured results that conform to this schema."}

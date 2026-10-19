@@ -32,7 +32,7 @@
 |---|---|---|
 | **06 · Prompt experiments** | Zero-shot vs. few-shot, controlled comparisons, held-out cases, and failure analysis | [First lab available](labs/prompt-comparison/README.md) |
 | **07 · Visual ML mechanics** | Token boundaries, next-token probabilities, temperature, and recorded continuations | [Interactive lab available](labs/model-mechanics/README.md) |
-| **08 · Retrieval experiments** | Chunking, lexical/embedding search, and evidence failures | [Retrieval lab available](labs/retrieval/README.md) |
+| **08 · Retrieval experiments** | Chunking, lexical/embedding search, and evidence failures | [Retrieval](labs/retrieval/README.md) → [Real-document answers](labs/real-docs/README.md) |
 | **09 · Agent engineering** | Complete execution traces, tool errors, permissions, checkpoints, and recovery | [First trace available](labs/bounded-agent/README.md) |
 | **10 · Reliable evaluation** | Judge calibration, uncertainty, regression tracking, cost, and latency | [Regression gate available](evaluation/README.md) |
 

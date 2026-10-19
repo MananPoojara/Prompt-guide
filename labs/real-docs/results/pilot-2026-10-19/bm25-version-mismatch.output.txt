@@ -1,0 +1,1 @@
+{"status":"answered","answer":"disconnect","chunk_id":"basic-lifecycle:896-1024","quote":"client does not support the version in the server's response, it **SHOULD**\ndisconnect."}
