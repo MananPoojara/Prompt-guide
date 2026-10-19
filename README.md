@@ -13,7 +13,7 @@
   <a href="CONTRIBUTING.md">Contribute</a>
 </p>
 
-## The path
+## Beginner → advanced
 
 **Write a clear request → Understand the model → Supply context → Connect tools → Measure and improve**
 
@@ -25,7 +25,17 @@
 | **04 · System** | Connect skills, plugins, and MCP; follow an agent's execution loop | [Skills](handbook/05-skills-and-plugins.md) → [MCP](handbook/06-tools-and-mcp.md) → [Loops](handbook/07-harnesses-and-loops.md) |
 | **05 · Evaluation** | Check results, compare changes, and diagnose failures | [Verification](handbook/08-coding-and-verification.md) → [Evaluation](handbook/09-evaluation-and-failures.md) |
 
-**Current depth:** beginner foundations and small engineering demonstrations. The advanced path is still being built; the [roadmap](ROADMAP.md) shows the missing experiments and topics. Reading these pages alone does not establish expertise.
+### Go deeper
+
+| Advanced track | What you'll explore | Status |
+|---|---|---|
+| **06 · Prompt experiments** | Zero-shot vs. few-shot, controlled comparisons, held-out cases, and failure analysis | [First lab available](labs/prompt-comparison/README.md) |
+| **07 · Visual ML mechanics** | Runnable tokenization, sampling, and output-variability demonstrations | Coming next |
+| **08 · Retrieval experiments** | RAG, conflicting evidence, context selection, and retrieval failures | Planned |
+| **09 · Agent engineering** | Complete execution traces, tool errors, permissions, checkpoints, and recovery | Planned |
+| **10 · Reliable evaluation** | Judge calibration, uncertainty, regression tracking, cost, and latency | Planned |
+
+**More advanced labs are coming.** Foundations and the first controlled experiment are available now; the remaining tracks are planned. Follow the [full roadmap](ROADMAP.md) for scope and the evidence each addition needs.
 
 ## Explore
 
