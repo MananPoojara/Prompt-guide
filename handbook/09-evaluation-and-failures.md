@@ -57,3 +57,7 @@ Choose the smallest change that addresses the observed cause. If the parser expe
 Then rerun the relevant evaluation and preserve the comparison. If performance improves only on one narrow category, say so. If the result ties, keep it. If a change improves correctness but doubles latency, report both when latency matters to users.
 
 The goal is a resource where readers can trace a claim to an input, an output, and a check. That lets them learn a technique and also understand when it fails.
+
+## Run the repository evidence gate
+
+The [operational evaluation guide](../evaluation/README.md) provides one offline command, recorded runtime observations, and explicit human-review and judge-calibration gaps. It distinguishes regrading saved artifacts from evaluating a new model run.

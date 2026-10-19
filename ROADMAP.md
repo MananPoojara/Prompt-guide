@@ -50,13 +50,17 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Demonstrated:** a [real local MCP connection](examples/mcp-notes/README.md), a [saved coding change](labs/search-fix/README.md), and an [evaluator/repair sequence](cases/evaluator-loop/README.md).
 
-**Still needed:** a complete model-driven tool loop with retained traces; invalid-call and timeout recovery; permission enforcement; checkpoint/resume; and measured comparisons of a single call, a fixed workflow, and an agent loop. The sample plugin currently has static validation only.
+**Demonstrated:** a [bounded agent](labs/bounded-agent/README.md) chooses search/read actions, resumes a saved checkpoint, and returns checked answers. Denied calls, timeouts, and budget exhaustion have simulated tests.
+
+**Still needed:** broader live failure/recovery evidence, external-action approval, and measured comparisons of a single call, a fixed workflow, and an agent loop. The sample plugin currently has static validation only.
 
 **Practical judgment:** explain which decisions the model makes, which rules the runtime enforces, and why the process stops.
 
 ## 5. Evaluate like an engineer
 
 **Available:** [evaluation and failure diagnosis](handbook/09-evaluation-and-failures.md), with raw outputs and small independent checks in the cases. The [controlled extraction pilot](labs/prompt-comparison/RESULTS.md) adds repeated trials, category reporting, paired comparisons, duration observations, and a documented ceiling result.
+
+**Available now:** an [offline regression gate and runtime report](evaluation/README.md), with explicit evidence levels and remaining review gates.
 
 **Still needed:** independently written held-out tasks, repeated trials, paired comparisons, uncertainty estimates, error categories, judge calibration against human review, and cost/latency measurement. Model and prompt revisions need regression tracking.
 
@@ -71,8 +75,8 @@ These tracks include the first available pilot and planned expansions. The next 
 | 1 | Controlled prompting comparisons — [first pilot available](labs/prompt-comparison/README.md) | Add independent label review and more varied held-out cases; retain the pilot’s tie and setup failure |
 | 2 | Visual ML mechanics — [first lab available](labs/model-mechanics/README.md) | Extend into embeddings and attention; retain the measured-versus-conceptual distinction |
 | 3 | Context and retrieval — [first lab available](labs/evidence-grounding/README.md) | Extend beyond explicit metadata and naive lexical search to representative documents and retrieval methods |
-| 4 | Complete agent execution | Model requests, tool calls, permission decisions, failures, budgets, and recovery traces |
-| 5 | Evaluation and deployment decisions | Judge agreement checks, uncertainty, cost/latency, regression results, and evidence for choosing prompting, retrieval, or fine-tuning |
+| 4 | Complete agent execution — [first trace available](labs/bounded-agent/README.md) | Model requests, tool calls, permission decisions, failures, budgets, and recovery traces |
+| 5 | Evaluation and deployment decisions — [first gate available](evaluation/README.md) | Judge agreement checks, uncertainty, cost/latency, regression results, and evidence for choosing prompting, retrieval, or fine-tuning |
 
 A useful addition connects **a question → a technique → an observable run → a check → its limits**. More pages or more links alone do not fill these gaps.
 
@@ -117,7 +121,7 @@ The everyday track uses examples such as revising a message for a defined audien
 
 The [updates index and review policy](updates/README.md) define the planned weekly process. Each meaningful update must answer: what changed, who it affects, what to do, what supports it, and which local page was revised. A source link without a practical explanation is insufficient.
 
-Start with manual editorial review. After that process has produced useful entries, automate source-change collection and stale-page checks. Keep publication reviewed. There is no scheduled scanner or automatic publication service at present.
+Start with manual editorial review. After that process has produced useful entries, automate source-change collection and stale-page checks. Keep publication reviewed. A daily source-watch workflow now collects HEAD changes for the five toolkit repositories into an Actions report. It does not publish advice; coverage and scheduling limits are described in the updates policy.
 
 ### Quality gates for every milestone
 

@@ -76,3 +76,7 @@ A reviewer prompt and a test suite answer different questions. A reviewer can no
 If the process stops midway, a new session needs to know which files changed, which actions already ran, and which checks remain. Repeating a read is usually harmless. Repeating a purchase, deployment, or message send can have consequences. The runtime must distinguish actions that can safely repeat from those needing deduplication or explicit recovery logic.
 
 For repository work, saved diffs, test logs, and a concise handoff make recovery inspectable. A final answer should state the actual completion condition: code changed, tests passed, review pending, or execution blocked. “The agent ran for a long time” is not itself a completion condition.
+
+## Follow a real bounded run
+
+The [bounded-agent lab](../labs/bounded-agent/README.md) retains all three model calls, tool results, and a deliberate checkpoint/resume. Inspect the host budget and read-only dispatcher alongside the model decisions. Simulated failure tests are labeled separately from the live trace.

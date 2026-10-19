@@ -4,12 +4,13 @@
 
 This page is the home for reviewed updates to Prompt Guide. Each entry should explain the change, who it affects, what action a reader should take, and the evidence behind it. Readers should be able to understand the practical change here; external links provide provenance and further detail.
 
-**Cadence:** a weekly editorial review is planned. No recurring scan, scheduled publishing job, or automatic model experiment is currently configured. This page does not claim continuous monitoring or coverage of every release.
+**Cadence:** a weekly editorial review is planned. A daily source-change collector is configured; publication remains reviewed and no automatic model experiments run. This page does not claim continuous monitoring or coverage of every release.
 
 ## Published updates
 
 | Date | Update | What changed |
 |---|---|---|
+| 2026-10-19 | [Agent and maintenance](2026-10-19-agent-and-maintenance.md) | Resumed live agent, offline evidence gate, and daily upstream collection |
 | 2026-10-19 | [Evidence availability](2026-10-19-evidence-grounding.md) | Ten recorded calls distinguish correct abstention from resolved questions |
 | 2026-10-19 | [Naturalistic notes and review packet](2026-10-19-natural-notes.md) | A second retained tie; independent annotation explicitly pending |
 | 2026-10-19 | [Model mechanics and everyday examples](2026-10-19-model-mechanics.md) | Offline visual, actual model recordings, and three noncoding cases |
@@ -53,7 +54,9 @@ A last-checked date records an actual inspection, not a guarantee of current cor
 
 When evidence changes a conclusion, explain the old statement, the corrected statement, and why it changed. Never overwrite raw model outputs to make a historical result match the new conclusion.
 
-Future automation may collect changed sources and open a review queue. It should not turn a changed page into an automatic endorsement or publish unreviewed generated advice. Automation status will be stated here when implemented.
+The [source-watch workflow](../.github/workflows/source-watch.yml) is configured daily at 06:17 UTC (11:47 IST), with manual dispatch. It compares the five toolkit repositories’ default-branch HEAD revisions against our inspected commits. Results appear in the Actions run summary and a 30-day artifact. A changed revision is a review candidate, not proof that guidance is stale. Failures are reported rather than treated as unchanged.
+
+The collector makes no model calls, updates no guide pages, and posts no issues or comments. It covers neither all provider documentation nor the entire prompting ecosystem. Editorial review remains manual. GitHub schedules can be delayed or dropped under load and can be disabled after repository inactivity; this is periodic collection, not guaranteed continuous operation. See [GitHub schedule behavior](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
 
 ## Follow along
 

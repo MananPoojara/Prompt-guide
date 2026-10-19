@@ -1,0 +1,72 @@
+{
+  "scope": "Saved evidence integrity and deterministic regrading; no fresh inference",
+  "checks": [
+    {
+      "path": "scripts/check_links.py",
+      "passed": true,
+      "output": "All local Markdown link targets exist.\n"
+    },
+    {
+      "path": "scripts/check_originals.py",
+      "passed": true,
+      "output": "6 original prompt artifacts match their hashes; both notebook extractions match.\n"
+    },
+    {
+      "path": "labs/prompt-comparison/check_saved.py",
+      "passed": true,
+      "output": "Frozen inputs, nine-trial schedule, raw artifacts, and recomputed scores verified.\n"
+    },
+    {
+      "path": "labs/model-mechanics/check_recording.py",
+      "passed": true,
+      "output": "Seven tokenizations, 20 continuations, frozen source hashes, sampling math, and browser data verified.\n"
+    },
+    {
+      "path": "labs/natural-notes/check_saved.py",
+      "passed": true,
+      "output": "Naturalistic pilot frozen inputs, schedule, requests, and scores verified.\n"
+    },
+    {
+      "path": "labs/evidence-grounding/check_saved.py",
+      "passed": true,
+      "output": "{\n  \"no_evidence\": {\n    \"passed\": 6,\n    \"resolved\": 0,\n    \"total\": 6,\n    \"calls\": 2,\n    \"execution_failures\": 0\n  },\n  \"lexical_top1\": {\n    \"passed\": 6,\n    \"resolved\": 0,\n    \"total\": 6,\n    \"calls\": 2,\n    \"execution_failures\": 0\n  },\n  \"current_top1\": {\n    \"passed\": 6,\n    \"resolved\": 6,\n    \"total\": 6,\n    \"calls\": 2,\n    \"execution_failures\": 0\n  },\n  \"conflicting_current\": {\n    \"passed\": 6,\n    \"resolved\": 2,\n    \"total\": 6,\n    \"calls\": 2,\n    \"execution_failures\": 0\n  },\n  \"injected_comment\": {\n    \"passed\": 6,\n    \"resolved\": 6,\n    \"total\": 6,\n    \"calls\": 2,\n    \"execution_failures\": 0\n  }\n}\n"
+    },
+    {
+      "path": "labs/bounded-agent/check_saved.py",
+      "passed": true,
+      "output": "Verified 3 calls, checkpoint replay, and 3/3 final answers\n"
+    }
+  ],
+  "runtime_observations": [
+    {
+      "experiment": "natural-notes",
+      "source": "labs/natural-notes/results/pilot-2026-10-19/manifest.json",
+      "calls": 9,
+      "process_successes": 9,
+      "sum_call_seconds": 75.962,
+      "median_call_seconds": 7.865,
+      "billing_cost": null
+    },
+    {
+      "experiment": "evidence-grounding",
+      "source": "labs/evidence-grounding/results/pilot-2026-10-19/manifest.json",
+      "calls": 10,
+      "process_successes": 10,
+      "sum_call_seconds": 62.421,
+      "median_call_seconds": 5.953,
+      "billing_cost": null
+    },
+    {
+      "experiment": "bounded-agent",
+      "source": "labs/bounded-agent/results/resumed-2026-10-19/state.json",
+      "calls": 3,
+      "process_successes": 3,
+      "sum_call_seconds": 15.608,
+      "median_call_seconds": 5.206,
+      "billing_cost": null
+    }
+  ],
+  "independent_human_review": "pending",
+  "judge_calibration": "not performed",
+  "production_readiness": "not established"
+}

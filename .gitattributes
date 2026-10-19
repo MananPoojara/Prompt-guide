@@ -11,3 +11,5 @@ everyday/*/execution.log -whitespace
 labs/natural-notes/results/** -whitespace
 
 labs/evidence-grounding/results/** -whitespace
+
+labs/bounded-agent/results/** -whitespace
