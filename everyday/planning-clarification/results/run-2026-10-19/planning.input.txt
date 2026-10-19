@@ -1,0 +1,13 @@
+Make a usable schedule from the supplied facts. Return a simple table with start time, end time, and activity. Respect dependencies, the fixed break, and the final unused buffer. State which optional work does not fit and why. Check that the minutes add up to the available window. If the required work cannot fit, explain the conflict instead of inventing a shorter duration. Do not use tools.
+
+SUPPLIED FACTS
+Fictional task: prepare eight paper-craft kits on Saturday, from 10:00 to 11:30.
+Required work and fixed estimates:
+- Sort materials: 20 minutes, before packing.
+- Pack all kits: 25 minutes, after sorting and before labeling.
+- Label kits: 15 minutes, after packing.
+- Clean the workspace: 10 minutes, after packing and labeling.
+- Take a fixed break from 10:45 to 10:55.
+- Keep the final 10 minutes, 11:20 to 11:30, as an unused buffer.
+Optional: make an inventory spreadsheet, estimated at 20 minutes.
+Only one person is working; tasks cannot overlap. Use the supplied estimates without shortening them.

@@ -1,0 +1,12 @@
+Continue this scripted conversation. Answer the latest user reply. Do not use tools.
+
+USER
+The request is missing information that would change the plan. Ask one concise question about the most important missing information, then wait for my reply. Do not invent the workshop topic, participants, duration, or facilities. Do not draft a schedule yet. Do not use tools.
+
+REQUEST
+Help me plan a workshop for our community group.
+
+ASSISTANT
+What topic or goal would you like the workshop to focus on?
+USER
+It's a 60-minute paper-bookmark workshop for eight adult beginners. The goal is for each person to leave with a usable folded bookmark. We have square paper and pencils, but no projector, scissors, or glue. Include a 5-minute welcome, a 10-minute live demonstration, at least 30 minutes of practice, a 5-minute sharing/check, and 5 minutes of cleanup. Use any remaining time as buffer. Please give a simple minute-by-minute agenda in relative time ranges, not a clock-time schedule. Do not assume a date or start time.

@@ -129,7 +129,7 @@ These are delivery milestones, not a promise to finish one every week. A weekly 
 
 | Order | Milestone | Deliverables | Completion evidence |
 |---|---|---|---|
-| 1 | Visual mechanics and everyday entry — first delivery available | [Tokenization/sampling lab](labs/model-mechanics/README.md) and [three noncoding cases](everyday/README.md) | Recorded model outputs, versions, data checks, browser checks, and author-reviewed examples; independent reader testing remains open |
+| 1 | Visual mechanics and everyday entry — first delivery available | [Tokenization/sampling lab](labs/model-mechanics/README.md) and [five noncoding cases](everyday/README.md) | Recorded model outputs, versions, data checks, browser checks, and author-reviewed examples; independent reader testing remains open |
 | 2 | Stronger prompt experiments | More natural notes; documented annotation disagreements; frozen development/held-out split; comparisons of examples and decomposition | Independent reviewer attribution when obtained; predeclared rubric; all trials retained; category and paired error reports; uncertainty appropriate to the design |
 | 3 | Context and retrieval | A local document set with known answers; retrieval logs; missing, stale, conflicting, and instruction-like evidence cases | Trace the retrieved material to the answer; compare retrieval and interpretation errors separately; preserve failed answers |
 | 4 | Complete agent workflow | Evolve the notes example into document lookup, extraction, and proposed updates for review; retain a full execution trace | Explicit stop conditions, invalid-call handling, permission decisions, timeout behavior, checkpoint/resume, and independent output checks |

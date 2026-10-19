@@ -1,0 +1,1 @@
+The request is missing information that would change the plan. Ask one concise question about the most important missing information, then wait for my reply. Do not invent the workshop topic, participants, duration, or facilities. Do not draft a schedule yet. Do not use tools.

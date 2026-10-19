@@ -1,0 +1,91 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "cli_version": "codex-cli 0.163.0",
+  "sha256": {
+    "planning.input.txt": "0e918bad1f2df923b5e0d933d3a2172496716b3d5a8a5634f87ef1ab761afbb9",
+    "planning.prompt.txt": "d6d5f56ccbe31029a518391f09de59590435ddd769f6b829faf7354141cfdbe1",
+    "clarification.input.txt": "913594b4fb86b14279156817d5ee90df5c92ee566c603c5517dce49e1fef6e2d",
+    "clarification.prompt.txt": "12dc6e6a60efdd17e92e2210fc42c519a0949956c1f5a85c65a855d0ede51b60",
+    "user-reply.txt": "3f9fa55b460d6220c6de4138bafd77cd01c1114ebf3069a7dd564ac67f0cf683",
+    "PROTOCOL.md": "1f75fb78ab941eaf26b308468c510c2cc1b82f7414bfd1e5666b8145b84c9273",
+    "run.py": "90a55d00448b067e46b5b2e955cc983dcbc575d4d737a4455c38a0f2a5d43919"
+  },
+  "calls": [
+    {
+      "name": "planning",
+      "status": 0,
+      "seconds": 9.624,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-planning-3fa6zwfo",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/everyday/planning-clarification/results/run-2026-10-19/planning.output.txt",
+        "-"
+      ],
+      "input_sha256": "a134254775c5f0f81192f619c38bc45e8afff24a56acfcc99c07edfe702499a8",
+      "output_sha256": "b9a621c855ce9228b76c86a64af0daa7849a75c9380257eceff5cdc5834d27cb"
+    },
+    {
+      "name": "question",
+      "status": 0,
+      "seconds": 5.404,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-planning-o77uu89f",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/everyday/planning-clarification/results/run-2026-10-19/question.output.txt",
+        "-"
+      ],
+      "input_sha256": "75c745ff2c8fb6bf9395546533b9b1536582e9559d557bb2ee0791c5e2f35e7d",
+      "output_sha256": "ff29799bcbf26f2d794bb2ea1a7b755f56b904efb9456c947ea4785ecd2eab08"
+    },
+    {
+      "name": "followup",
+      "status": 0,
+      "seconds": 11.39,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-planning-60ofi060",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/everyday/planning-clarification/results/run-2026-10-19/followup.output.txt",
+        "-"
+      ],
+      "input_sha256": "841621945874daf559715f2c95c2af08dee103f6cc105f2df6acba7c1903ff7c",
+      "output_sha256": "bc77ed1f243abf035f21247ff9e59a7aa7d2a716eda6955482f38774d53ca141"
+    }
+  ]
+}

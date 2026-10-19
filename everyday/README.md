@@ -8,9 +8,13 @@ You do not need to write code to use these examples. Each includes the original 
 |---|---|---|
 | Make a message clearer | [Rewrite a workshop email](writing/README.md) | Change tone without inventing commitments |
 | Catch up on a document | [Summarize meeting notes](summarizing/README.md) | Separate decisions, proposals, and missing information |
+| Make a plan that fits | [Schedule kit preparation](planning-clarification/planning.md) | Respect fixed durations, dependencies, and unused buffer |
+| Resolve a vague request | [Clarify a workshop goal](planning-clarification/clarification.md) | Ask a consequential question, then plan from the reply |
 | Understand a mistake | [Learn why a fraction calculation fails](learning/README.md) | Ask for a concrete explanation and a checkable example |
 
-These are three successful demonstrations, not a comparison proving the prompts outperform alternatives. One response was recorded for each task using Codex CLI 0.163.0, gpt-6.1-sol, reasoning effort low, fresh ephemeral sessions, and read-only sandbox. The [manifest](manifest.json) records complete commands, statuses, durations, and request hashes.
+These are successful demonstrations, not a comparison proving the prompts outperform alternatives. For the original writing, summarizing, and learning examples, one response was recorded for each task using Codex CLI 0.163.0, gpt-6.1-sol, reasoning effort low, fresh ephemeral sessions, and read-only sandbox. The [manifest](manifest.json) records complete commands, statuses, durations, and request hashes.
+
+The [planning and clarification recording](planning-clarification/README.md) adds three responses, including a scripted follow-up, with its own protocol and manifest.
 
 The authoring assistant reviewed the results against the supplied facts and arithmetic. This is not independent human review or a study of whether learners understood the explanation. Real reader feedback remains valuable.
 

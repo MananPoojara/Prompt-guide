@@ -8,7 +8,7 @@ The audit below was performed on 2026-10-19. **Initial** means a local explanati
 
 | Reader decision | Current local coverage | Remaining core work |
 |---|---|---|
-| How do I ask for a useful result? | First example, templates, three everyday cases | A complete planning example; ambiguity and clarification examples |
+| How do I ask for a useful result? | First example, templates, and five everyday cases including planning and a scripted clarification exchange | Initial everyday path demonstrated; independent beginner feedback remains open |
 | What happens to my input? | Linked token/sampling and representation visuals, plus measured context-budget example | Core mechanics path demonstrated; broader architectures and multimodal accounting remain extensions |
 | Which prompt technique should I try? | Original prompts, extraction pilots, bounded repair, and a five-condition example/decomposition comparison | Initial technique comparisons demonstrated; broader task difficulty and independent labels remain extensions |
 | How do I supply relevant evidence? | Five evidence conditions, fictional retrieval corpus, and six official specification pages with equal-budget retrieval and twelve answer calls | Initial real-document pipeline demonstrated; broader tasks, repeated generation, and independent evidence labels remain extensions |

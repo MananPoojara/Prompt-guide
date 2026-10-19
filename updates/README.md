@@ -10,6 +10,7 @@ This page is the home for reviewed updates to Prompt Guide. Each entry should ex
 
 | Date | Update | What changed |
 |---|---|---|
+| 2026-10-19 | [Planning and clarification](2026-10-19-planning-clarification.md) | Three recorded responses complete the five-case everyday path |
 | 2026-10-19 | [Untrusted-content boundaries](2026-10-19-trust-boundaries.md) | Five recorded proposals, nine authored host probes, and a provenance negative control |
 | 2026-10-19 | [Example selection and decomposition](2026-10-19-example-design.md) | Five fixed conditions, two repetitions, and visible intermediate ledgers |
 | 2026-10-19 | [Real-document retrieval and answers](2026-10-19-real-docs.md) | Equal evidence ceiling, twelve generated answers, and per-question quotation failures |
