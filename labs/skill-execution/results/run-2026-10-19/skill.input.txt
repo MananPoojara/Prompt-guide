@@ -1,0 +1,1 @@
+Invoke the prompt-guide:inspect-evidence skill to perform this review. Check the claim "the longer prompt is more accurate" against labs/prompt-contract/. Inspect the saved evidence. Do not modify files or run new model trials.

@@ -1,0 +1,15 @@
+**The saved evidence doesn't support the claim.** In this lab the longer prompt was not more accurate. It tied with the shorter one.
+
+- **Accuracy:** `results/baseline.txt` and `results/candidate.txt` hold the same four records. Both match `expected.json` exactly, so each variant scores 4/4 with a complete-output match. I read the files and compared them by eye. I did not run `grade.py` or the tests.
+- **Prompts:** `candidate.txt` is longer because it adds explicit rules. Unconfirmed or merely proposed values must be null, a changed deadline supersedes the old one, and nothing should be inferred. The shorter `baseline.txt` still got the Dashboard proposal (null) and the Login bug deadline change (2026-11-06) right.
+- **The lab's own conclusion:** `RESULTS.md` is titled "a tie". It says the shorter prompt was sufficient for these notes. It also says the benefit of explicit policy on ambiguous inputs is *not established* by this experiment.
+
+**Limits on what this shows:**
+- **No evidence either way on longer prompts:** There was one attempt per variant, and the four notes were in one shared batch. That means a tie here can't show that longer prompts are no better in general.
+- **Confounded comparison:** The candidate adds policy information as well as length, so any difference couldn't be attributed to length alone.
+- **No spread to measure:** The test set is small and synthetic, with no repeats, no randomized order and a single model. The cases are also easy.
+- **Rubric timing:** The README and `RESULTS.md` say the rubric and prompts were written before the runs. I can't verify that from the files.
+
+**A fair restatement:** "On these four easy notes, the longer, more explicit prompt was no more accurate than the short one. Both scored 4/4. The data can't say whether it helps on harder or more ambiguous inputs."
+
+I changed no files and ran no model trials.

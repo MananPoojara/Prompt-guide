@@ -1,0 +1,7 @@
+Extract confirmed task ownership and deadlines from the notes below. Return only a JSON array with one object per task, preserving task order, using exactly keys task, owner, deadline. Use a person's name only when ownership is explicitly assigned. Use an ISO date only for an explicitly confirmed deadline. Unassigned, undecided, and merely proposed values must be JSON null. An explicitly changed deadline supersedes the previous deadline. Do not infer commitments.
+
+Notes:
+- Search fix: Priya will do it by 2026-11-03.
+- Export fix: no owner assigned; deadline not decided.
+- Dashboard: Alex proposed 2026-11-05. No one accepted ownership or a deadline.
+- Login bug: Sam owns it. The deadline was 2026-11-04, then explicitly changed to 2026-11-06.

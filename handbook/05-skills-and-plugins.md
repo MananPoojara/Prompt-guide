@@ -66,7 +66,7 @@ Inside that session, the skill is namespaced by its plugin:
 /prompt-guide:inspect-evidence Check the claim "the longer prompt is more accurate" against labs/prompt-contract/.
 ```
 
-This is an optional runtime example, requiring Claude Code and the account/runtime it uses. The repository records static validation separately from any actual skill invocation. See the [sample README](../examples/claude-plugin/README.md) for the validation status. The package layout and loading command follow the [official plugin documentation](https://code.claude.com/docs/en/plugins).
+This is an optional runtime example, requiring Claude Code and the account/runtime it uses. The repository records static validation separately from any actual skill invocation. The [native execution lab](../labs/skill-execution/README.md) now retains actual discovery and invocation events alongside a baseline review. See the [sample README](../examples/claude-plugin/README.md) for the validation status. The package layout and loading command follow the [official plugin documentation](https://code.claude.com/docs/en/plugins).
 
 ## Skill, instruction file, tool, and plugin are different objects
 

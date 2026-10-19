@@ -1,0 +1,334 @@
+[
+  {
+    "type": "system",
+    "subtype": "init",
+    "model": "claude-sonnet-5-5",
+    "tools": [
+      "Glob",
+      "Grep",
+      "Read"
+    ],
+    "skills": [],
+    "plugins": [
+      {
+        "name": "cc-plugin-agents-md",
+        "path": "builtin",
+        "source": "cc-plugin-agents-md@builtin"
+      },
+      {
+        "name": "cc-plugin-telemetry",
+        "path": "builtin",
+        "source": "cc-plugin-telemetry@builtin"
+      },
+      {
+        "name": "cc-plugin-plugin-authoring",
+        "path": "builtin",
+        "source": "cc-plugin-plugin-authoring@builtin"
+      }
+    ]
+  },
+  {
+    "type": "assistant",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_01APQBhqp7VoyDXe8XtT7B2Z",
+        "name": "Glob",
+        "input": {
+          "pattern": "labs/prompt-contract/**"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      }
+    ]
+  },
+  {
+    "type": "user",
+    "content": [
+      {
+        "tool_use_id": "toolu_01APQBhqp7VoyDXe8XtT7B2Z",
+        "type": "tool_result",
+        "content": "labs/prompt-contract/baseline.txt\nlabs/prompt-contract/candidate.txt\nlabs/prompt-contract/expected.json\nlabs/prompt-contract/results/baseline.txt\nlabs/prompt-contract/results/candidate.txt\nlabs/prompt-contract/grade.py\nlabs/prompt-contract/test_grade.py\nlabs/prompt-contract/README.md\nlabs/prompt-contract/RESULTS.md"
+      }
+    ]
+  },
+  {
+    "type": "assistant",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_01LyjLgusFYhoVgNa1MiuKa7",
+        "name": "Read",
+        "input": {
+          "file_path": "/tmp/prompt-guide-native-baseline-ad77gnvu/labs/prompt-contract/README.md"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      }
+    ]
+  },
+  {
+    "type": "user",
+    "content": [
+      {
+        "tool_use_id": "toolu_01LyjLgusFYhoVgNa1MiuKa7",
+        "type": "tool_result",
+        "content": "1\t# Lab: explicit extraction rules in Codex\n2\t\n3\t**Question:** does stating how to handle unconfirmed information change the output on four simple task notes?\n4\t\n5\tThis is a small, executed tutorial comparison, with one attempt per variant. It is not a coding benchmark or a statistical estimate of prompt reliability. The candidate supplies missing policy details, so this compares specification completeness rather than isolating wording alone.\n6\t\n7\t## Inspect the experiment\n8\t\n9\t- [Baseline prompt](baseline.txt): asks for structured extraction.\n10\t- [Candidate prompt](candidate.txt): explicitly defines nulls, proposals, and superseded dates.\n11\t- [Expected output](expected.json): the rubric fixed before execution.\n12\t- [Actual baseline output](results/baseline.txt).\n13\t- [Actual candidate output](results/candidate.txt).\n14\t\n15\tBoth receive the same four cases: explicit commitment, missing information, an unaccepted proposal, and a changed deadline. Both use fresh Codex sessions in the same empty temporary working directory. No schema-enforcement flag is supplied. The model must satisfy the requested JSON format itself.\n16\t\n17\t## Re-score locally\n18\t\n19\tFrom the repository root, using Python 3:\n20\t\n21\t```bash\n22\tpython3 labs/prompt-contract/grade.py\n23\tpython3 -m unittest discover -s labs/prompt-contract -p 'test_*.py'\n24\t```\n25\t\n26\tThe grader parses the entire response as JSON and checks exact object values and ordering. Extra or missing records fail the complete-output check. This narrow schema is appropriate for this extraction task; exact matching would be inappropriate for most prose tasks.\n27\t\n28\t## Run new attempts\n29\t\n30\tWith a working Codex CLI login, from the repository root:\n31\t\n32\t```bash\n33\tmkdir -p /tmp/prompt-guide-trial\n34\tcodex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only -C /tmp/prompt-guide-trial --output-last-message /tmp/baseline-output.txt - < labs/prompt-contract/baseline.txt\n35\tcodex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only -C /tmp/prompt-guide-trial --output-last-message /tmp/candidate-output.txt - < labs/prompt-contract/candidate.txt\n36\t```\n37\t\n38\tCommands were checked against Codex CLI 0.163.0. Model calls consume account usage. Save new outputs separately and record the actual model and settings. `--ignore-user-config` does not promise a completely instruction-free runtime; Codex still supplies its own harness. These runs measure the model inside Codex, not a raw model API.\n39\t\n40\tFor a stronger experiment, pin the same available model for both variants, alternate order across repeats, use independent holdout notes, and report all runs. Do not overwrite these historical outputs to improve the result.\n41\t\n42\tSee [RESULTS.md](RESULTS.md) for the observed outcome and limitations.\n43\t"
+      }
+    ]
+  },
+  {
+    "type": "assistant",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_01VxM42JDxXGwLJ76VVuXQjf",
+        "name": "Read",
+        "input": {
+          "file_path": "/tmp/prompt-guide-native-baseline-ad77gnvu/labs/prompt-contract/RESULTS.md"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      }
+    ]
+  },
+  {
+    "type": "user",
+    "content": [
+      {
+        "tool_use_id": "toolu_01VxM42JDxXGwLJ76VVuXQjf",
+        "type": "tool_result",
+        "content": "1\t# Observed result: a tie\n2\t\n3\tExecuted 2026-10-19 using Codex CLI 0.163.0, model `gpt-6.1-sol`, provider `openai`, reasoning effort `none`, read-only sandbox, and fresh ephemeral sessions. Baseline ran first, candidate second. Neither requested external tools. Each variant had one attempt containing four cases.\n4\t\n5\t| Variant | Correct records | Complete output matches rubric |\n6\t|---|---:|---|\n7\t| Baseline | 4 / 4 | Yes |\n8\t| Candidate | 4 / 4 | Yes |\n9\t\n10\tBoth outputs are identical after JSON parsing. The shorter prompt was sufficient for these notes. Explicit policy may still help more ambiguous inputs, but this experiment does not establish that claim.\n11\t\n12\tThe expected output and both prompts were written before either run. No retries were selected to improve the score. The six grader tests cover valid data, an invented owner, extra and missing records, invalid formatting, and a wrong top-level type.\n13\t\n14\t## Limits\n15\t\n16\tFour synthetic notes in a shared batch are not four independent model trials. One attempt per variant cannot estimate reliability. The order was not randomized. The candidate adds policy information as well as words. No held-out task set or different model was tested. No latency or monetary-cost measurements were collected. Codex's runtime instructions remain part of the experiment.\n17\t\n18\tA larger trial should include contradictory notes, indirect assignments, uncertain dates, and adversarial embedded instructions, with an independently reviewed rubric. Preserve any regressions or ties rather than manufacturing a success story.\n19\t"
+      }
+    ]
+  },
+  {
+    "type": "assistant",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_01K86GoLyecMzM2Ad5vdggD6",
+        "name": "Read",
+        "input": {
+          "file_path": "/tmp/prompt-guide-native-baseline-ad77gnvu/labs/prompt-contract/grade.py"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      }
+    ]
+  },
+  {
+    "type": "user",
+    "content": [
+      {
+        "tool_use_id": "toolu_01K86GoLyecMzM2Ad5vdggD6",
+        "type": "tool_result",
+        "content": "1\t\"\"\"Re-score saved outputs without any model calls or external dependencies.\"\"\"\n2\timport json\n3\tfrom pathlib import Path\n4\t\n5\tROOT = Path(__file__).resolve().parent\n6\t\n7\tdef grade(text, expected):\n8\t    try:\n9\t        actual = json.loads(text)\n10\t    except json.JSONDecodeError:\n11\t        return {\"valid_json\": False, \"passed\": 0, \"total\": len(expected), \"exact\": False}\n12\t    if not isinstance(actual, list):\n13\t        return {\"valid_json\": True, \"passed\": 0, \"total\": len(expected), \"exact\": False}\n14\t    return {\"valid_json\": True,\n15\t            \"passed\": sum(a == b for a, b in zip(actual, expected)),\n16\t            \"total\": len(expected), \"exact\": actual == expected}\n17\t\n18\tif __name__ == '__main__':\n19\t    expected = json.loads((ROOT / 'expected.json').read_text())\n20\t    results = {name: grade((ROOT / 'results' / (name + '.txt')).read_text(), expected)\n21\t               for name in ('baseline', 'candidate')}\n22\t    print(json.dumps(results, indent=2))\n23\t    raise SystemExit(0 if all(r['exact'] for r in results.values()) else 1)\n24\t"
+      }
+    ]
+  },
+  {
+    "type": "assistant",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_017u9Jr9J3Fz5ZAQTCGYsNQ4",
+        "name": "Read",
+        "input": {
+          "file_path": "/tmp/prompt-guide-native-baseline-ad77gnvu/labs/prompt-contract/expected.json"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      }
+    ]
+  },
+  {
+    "type": "user",
+    "content": [
+      {
+        "tool_use_id": "toolu_017u9Jr9J3Fz5ZAQTCGYsNQ4",
+        "type": "tool_result",
+        "content": "1\t[\n2\t  {\"task\":\"Search fix\",\"owner\":\"Priya\",\"deadline\":\"2026-11-03\"},\n3\t  {\"task\":\"Export fix\",\"owner\":null,\"deadline\":null},\n4\t  {\"task\":\"Dashboard\",\"owner\":null,\"deadline\":null},\n5\t  {\"task\":\"Login bug\",\"owner\":\"Sam\",\"deadline\":\"2026-11-06\"}\n6\t]\n7\t"
+      }
+    ]
+  },
+  {
+    "type": "assistant",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_01Xjx1VGK1kSe5t5npjXCLuj",
+        "name": "Read",
+        "input": {
+          "file_path": "/tmp/prompt-guide-native-baseline-ad77gnvu/labs/prompt-contract/results/baseline.txt"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      }
+    ]
+  },
+  {
+    "type": "user",
+    "content": [
+      {
+        "tool_use_id": "toolu_01Xjx1VGK1kSe5t5npjXCLuj",
+        "type": "tool_result",
+        "content": "1\t[\n2\t  {\"task\":\"Search fix\",\"owner\":\"Priya\",\"deadline\":\"2026-11-03\"},\n3\t  {\"task\":\"Export fix\",\"owner\":null,\"deadline\":null},\n4\t  {\"task\":\"Dashboard\",\"owner\":null,\"deadline\":null},\n5\t  {\"task\":\"Login bug\",\"owner\":\"Sam\",\"deadline\":\"2026-11-06\"}\n6\t]"
+      }
+    ]
+  },
+  {
+    "type": "assistant",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_014BTcvhhHJ6uTHEysba6MyC",
+        "name": "Read",
+        "input": {
+          "file_path": "/tmp/prompt-guide-native-baseline-ad77gnvu/labs/prompt-contract/results/candidate.txt"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      }
+    ]
+  },
+  {
+    "type": "user",
+    "content": [
+      {
+        "tool_use_id": "toolu_014BTcvhhHJ6uTHEysba6MyC",
+        "type": "tool_result",
+        "content": "1\t[\n2\t  {\"task\":\"Search fix\",\"owner\":\"Priya\",\"deadline\":\"2026-11-03\"},\n3\t  {\"task\":\"Export fix\",\"owner\":null,\"deadline\":null},\n4\t  {\"task\":\"Dashboard\",\"owner\":null,\"deadline\":null},\n5\t  {\"task\":\"Login bug\",\"owner\":\"Sam\",\"deadline\":\"2026-11-06\"}\n6\t]"
+      }
+    ]
+  },
+  {
+    "type": "assistant",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_012BFns7w9KQfYBTPTuP52Wa",
+        "name": "Read",
+        "input": {
+          "file_path": "/tmp/prompt-guide-native-baseline-ad77gnvu/labs/prompt-contract/baseline.txt"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      }
+    ]
+  },
+  {
+    "type": "user",
+    "content": [
+      {
+        "tool_use_id": "toolu_012BFns7w9KQfYBTPTuP52Wa",
+        "type": "tool_result",
+        "content": "1\tExtract the owner and deadline for each task in the notes below. Return only a JSON array with one object per task, using keys task, owner, deadline.\n2\t\n3\tNotes:\n4\t- Search fix: Priya will do it by 2026-11-03.\n5\t- Export fix: no owner assigned; deadline not decided.\n6\t- Dashboard: Alex proposed 2026-11-05. No one accepted ownership or a deadline.\n7\t- Login bug: Sam owns it. The deadline was 2026-11-04, then explicitly changed to 2026-11-06.\n8\t"
+      }
+    ]
+  },
+  {
+    "type": "assistant",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_01DEuseodvdk67jFQoQBwL77",
+        "name": "Read",
+        "input": {
+          "file_path": "/tmp/prompt-guide-native-baseline-ad77gnvu/labs/prompt-contract/candidate.txt"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      }
+    ]
+  },
+  {
+    "type": "user",
+    "content": [
+      {
+        "tool_use_id": "toolu_01DEuseodvdk67jFQoQBwL77",
+        "type": "tool_result",
+        "content": "1\tExtract confirmed task ownership and deadlines from the notes below. Return only a JSON array with one object per task, preserving task order, using exactly keys task, owner, deadline. Use a person's name only when ownership is explicitly assigned. Use an ISO date only for an explicitly confirmed deadline. Unassigned, undecided, and merely proposed values must be JSON null. An explicitly changed deadline supersedes the previous deadline. Do not infer commitments.\n2\t\n3\tNotes:\n4\t- Search fix: Priya will do it by 2026-11-03.\n5\t- Export fix: no owner assigned; deadline not decided.\n6\t- Dashboard: Alex proposed 2026-11-05. No one accepted ownership or a deadline.\n7\t- Login bug: Sam owns it. The deadline was 2026-11-04, then explicitly changed to 2026-11-06.\n8\t"
+      }
+    ]
+  },
+  {
+    "type": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "**The saved evidence doesn't support the claim.** In this lab the longer prompt was not more accurate. It tied with the shorter one.\n\n- **Accuracy:** `results/baseline.txt` and `results/candidate.txt` hold the same four records. Both match `expected.json` exactly, so each variant scores 4/4 with a complete-output match. I read the files and compared them by eye. I did not run `grade.py` or the tests.\n- **Prompts:** `candidate.txt` is longer because it adds explicit rules. Unconfirmed or merely proposed values must be null, a changed deadline supersedes the old one, and nothing should be inferred. The shorter `baseline.txt` still got the Dashboard proposal (null) and the Login bug deadline change (2026-11-06) right.\n- **The lab's own conclusion:** `RESULTS.md` is titled \"a tie\". It says the shorter prompt was sufficient for these notes. It also says the benefit of explicit policy on ambiguous inputs is *not established* by this experiment.\n\n**Limits on what this shows:**\n- **No evidence either way on longer prompts:** There was one attempt per variant, and the four notes were in one shared batch. That means a tie here can't show that longer prompts are no better in general.\n- **Confounded comparison:** The candidate adds policy information as well as length, so any difference couldn't be attributed to length alone.\n- **No spread to measure:** The test set is small and synthetic, with no repeats, no randomized order and a single model. The cases are also easy.\n- **Rubric timing:** The README and `RESULTS.md` say the rubric and prompts were written before the runs. I can't verify that from the files.\n\n**A fair restatement:** \"On these four easy notes, the longer, more explicit prompt was no more accurate than the short one. Both scored 4/4. The data can't say whether it helps on harder or more ambiguous inputs.\"\n\nI changed no files and ran no model trials."
+      }
+    ]
+  },
+  {
+    "type": "result",
+    "subtype": "success",
+    "is_error": false,
+    "result": "**The saved evidence doesn't support the claim.** In this lab the longer prompt was not more accurate. It tied with the shorter one.\n\n- **Accuracy:** `results/baseline.txt` and `results/candidate.txt` hold the same four records. Both match `expected.json` exactly, so each variant scores 4/4 with a complete-output match. I read the files and compared them by eye. I did not run `grade.py` or the tests.\n- **Prompts:** `candidate.txt` is longer because it adds explicit rules. Unconfirmed or merely proposed values must be null, a changed deadline supersedes the old one, and nothing should be inferred. The shorter `baseline.txt` still got the Dashboard proposal (null) and the Login bug deadline change (2026-11-06) right.\n- **The lab's own conclusion:** `RESULTS.md` is titled \"a tie\". It says the shorter prompt was sufficient for these notes. It also says the benefit of explicit policy on ambiguous inputs is *not established* by this experiment.\n\n**Limits on what this shows:**\n- **No evidence either way on longer prompts:** There was one attempt per variant, and the four notes were in one shared batch. That means a tie here can't show that longer prompts are no better in general.\n- **Confounded comparison:** The candidate adds policy information as well as length, so any difference couldn't be attributed to length alone.\n- **No spread to measure:** The test set is small and synthetic, with no repeats, no randomized order and a single model. The cases are also easy.\n- **Rubric timing:** The README and `RESULTS.md` say the rubric and prompts were written before the runs. I can't verify that from the files.\n\n**A fair restatement:** \"On these four easy notes, the longer, more explicit prompt was no more accurate than the short one. Both scored 4/4. The data can't say whether it helps on harder or more ambiguous inputs.\"\n\nI changed no files and ran no model trials.",
+    "duration_ms": 12654,
+    "duration_api_ms": 12544,
+    "num_turns": 10,
+    "total_cost_usd": 0.0385399,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 5822,
+      "cache_read_input_tokens": 13299,
+      "output_tokens": 1391,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5822,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 643,
+          "cache_read_input_tokens": 5170,
+          "cache_creation_input_tokens": 3875,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3875
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-sonnet-5-5": {
+        "inputTokens": 6,
+        "outputTokens": 1391,
+        "cacheReadInputTokens": 13299,
+        "cacheCreationInputTokens": 5822,
+        "webSearchRequests": 0,
+        "costUSD": 0.0385399,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-sonnet-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": []
+  }
+]

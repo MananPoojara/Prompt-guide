@@ -15,8 +15,9 @@ Build judgment by following the input through an actual system. Each lab include
 | 7 | [Memory lifecycle](memory-lifecycle/README.md) | Corrections, revision conflicts, expiry, retraction, and current context |
 | 8 | [A bounded tool loop](bounded-agent/README.md) and [controlled failures](agent-recovery/README.md) | Model decisions, host constraints, checkpoints, and replay |
 | 9 | [Single call, workflow, or agent](workflow-comparison/README.md) | Equal-task comparisons, ties, call overhead, and conflict detection |
-| 10 | [Exact-action approval](action-approval/README.md) | Binding review to a proposal and rejecting changed inputs |
-| 11 | [Operational evaluation](../evaluation/README.md) and [uncertainty](eval-uncertainty/README.md) | Process success versus answer correctness, regression checks, and accounting gaps |
+| 10 | [Native skill execution](skill-execution/README.md) | Plugin discovery, actual invocation, baseline comparison, and runtime limits |
+| 11 | [Exact-action approval](action-approval/README.md) | Binding review to a proposal and rejecting changed inputs |
+| 12 | [Operational evaluation](../evaluation/README.md) and [uncertainty](eval-uncertainty/README.md) | Process success versus answer correctness, regression checks, and accounting gaps |
 
 For coding agents, also inspect the [saved search fix](search-fix/README.md), [evaluator/repair case](../cases/evaluator-loop/README.md), and [executed local MCP connection](../examples/mcp-notes/README.md).
 

@@ -17,3 +17,4 @@ labs/output-repair/results/** -whitespace
 labs/agent-recovery/results/** -whitespace
 labs/workflow-comparison/results/** -whitespace
 labs/action-approval/results/** -whitespace
+labs/skill-execution/results/** -whitespace

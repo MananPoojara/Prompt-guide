@@ -1,0 +1,17 @@
+**Claim:** "The longer prompt is more accurate."
+
+**Evidence:**
+- **What was supplied:** `baseline.txt` is a short extraction prompt. `candidate.txt` is longer and adds rules for nulls, proposed values, superseded dates and "do not infer". Both get the same four notes, so the candidate adds policy information as well as length.
+- **What was observed:** `results/baseline.txt` and `results/candidate.txt` are identical, line for line. Both match `expected.json`'s rubric, going by `RESULTS.md`: 4/4 correct records and an exact full-output match for each. I did not re-run `grade.py` or the tests, because that would be new execution. The saved outputs and the grader code are consistent with the reported scores.
+- **Independent check:** `grade.py` does an exact JSON comparison against a rubric written before the runs. It is deterministic and separate from the model. `test_grade.py` covers six grader cases.
+- **Limits stated in `RESULTS.md`:**
+  - There was one attempt per variant.
+  - The four notes were in one shared batch, so they are not four independent trials.
+  - The run order was not randomized.
+  - Only one model was tested, with no held-out notes.
+
+**Verdict:** Unsupported. The saved evidence contradicts the claim. Accuracy was identical (4/4 vs 4/4), and `RESULTS.md` calls the result a tie. The shorter prompt was enough on these notes. The evidence doesn't show the longer prompt is worse either. It can't separate the two prompts.
+
+**Safer wording:** "On four synthetic task notes, one attempt each, the longer prompt with explicit null and supersession rules produced the same correct output as the short baseline. This test did not show an accuracy benefit from the longer prompt."
+
+**Missing check:** Run both prompts several times, with order alternated, on a held-out set of ambiguous notes. These should include contradictory notes, indirect assignments and uncertain dates. Score them with the same exact-match grader and report every run. That would show whether the explicit rules help when the notes are harder. It needs new model trials, which you ruled out for this review.

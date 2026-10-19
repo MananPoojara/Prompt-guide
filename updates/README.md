@@ -10,6 +10,7 @@ This page is the home for reviewed updates to Prompt Guide. Each entry should ex
 
 | Date | Update | What changed |
 |---|---|---|
+| 2026-10-19 | [Native skill execution](2026-10-19-native-skill.md) | Actual plugin discovery and Skill invocation, compared with a baseline review |
 | 2026-10-19 | [Evaluation uncertainty](2026-10-19-uncertainty.md) | Paired cluster resampling, perfect-score limits, and explicit study assumptions |
 | 2026-10-19 | [Strategy comparison and action approval](2026-10-19-workflows-and-approval.md) | Twelve task runs and one exact-proposal gate demonstration |
 | 2026-10-19 | [Context budgets](2026-10-19-context-budget.md) | Token-level truncation and packing show which required segments survive |
