@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CHECKS = [
     "scripts/check_links.py",
+    "evaluation/judge-calibration/check_example.py",
     "everyday/planning-clarification/check_saved.py",
     "scripts/check_originals.py",
     "labs/prompt-comparison/check_saved.py",

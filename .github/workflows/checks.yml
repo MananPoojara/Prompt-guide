@@ -57,6 +57,7 @@ jobs:
       - run: python3 -m unittest discover -s labs/skill-execution -p 'test_*.py'
       - run: python3 labs/skill-execution/check_saved.py
       - run: python3 -m unittest discover -s scripts -p 'test_source_watch.py'
+      - run: python3 -m unittest discover -s evaluation/judge-calibration -p 'test_*.py'
       - run: python3 evaluation/check.py --output /tmp/evaluation.json
       - name: Verify the saved search implementation
         run: |

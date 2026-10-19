@@ -1,0 +1,78 @@
+{
+  "evidence_type": "synthetic_fixture",
+  "reference_provenance": {
+    "type": "synthetic",
+    "reviewer": null,
+    "independent": false
+  },
+  "judge_provenance": {
+    "type": "scripted",
+    "model": null,
+    "prompt_revision": null
+  },
+  "rows": [
+    {
+      "id": "cal-accept",
+      "group": "cal-accept",
+      "split": "calibration",
+      "reference": "pass",
+      "judge": "pass"
+    },
+    {
+      "id": "cal-reject",
+      "group": "cal-reject",
+      "split": "calibration",
+      "reference": "fail",
+      "judge": "fail"
+    },
+    {
+      "id": "cal-missing",
+      "group": "cal-missing",
+      "split": "calibration",
+      "reference": "fail",
+      "judge": "missing"
+    },
+    {
+      "id": "test-agree",
+      "group": "test-agree",
+      "split": "test",
+      "reference": "pass",
+      "judge": "pass"
+    },
+    {
+      "id": "test-false-accept",
+      "group": "test-false-accept",
+      "split": "test",
+      "reference": "fail",
+      "judge": "pass"
+    },
+    {
+      "id": "test-false-reject",
+      "group": "test-false-reject",
+      "split": "test",
+      "reference": "pass",
+      "judge": "fail"
+    },
+    {
+      "id": "test-abstain",
+      "group": "test-abstain",
+      "split": "test",
+      "reference": "fail",
+      "judge": "abstain"
+    },
+    {
+      "id": "test-unreviewed",
+      "group": "test-unreviewed",
+      "split": "test",
+      "reference": "unreviewed",
+      "judge": "pass"
+    },
+    {
+      "id": "test-uncertain",
+      "group": "test-uncertain",
+      "split": "test",
+      "reference": "uncertain",
+      "judge": "fail"
+    }
+  ]
+}

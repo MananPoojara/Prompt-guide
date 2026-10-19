@@ -88,7 +88,9 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Also available:** an [uncertainty worked example](labs/eval-uncertainty/README.md), with paired document-cluster resampling and explicit limits on interpreting authored data.
 
-**Still needed:** independently written held-out tasks, broader repeated/paired comparisons, uncertainty estimates supported by representative study design, judge calibration against human review, and actual billing-cost measurement. Model and prompt revisions need regression tracking.
+**Available:** [judge-comparison software](evaluation/judge-calibration/README.md) separates disagreement, abstention, and missing-review counts using an explicitly synthetic example.
+
+**Still needed:** independently written held-out tasks, broader repeated/paired comparisons, uncertainty estimates supported by representative study design, actual judge calibration against human review, and actual billing-cost measurement. Model and prompt revisions need regression tracking.
 
 **Practical judgment:** distinguish “worked once,” “improved on this evaluation,” and “reliable enough for this use.” An evaluator saying PASS is one observation, not a universal correctness proof.
 

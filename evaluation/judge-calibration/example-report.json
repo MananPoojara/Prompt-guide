@@ -1,0 +1,102 @@
+{
+  "evidence_status": "synthetic demonstration only",
+  "independent_review_verified": false,
+  "calibration_certified": false,
+  "reference_provenance": {
+    "type": "synthetic",
+    "reviewer": null,
+    "independent": false
+  },
+  "judge_provenance": {
+    "type": "scripted",
+    "model": null,
+    "prompt_revision": null
+  },
+  "splits": {
+    "calibration": {
+      "total_rows": 3,
+      "matrix": {
+        "pass": {
+          "pass": 1,
+          "fail": 0,
+          "abstain": 0,
+          "missing": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 1,
+          "abstain": 0,
+          "missing": 1
+        }
+      },
+      "reference_coverage": {
+        "numerator": 3,
+        "denominator": 3,
+        "value": 1.0
+      },
+      "decision_coverage": {
+        "numerator": 2,
+        "denominator": 3,
+        "value": 0.6666666666666666
+      },
+      "agreement_on_decided": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "false_acceptances": [],
+      "false_rejections": [],
+      "judge_abstentions": [],
+      "missing_judgments": [
+        "cal-missing"
+      ],
+      "excluded_reference": []
+    },
+    "test": {
+      "total_rows": 6,
+      "matrix": {
+        "pass": {
+          "pass": 1,
+          "fail": 1,
+          "abstain": 0,
+          "missing": 0
+        },
+        "fail": {
+          "pass": 1,
+          "fail": 0,
+          "abstain": 1,
+          "missing": 0
+        }
+      },
+      "reference_coverage": {
+        "numerator": 4,
+        "denominator": 6,
+        "value": 0.6666666666666666
+      },
+      "decision_coverage": {
+        "numerator": 3,
+        "denominator": 4,
+        "value": 0.75
+      },
+      "agreement_on_decided": {
+        "numerator": 1,
+        "denominator": 3,
+        "value": 0.3333333333333333
+      },
+      "false_acceptances": [
+        "test-false-accept"
+      ],
+      "false_rejections": [
+        "test-false-reject"
+      ],
+      "judge_abstentions": [
+        "test-abstain"
+      ],
+      "missing_judgments": [],
+      "excluded_reference": [
+        "test-unreviewed",
+        "test-uncertain"
+      ]
+    }
+  }
+}
