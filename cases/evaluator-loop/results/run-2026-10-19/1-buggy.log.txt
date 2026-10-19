@@ -1,0 +1,65 @@
+<evaluation>FAIL</evaluation>
+<feedback>
+Duplicate minima are not tracked: pushing 2 twice and popping once empties minimums while one 2 remains, so getMin() incorrectly raises IndexError. A subsequent pop() also raises unexpectedly after removing the remaining value. List append makes push() amortized O(1), not strict worst-case O(1). Style is otherwise clear.
+</feedback>
+
+OpenAI Codex v0.163.0
+--------
+workdir: /tmp/prompt-guide-evaluator-mwwa0pod
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 01a152d3-7a15-7632-9679-4cdc82d14648
+--------
+user
+
+Evaluate this following code implementation for:
+1. code correctness
+2. time complexity
+3. style and best practices
+
+You should be evaluating only and not attemping to solve the task.
+Only output "PASS" if all criteria are met and you have no further suggestions for improvements.
+Output your evaluation concisely in the following format.
+
+<evaluation>PASS, NEEDS_IMPROVEMENT, or FAIL</evaluation>
+<feedback>
+What needs improvement and why.
+</feedback>
+
+Original task: Implement MinStack for integers with push(x), pop(), and getMin(). Each operation must be O(1). pop() returns the removed value. pop() and getMin() raise IndexError on an empty stack. Duplicate minimum values must remain correct after popping one duplicate.
+
+Content to evaluate: class MinStack:
+    """Integer stack with constant-time minimum lookup."""
+    def __init__(self):
+        self.items = []
+        self.minimums = []
+
+    def push(self, x):
+        self.items.append(x)
+        if not self.minimums or x < self.minimums[-1]:
+            self.minimums.append(x)
+
+    def pop(self):
+        if not self.items:
+            raise IndexError('empty stack')
+        value = self.items.pop()
+        if value == self.minimums[-1]:
+            self.minimums.pop()
+        return value
+
+    def getMin(self):
+        if not self.minimums:
+            raise IndexError('empty stack')
+        return self.minimums[-1]
+
+codex
+<evaluation>FAIL</evaluation>
+<feedback>
+Duplicate minima are not tracked: pushing 2 twice and popping once empties minimums while one 2 remains, so getMin() incorrectly raises IndexError. A subsequent pop() also raises unexpectedly after removing the remaining value. List append makes push() amortized O(1), not strict worst-case O(1). Style is otherwise clear.
+</feedback>
+tokens used
+6,588

@@ -1,45 +1,61 @@
 # Prompt Guide
 
-**Learn to give AI work it can understand—and learn to check the result.**
+**Real prompts. The systems around them. Results you can inspect.**
 
-A practical, evidence-backed field guide for people building with Codex, Claude Code, and other AI assistants. Start with a real task. Write the prompt. Inspect what happened. Improve one thing at a time.
+A resource for builders who want to see how AI-assisted work actually happens: original public prompts from Anthropic and OpenAI, the context and tools they depend on, workflow diagrams, and recorded examples.
 
-![A task moves through context, action, evidence, and revision](diagrams/learning-loop.svg)
+Start with the artifacts—not a list of magic phrases.
 
-## Start here
+## See what is actually there
 
-1. **Ten minutes:** [Write your first useful prompt](guides/01-prompt-contract.md). Copy the example and adapt it to your project.
-2. **One session:** [Build a feature with an agent](guides/04-coding-workflow.md). Learn how to go from an idea to a verified change.
-3. **One coding example:** [Inspect a real search fix](labs/search-fix/README.md), including before-and-after test output.
-4. **One experiment:** [Compare prompts in Codex](labs/prompt-contract/README.md). Inspect real outputs and run the grader yourself.
-
-No API key is required to read the guide or re-score saved results. Running new model trials requires a working Codex CLI account and may consume your account's usage.
-
-## Learning path
-
-| Lesson | What you will be able to do |
+| Open this | What you will find |
 |---|---|
-| [1. Define the task](guides/01-prompt-contract.md) | Turn an unclear request into a testable outcome |
-| [2. Understand model behavior](guides/02-model-behavior.md) | Diagnose missing context, ambiguity, and unsupported claims |
-| [3. Design context](guides/03-context-and-memory.md) | Use instructions, retrieval, and memory deliberately |
-| [4. Build software](guides/04-coding-workflow.md) | Inspect, implement, test, and review a feature |
-| [5. Tools, skills, and MCP](guides/05-tools-skills-mcp.md) | Choose the right extension and verify it works |
-| [6. Harnesses and graphs](guides/06-harnesses.md) | Design bounded loops with observable completion |
-| [7. Evaluate prompts](guides/07-evaluations.md) | Compare outputs fairly and avoid misleading scores |
-| [8. Research like an engineer](guides/08-research-practice.md) | Check new claims and keep learning without chasing hype |
+| [Original public prompts](originals/README.md) | Six licensed artifacts from publisher-owned repositories, with exact revisions, hashes, and attribution |
+| [An Anthropic engineer’s actual task prompt](cases/anthropic-game-maker.md) | A first-person experiment report, the exact task sentence, and the system that accompanied it |
+| [A published evaluator prompt in action](cases/evaluator-loop/README.md) | Original Anthropic prompts, assembled requests, recorded feedback, and code checks |
+| [Evidence-gated completion](cases/evidence-gate.md) | Original reviewer instructions and the difference between a prompt rule and a hook |
+| [What reaches the model](cases/request-to-result.md) | How context, skills, plugins, tools, MCP, memory, and the harness fit together |
+| [A verified coding change](labs/search-fix/README.md) | Prompt → changed code → three failed tests becoming five passes |
+| [A comparison that tied](labs/prompt-contract/README.md) | The shorter and longer prompts both succeeded; the raw outputs are retained |
 
-## Pick a prompt for today's work
+![Original prompt, recorded feedback, generated revision, and independent checks](diagrams/evaluator-case.svg)
 
-[Prompt library](prompts/README.md): understand a repository · specify a feature · implement · debug · review · research · design an eval · critique · resume · design a tool · curate memory · learn a concept.
+## Read the prompt in its environment
 
-These are original templates derived from public practices. They are **not leaked internal prompts**, an official course, or a claim of affiliation with OpenAI or Anthropic. Template examples are labeled separately from observed model outputs. No prompt guarantees correctness.
+A task sentence, a system prompt, a skill, and an evaluator prompt do different jobs. Copying one without its expected files, tools, or runtime can change its behavior completely. Each original entry explains what supplies those dependencies and what has actually been verified.
 
-## Evidence and maintenance
+Our labels are explicit:
 
-- [Research ledger](research/sources.md): what each source supports, its limits, and when it was checked.
-- [Claim checks](research/claims.md): documented practices versus unverified stories.
-- [FLOW.md](FLOW.md): scope, research decisions, validation, and remaining dependencies.
-- [Memory handoff](memory/README.md): durable notes and verified Supermemory storage receipts.
-- [Contribute](CONTRIBUTING.md): add examples with evidence, including negative results.
+- **Published original:** released by the named publisher, preserved with source attribution.
+- **Reported experiment:** the original author describes the run; we have not reproduced it.
+- **Executed here:** prompts, outputs, environment details, and checks are saved in this repository.
+- **Our synthesis:** an explanatory diagram, adaptation, or template we authored.
 
-Source review date: **2026-10-19**. Version-sensitive product details need rechecking before use. This is a maintained learning repository, not a live news feed.
+We do not have access to private lab workflows, and a public source does not establish an engineer’s undisclosed daily prompting style. This repository is independent of OpenAI and Anthropic.
+
+## Follow the evidence
+
+[Case studies](cases/README.md) · [Original prompt entries](originals/entries.md) · [Source ledger](research/sources.md) · [Claim checks](research/claims.md)
+
+The authored [prompt templates](prompts/README.md) remain available as adaptations for everyday work. They are not attributed to lab engineers.
+
+For background, browse the reference notes on [model behavior](guides/02-model-behavior.md), [context and memory](guides/03-context-and-memory.md), [tools and MCP](guides/05-tools-skills-mcp.md), [harnesses](guides/06-harnesses.md), and [evaluation](guides/07-evaluations.md).
+
+## Check it yourself
+
+Reading the resource and rechecking saved artifacts requires no model account. Python 3 checks use only the standard library:
+
+```bash
+python3 scripts/check_links.py
+python3 scripts/check_originals.py
+python3 labs/prompt-contract/grade.py
+python3 -m unittest discover -s cases/evaluator-loop -p 'test_*.py'
+```
+
+New model trials require the relevant account, runtime, tools, and usage budget. Local Codex reproductions are labeled separately from upstream Claude execution. Small demonstrations do not establish broad reliability or model superiority.
+
+## Keep it honest and useful
+
+[FLOW.md](FLOW.md) records research and implementation decisions. [Memory records](memory/README.md) retain provenance. [Contributing](CONTRIBUTING.md) explains how to add an original prompt or a reproducible case. [Launch preparation](launch/README.md) tracks the public-facing claims and remaining checks.
+
+Sources last inspected: **2026-10-19**. Original files retain their upstream licenses and notices; see [originals/README.md](originals/README.md).

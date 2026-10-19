@@ -1,0 +1,1 @@
+Implement MinStack for integers with push(x), pop(), and getMin(). Each operation must be O(1). pop() returns the removed value. pop() and getMin() raise IndexError on an empty stack. Duplicate minimum values must remain correct after popping one duplicate.

@@ -45,6 +45,5 @@ or confidence. Mark criteria you cannot verify as unknown. Return a concise
 finding list and the checks needed to resolve unknowns.
 ```
 
-**Exercise:** invent an output that looks polished but violates one requirement. Confirm the grader rejects it. Then test a terse valid output to detect style bias.
 
 Next: [Research practice](08-research-practice.md).

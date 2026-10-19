@@ -1,0 +1,134 @@
+[
+  {
+    "trial": "1-buggy",
+    "cli": "codex-cli 0.163.0",
+    "exit_status": 0,
+    "elapsed_seconds": 17.052,
+    "command": [
+      "codex",
+      "exec",
+      "--ignore-user-config",
+      "--ephemeral",
+      "--skip-git-repo-check",
+      "--sandbox",
+      "read-only",
+      "-C",
+      "/tmp/prompt-guide-evaluator-mwwa0pod",
+      "--output-last-message",
+      "/home/server/Downloads/prompt-guide/cases/evaluator-loop/results/run-2026-10-19/1-buggy.output.txt",
+      "-"
+    ],
+    "prompt_source": "AC-evaluator",
+    "variant": "buggy"
+  },
+  {
+    "trial": "1-correct",
+    "cli": "codex-cli 0.163.0",
+    "exit_status": 0,
+    "elapsed_seconds": 8.853,
+    "command": [
+      "codex",
+      "exec",
+      "--ignore-user-config",
+      "--ephemeral",
+      "--skip-git-repo-check",
+      "--sandbox",
+      "read-only",
+      "-C",
+      "/tmp/prompt-guide-evaluator-mwwa0pod",
+      "--output-last-message",
+      "/home/server/Downloads/prompt-guide/cases/evaluator-loop/results/run-2026-10-19/1-correct.output.txt",
+      "-"
+    ],
+    "prompt_source": "AC-evaluator",
+    "variant": "correct"
+  },
+  {
+    "trial": "2-correct",
+    "cli": "codex-cli 0.163.0",
+    "exit_status": 0,
+    "elapsed_seconds": 13.343,
+    "command": [
+      "codex",
+      "exec",
+      "--ignore-user-config",
+      "--ephemeral",
+      "--skip-git-repo-check",
+      "--sandbox",
+      "read-only",
+      "-C",
+      "/tmp/prompt-guide-evaluator-mwwa0pod",
+      "--output-last-message",
+      "/home/server/Downloads/prompt-guide/cases/evaluator-loop/results/run-2026-10-19/2-correct.output.txt",
+      "-"
+    ],
+    "prompt_source": "AC-evaluator",
+    "variant": "correct"
+  },
+  {
+    "trial": "2-buggy",
+    "cli": "codex-cli 0.163.0",
+    "exit_status": 0,
+    "elapsed_seconds": 17.572,
+    "command": [
+      "codex",
+      "exec",
+      "--ignore-user-config",
+      "--ephemeral",
+      "--skip-git-repo-check",
+      "--sandbox",
+      "read-only",
+      "-C",
+      "/tmp/prompt-guide-evaluator-mwwa0pod",
+      "--output-last-message",
+      "/home/server/Downloads/prompt-guide/cases/evaluator-loop/results/run-2026-10-19/2-buggy.output.txt",
+      "-"
+    ],
+    "prompt_source": "AC-evaluator",
+    "variant": "buggy"
+  },
+  {
+    "trial": "3-buggy",
+    "cli": "codex-cli 0.163.0",
+    "exit_status": 0,
+    "elapsed_seconds": 24.455,
+    "command": [
+      "codex",
+      "exec",
+      "--ignore-user-config",
+      "--ephemeral",
+      "--skip-git-repo-check",
+      "--sandbox",
+      "read-only",
+      "-C",
+      "/tmp/prompt-guide-evaluator-mwwa0pod",
+      "--output-last-message",
+      "/home/server/Downloads/prompt-guide/cases/evaluator-loop/results/run-2026-10-19/3-buggy.output.txt",
+      "-"
+    ],
+    "prompt_source": "AC-evaluator",
+    "variant": "buggy"
+  },
+  {
+    "trial": "3-correct",
+    "cli": "codex-cli 0.163.0",
+    "exit_status": 0,
+    "elapsed_seconds": 12.58,
+    "command": [
+      "codex",
+      "exec",
+      "--ignore-user-config",
+      "--ephemeral",
+      "--skip-git-repo-check",
+      "--sandbox",
+      "read-only",
+      "-C",
+      "/tmp/prompt-guide-evaluator-mwwa0pod",
+      "--output-last-message",
+      "/home/server/Downloads/prompt-guide/cases/evaluator-loop/results/run-2026-10-19/3-correct.output.txt",
+      "-"
+    ],
+    "prompt_source": "AC-evaluator",
+    "variant": "correct"
+  }
+]

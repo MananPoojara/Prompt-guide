@@ -51,7 +51,6 @@ Remove fields that do not affect the answer. A one-line rewrite usually needs mu
 | Endless planning | State whether you want a proposal or implementation |
 | “Done” without evidence | Name the check and require the actual result |
 
-**Exercise:** choose an actual task, write three acceptance examples, then remove every sentence from your prompt that does not change a decision. Keep both versions to compare.
 
 Public grounding: [OpenAI prompting guidance](https://developers.openai.com/api/docs/guides/prompting) encourages task-specific details and examples plus prompt evaluation. The four-field contract here is our teaching framework, not an official lab standard.
 

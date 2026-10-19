@@ -22,5 +22,13 @@
     "status": "done",
     "retrieved_content": "Prompt Guide measured results, executed 2026-10-19 with Codex CLI 0.163.0, gpt-6.1-sol, reasoning effort none. Extraction pilot: one attempt per variant, four synthetic notes per attempt; baseline and candidate both matched 4/4 records, a tie. No evidence of candidate superiority, repeated-run reliability, or generalization. Coding demonstration: search normalization changed 3 failures in 5 tests into 5 passes, confirmed independently with unchanged tests. One small demonstration, not a benchmark. Evidence: labs/prompt-contract and labs/search-fix in https://github.com/MananPoojara/Prompt-guide .",
     "retrieval_verified_on": "2026-10-19"
+  },
+  {
+    "topic": "user-scope-correction",
+    "namespace": "sm_project_default",
+    "document_id": "ecarQK6mzaeUkVdFo3rhZL",
+    "status": "done",
+    "retrieved_content": "Prompt Guide scope correction from the user, 2026-10-19: this is a public resource showing real AI engineering, not a course, homework, or assignment. Lead with original publicly released prompts, named engineers' documented experiments, diagrams, actual inputs/outputs, and the surrounding skills, plugins, MCP, harnesses, loops, and graphs. Keep our authored templates separate. Never claim access to undisclosed private lab prompting styles. This supersedes the earlier lesson-first framing. Current artifacts: originals/manifest.json pins six licensed Anthropic/OpenAI prompt artifacts; cases/ contains provenance and workflow case studies. An X launch draft exists but is not posted.",
+    "retrieval_verified_on": "2026-10-19"
   }
 ]

@@ -1,0 +1,4 @@
+<evaluation>PASS</evaluation>
+<feedback>
+Correctly handles duplicate minima, returns popped values, and raises IndexError when empty. Operations are O(1) amortized with Python lists; space usage is O(n). Style is clear and appropriate.
+</feedback>

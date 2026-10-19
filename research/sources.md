@@ -121,3 +121,43 @@ Limit: Abstract-level review here; results cannot be generalized to every curren
 Supports: Failures of intrinsic self-correction without external feedback in studied settings.
 
 Limit: Abstract-level review here; not a dismissal of all feedback-driven correction.
+
+## S16: Anthropic evaluator–optimizer implementation
+
+[Pinned notebook](https://github.com/anthropics/claude-cookbooks/blob/a162e0184e71b60290808a43961a6cbc8060123c/patterns/agents/evaluator_optimizer.ipynb) · Checked: 2026-10-19.
+
+Supports: exact published generator/evaluator strings, request assembly, XML parsing, and feedback loop. Root license inspected: MIT. Exact strings and notebook retained under originals/vendor/anthropic-cookbook.
+
+Limit: official runnable example, not evidence of a particular engineer's private daily usage. Local runs use Codex rather than the upstream Anthropic API settings.
+
+## S17: Anthropic Code with Claude long-running primitives
+
+[Pinned repository](https://github.com/anthropics/cwc-long-running-agents/tree/ad107a974bced5244f74dd283dbf2bfd3baee3a1) · Checked: 2026-10-19.
+
+Supports: original evaluator instructions, handoff conventions, and example evidence-read hooks. License inspected: Apache-2.0. Repository explicitly describes an event demo and says it is not maintained.
+
+Limit: source inspected; full runtime integration not tested here. Hook source documents bypasses and limited evidence matching.
+
+## S18: OpenAI Codex published prompt files
+
+[Pinned repository](https://github.com/openai/codex/tree/89461ea6833832b0551ce24ee32205824d5c108d) · Checked: 2026-10-19.
+
+Supports: exact compaction and GPT-5.2 Codex base prompt file contents. Apache-2.0 license and NOTICE retained.
+
+Limit: file existence does not prove selection by the current deployed default. This is public source, not a disclosure of all private runtime instructions.
+
+## S19: Anthropic Labs engineer's game-maker experiment
+
+[First-person report](https://www.anthropic.com/engineering/harness-design-long-running-apps) · Published: 2026-03-24 · Checked: 2026-10-19.
+
+Supports: named engineer, published task prompt, and a reported solo-versus-harness comparison. See cases/anthropic-game-maker.md for the scoped account.
+
+Limit: not rerun locally, and the comparison changes orchestration rather than isolating prompt wording.
+
+## S20: Transformer architecture background
+
+[Attention Is All You Need](https://arxiv.org/abs/1706.03762) · Submitted: 2017-06-12 · Checked: 2026-10-19, abstract-level review.
+
+Supports: the original attention-based Transformer architecture proposal.
+
+Limit: does not establish the architecture or internal reasoning mechanism of every contemporary proprietary model.

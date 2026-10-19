@@ -44,6 +44,5 @@ Persist a feature list, completed checks, current revision, unresolved failures,
 
 A knowledge graph is different from this execution graph: it stores entities and relations, such as a claim supported by a source and superseded by a later claim. Use one when relationship queries justify it. Markdown and stable IDs are enough for this repository's initial evidence ledger.
 
-**Exercise:** draw the failure path for an unavailable tool. Specify retry limits, the recorded error, and what would allow the task to resume.
 
 Next: [Evaluations](07-evaluations.md).

@@ -1,0 +1,4 @@
+<evaluation>FAIL</evaluation>
+<feedback>
+Duplicate minima are not tracked: push(2), push(2), pop() leaves one item but empties minimums, so getMin() incorrectly raises IndexError. Record equal minima or track their counts. Operations otherwise run in amortized O(1), and the style is clear.
+</feedback>

@@ -11,6 +11,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: python3 scripts/check_links.py
+      - run: python3 scripts/check_originals.py
+      - run: python3 -m unittest discover -s cases/evaluator-loop -p 'test_*.py'
       - run: python3 -m unittest discover -s labs/prompt-contract -p 'test_*.py'
       - run: python3 labs/prompt-contract/grade.py
       - name: Verify the saved search implementation

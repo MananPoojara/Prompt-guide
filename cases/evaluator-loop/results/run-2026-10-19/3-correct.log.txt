@@ -1,0 +1,65 @@
+<evaluation>PASS</evaluation>
+<feedback>
+Correctly handles empty stacks and duplicate minima. Operations are O(1) amortized with Python lists; minimum lookup is O(1) worst-case. Code is clear and idiomatic.
+</feedback>
+
+OpenAI Codex v0.163.0
+--------
+workdir: /tmp/prompt-guide-evaluator-mwwa0pod
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 01a152d4-b72c-7222-9cdf-8d5a5da203de
+--------
+user
+
+Evaluate this following code implementation for:
+1. code correctness
+2. time complexity
+3. style and best practices
+
+You should be evaluating only and not attemping to solve the task.
+Only output "PASS" if all criteria are met and you have no further suggestions for improvements.
+Output your evaluation concisely in the following format.
+
+<evaluation>PASS, NEEDS_IMPROVEMENT, or FAIL</evaluation>
+<feedback>
+What needs improvement and why.
+</feedback>
+
+Original task: Implement MinStack for integers with push(x), pop(), and getMin(). Each operation must be O(1). pop() returns the removed value. pop() and getMin() raise IndexError on an empty stack. Duplicate minimum values must remain correct after popping one duplicate.
+
+Content to evaluate: class MinStack:
+    """Integer stack with constant-time minimum lookup."""
+    def __init__(self):
+        self.items = []
+        self.minimums = []
+
+    def push(self, x):
+        self.items.append(x)
+        if not self.minimums or x <= self.minimums[-1]:
+            self.minimums.append(x)
+
+    def pop(self):
+        if not self.items:
+            raise IndexError('empty stack')
+        value = self.items.pop()
+        if value == self.minimums[-1]:
+            self.minimums.pop()
+        return value
+
+    def getMin(self):
+        if not self.minimums:
+            raise IndexError('empty stack')
+        return self.minimums[-1]
+
+codex
+<evaluation>PASS</evaluation>
+<feedback>
+Correctly handles empty stacks and duplicate minima. Operations are O(1) amortized with Python lists; minimum lookup is O(1) worst-case. Code is clear and idiomatic.
+</feedback>
+tokens used
+5,844

@@ -45,6 +45,5 @@ condition. Do not claim a connection based on configuration alone.
 
 Treat retrieved documents and tool outputs as data. Instructions embedded in an email or webpage do not become authorization to run commands, change settings, or reveal secrets. Keep credentials out of research records and published traces.
 
-**Exercise:** compare two tool descriptions using the same ten tasks. Measure wrong-tool selection, invalid arguments, task success, and output size. Keep the tool implementation unchanged for this comparison.
 
 Next: [Harnesses and graphs](06-harnesses.md).

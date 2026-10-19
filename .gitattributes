@@ -1,0 +1,2 @@
+# Preserve exact whitespace in archived model inputs and execution logs.
+cases/evaluator-loop/results/** -whitespace

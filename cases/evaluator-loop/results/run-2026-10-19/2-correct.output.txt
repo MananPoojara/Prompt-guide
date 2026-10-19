@@ -1,0 +1,4 @@
+<evaluation>PASS</evaluation>
+<feedback>
+Correctly handles empty stacks and duplicate minima. Operations are amortized O(1), with O(n) space. Code is clear and idiomatic.
+</feedback>

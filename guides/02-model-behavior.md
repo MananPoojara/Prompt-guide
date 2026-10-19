@@ -32,6 +32,5 @@ A better experiment supplies new evidence: a failing test, a counterexample, a s
 
 These are different interventions. Prompting changes the input; retrieval brings selected external information into that input; persistent memory stores material that can be retrieved later. Fine-tuning changes model parameters through a training process. Saving a Markdown note does not itself train the model or guarantee that a future session will read it.
 
-**Exercise:** take one failed result and classify the failure using the table. Change only the suspected cause. If the output improves, repeat with new cases before claiming you found a general solution.
 
 Next: [Context and memory](03-context-and-memory.md).

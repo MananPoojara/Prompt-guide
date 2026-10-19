@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+<title id="title">An original prompt inside a measured feedback sequence</title><desc id="desc">Anthropic's published evaluator rejects an authored duplicate-minimum bug in three local Codex attempts. Its recorded feedback is passed to the original generator prompt. The generated revision passes independent behavior checks. This is a small cross-runtime demonstration, not a benchmark.</desc>
+<rect width="1200" height="500" rx="20" fill="#101c2b"/>
+<g font-family="sans-serif"><text x="40" y="52" font-size="29" fill="#f5f1e8">Read the prompt. Follow the feedback. Check the code.</text>
+<text x="40" y="86" font-size="17" fill="#b4c8d8">Original Anthropic prompt strings · local Codex execution · saved inputs and outputs</text>
+<g fill="#20364b" stroke="#77c8b4" stroke-width="2"><rect x="40" y="125" width="260" height="145" rx="9"/><rect x="340" y="125" width="350" height="145" rx="9"/><rect x="730" y="125" width="430" height="145" rx="9"/></g>
+<g fill="#f5f1e8" font-size="21"><text x="60" y="162">Authored defective code</text><text x="360" y="162">Original evaluator prompt</text><text x="750" y="162">Recorded feedback → generator</text></g>
+<g fill="#b4c8d8" font-size="17"><text x="60" y="200">Duplicate minimum lost</text><text x="60" y="230">after one pop</text><text x="360" y="200">3 attempts → 3 FAIL verdicts</text><text x="360" y="230">Specific defect identified</text><text x="750" y="200">Original generator prompt</text><text x="750" y="230">returns a linked-node revision</text></g>
+<g fill="none" stroke="#77c8b4" stroke-width="3"><path d="M305 197h28m-8-7 8 7-8 7M695 197h28m-8-7 8 7-8 7"/><path d="M945 280v38m-7-8 7 8 7-8"/></g>
+<rect x="730" y="325" width="430" height="88" rx="9" fill="#1d403b"/><text x="750" y="359" fill="#f5f1e8" font-size="20">Independent behavior checks pass</text><text x="750" y="389" fill="#b4c8d8" font-size="17">A fresh evaluator also returns PASS</text>
+<text x="40" y="334" fill="#eac88b" font-size="18">The limitation stays in the record.</text><text x="40" y="365" fill="#b4c8d8" font-size="17">The evaluator accepted an amortized-O(1) fixture</text><text x="40" y="391" fill="#b4c8d8" font-size="17">despite an ambiguous O(1) requirement.</text>
+<text x="40" y="460" fill="#b4c8d8" font-size="15">Two small fixtures. No no-feedback control. This demonstrates the sequence, not universal prompt superiority.</text></g></svg>

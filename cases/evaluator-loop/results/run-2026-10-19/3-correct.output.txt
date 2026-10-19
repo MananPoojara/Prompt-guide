@@ -1,0 +1,4 @@
+<evaluation>PASS</evaluation>
+<feedback>
+Correctly handles empty stacks and duplicate minima. Operations are O(1) amortized with Python lists; minimum lookup is O(1) worst-case. Code is clear and idiomatic.
+</feedback>

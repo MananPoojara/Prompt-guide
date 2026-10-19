@@ -53,3 +53,19 @@ This file records decisions, evidence, and next actions; it is not a private int
 ## Publication verification
 
 Published to [MananPoojara/Prompt-guide](https://github.com/MananPoojara/Prompt-guide). The initial content commit passed [GitHub Actions](https://github.com/MananPoojara/Prompt-guide/actions/runs/39208827349). Remote branch hash matched the local content commit. This final documentation update records the completed memory readbacks and publication evidence.
+
+## User-directed revision: resource, not coursework
+
+The user clarified that the value must be inspectable real engineering: original prompts, documented use, diagrams, and observed behavior across model inputs, skills, plugins, MCP, harnesses, loops, and graphs. The first lesson-led edition did not satisfy that emphasis. The current front page leads with source artifacts and cases; authored templates remain separately labeled, and exercise paragraphs were removed.
+
+### What changed
+
+- Six original prompt artifacts from three publisher-owned repositories are preserved with pinned revisions, SHA-256 hashes, and licenses. Notebook strings are exact extracted values; full-file snapshots are byte-preserved.
+- A named Anthropic Labs engineer's reported experiment includes his exact short task prompt, a sourced workflow diagram, and limits on causal interpretation.
+- The autonomous-coding quickstart's conflicting license statements are documented; its complete prompt files are linked rather than copied under an assumption.
+- Anthropic's unchanged evaluator prompt was run six times in Codex across two fixtures, alternating order. The defective fixture was rejected three times; the behaviorally repaired fixture accepted three times. Its amortized-versus-worst-case ambiguity is retained as a limitation.
+- Actual evaluator feedback was supplied to Anthropic's unchanged generator prompt. The generated revision passed independent behavior checks and a fresh evaluation. Inputs, outputs, logs, generated code, and checks are saved.
+- Eight case checks and six existing grader checks pass. Original snapshot integrity checks pass. The new diagram was rendered and visually inspected.
+- X launch copy and a proposed one-day editorial/validation schedule are saved under launch/. They are drafts, not posted content or a claim that a day has elapsed. A fresh Agent Reach check found no active X backend.
+
+The local reproduction uses Codex, not the upstream Claude API configuration. It does not establish universal prompt effectiveness, private employee routines, or superiority over a no-feedback control. The resource makes those boundaries visible next to the examples.

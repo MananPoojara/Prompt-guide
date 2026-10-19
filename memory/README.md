@@ -27,3 +27,7 @@ Hosted MCP returned `success: true` and `status: queued` for three records in `s
 The first semantic search returned zero results while ingestion was queued. This default hosted namespace differs from the plugin's automatic project recall container; do not assume automatic recall reads it. Explicit retrieval should specify the namespace. No credentials are stored here.
 
 All three records subsequently reached `done`. Fresh hosted MCP `get_document` calls returned their complete contents with `contentTruncated: false`; see receipts.json. This verifies storage and explicit document retrieval. Semantic-search recall and automatic project-hook recall are separate capabilities and are not claimed as verified.
+
+## Product-framing correction
+
+The user's latest clarification is saved as a separate record, `ecarQK6mzaeUkVdFo3rhZL`, and its complete content was retrieved after processing. See scope-correction.md and receipts.json. It supersedes the earlier lesson-first description: the resource now leads with original public artifacts and observable case studies.

@@ -1,0 +1,4 @@
+<evaluation>FAIL</evaluation>
+<feedback>
+Duplicate minima are not tracked: pushing 2 twice and popping once empties minimums while one 2 remains, so getMin() incorrectly raises IndexError. A subsequent pop() also raises unexpectedly after removing the remaining value. List append makes push() amortized O(1), not strict worst-case O(1). Style is otherwise clear.
+</feedback>

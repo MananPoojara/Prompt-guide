@@ -43,6 +43,5 @@ Every durable claim needs an ID, source, scope, review date, and status. Disting
 
 Supermemory authentication and reachability have been verified; storage receipts are tracked separately. The [memory directory](../memory/README.md) contains portable records; it is not evidence of a successful remote write. A working integration must demonstrate write, retrieval in a fresh context, correction, and deletion.
 
-**Exercise:** reduce a long session into a handoff containing objective, completed changes, actual checks, uncertainties, and one next action. Have a fresh session verify it against the repository.
 
 Next: [Coding workflow](04-coding-workflow.md).

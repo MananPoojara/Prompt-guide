@@ -1,0 +1,13 @@
+
+Your goal is to complete the task based on <user input>. If there are feedback
+from your previous generations, you should reflect on them to improve your solution
+
+Output your answer concisely in the following format:
+
+<thoughts>
+[Your understanding of the task and feedback and how you plan to improve]
+</thoughts>
+
+<response>
+[Your code implementation here]
+</response>

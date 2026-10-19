@@ -27,6 +27,5 @@ When a new release or article appears, ask which existing lesson or prompt it ch
 
 Suggested cadence: review product instructions monthly and conceptual sources when new evidence contradicts them. This is a maintainer procedure, not an installed background automation. Use [the contribution checklist](../CONTRIBUTING.md).
 
-**Exercise:** take a new AI claim and write two sentences: the strongest statement the evidence supports, and one tempting overclaim it does not support. Add the source and review date.
 
 Return to the [learning path](../README.md) or choose a [prompt](../prompts/README.md).
