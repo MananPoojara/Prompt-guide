@@ -4,11 +4,11 @@
 
 “Everything about prompting” is not a stable finish line. The maintenance milestone is a coherent path through the decisions a reader must make, with inspectable examples and clear limits. New products and research can still add topics later.
 
-The audit below was performed on 2026-10-19. **Initial** means a local explanation and small demonstration exist; **open** means the requirement has not been met. A topic is not complete merely because it appears in a table.
+The audit below was performed on 2026-10-19. The [requirement-by-requirement audit](review/readiness-audit-2026-10-19.md) records inspected evidence and remaining work. **Initial** means a local explanation and small demonstration exist; **open** means the requirement has not been met. A topic is not complete merely because it appears in a table.
 
 | Reader decision | Current local coverage | Remaining core work |
 |---|---|---|
-| How do I ask for a useful result? | First example, templates, and five everyday cases including planning and a scripted clarification exchange | Initial everyday path demonstrated; independent beginner feedback remains open |
+| How do I ask for a useful result? | First example, templates, and five everyday cases including planning and a scripted clarification exchange | Initial everyday path demonstrated; the promised noncoding research/revision example and independent beginner feedback remain open |
 | What happens to my input? | Linked token/sampling and representation visuals, plus measured context-budget example | Core mechanics path demonstrated; broader architectures and multimodal accounting remain extensions |
 | Which prompt technique should I try? | Original prompts, extraction pilots, bounded repair, and a five-condition example/decomposition comparison | Initial technique comparisons demonstrated; broader task difficulty and independent labels remain extensions |
 | How do I supply relevant evidence? | Five evidence conditions, fictional retrieval corpus, and six official specification pages with equal-budget retrieval and twelve answer calls | Initial real-document pipeline demonstrated; [read-only capstone](labs/capstone/README.md) integrates scope/current filtering, packing, and answer checks. [Recovery/update integration](labs/capstone-update/README.md) is demonstrated separately; independent evidence review remains unfinished |

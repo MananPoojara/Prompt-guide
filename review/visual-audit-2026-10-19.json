@@ -1,0 +1,63 @@
+{
+  "recorded_at": "2026-10-19T13:49:14.459Z",
+  "scope": "Chromium controls, caption bounds, keyboard scrolling and viewport overflow only; no screen-reader or human usability study",
+  "results": [
+    {
+      "width": 375,
+      "caption_bounds": [
+        {
+          "text": "Cosine similarity of the bank token across the two inputs",
+          "left": 18,
+          "right": 357
+        },
+        {
+          "text": "Recorded attention weights; each row sums to approximately one",
+          "left": 18,
+          "right": 357
+        },
+        {
+          "text": "First 12 coordinates of the bank token; full vectors are retained\n              in data.json",
+          "left": 18,
+          "right": 357
+        }
+      ],
+      "keyboard_scroll_left": 6,
+      "focus_retained": true,
+      "page_horizontal_overflow": false
+    },
+    {
+      "width": 320,
+      "caption_bounds": [
+        {
+          "text": "Cosine similarity of the bank token across the two inputs",
+          "left": 18,
+          "right": 302
+        },
+        {
+          "text": "Recorded attention weights; each row sums to approximately one",
+          "left": 18,
+          "right": 302
+        },
+        {
+          "text": "First 12 coordinates of the bank token; full vectors are retained\n              in data.json",
+          "left": 18,
+          "right": 302
+        }
+      ],
+      "keyboard_scroll_left": 3,
+      "focus_retained": true,
+      "page_horizontal_overflow": false
+    }
+  ],
+  "base_commit": "d58d6f2e65046301b5eecb9e761972831c4ad7f4",
+  "worktree_modified": true,
+  "source_sha256": {
+    "labs/representations/index.html": "c65b279289396b8413b0163bd15e36dc5247f02f5cb954ca2b6c8e72c9eacc57",
+    "labs/representations/style.css": "a085dde4f7fc37e6fc388d6e0bd9272731d3ea5028dbcfb0b72078ee151300d1",
+    "labs/representations/app.js": "3c5873fec272a1f128081962dd608a84fc2d1604a15666724ad686ef7c73917c"
+  },
+  "existing_browser_checks": {
+    "model_mechanics": "passed",
+    "representations": "passed"
+  }
+}

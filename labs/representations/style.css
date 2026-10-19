@@ -82,7 +82,15 @@ table {
   margin: 15px 0;
   font-variant-numeric: tabular-nums;
 }
-caption {
+figure {
+  margin: 20px 0;
+}
+.table-help {
+  font-size: 14px;
+  border-left: 3px solid #648d76;
+  padding-left: 12px;
+}
+figcaption {
   text-align: left;
   font-size: 14px;
   padding: 10px 0;

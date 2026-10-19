@@ -29,11 +29,16 @@
           differ after processing the earlier words.
         </p>
         <div id="sentences"></div>
-        <div class="scroll">
-          <table>
-            <caption>
+        <p id="table-scroll-help" class="table-help">
+          On narrow screens, scroll tables sideways to see every column.
+          With a keyboard, focus a table region and use the Left and Right arrow keys.
+        </p>
+        <figure>
+          <figcaption id="cosine-caption">
               Cosine similarity of the bank token across the two inputs
-            </caption>
+            </figcaption>
+          <div class="scroll" role="region" tabindex="0" aria-labelledby="cosine-caption" aria-describedby="table-scroll-help">
+            <table aria-labelledby="cosine-caption">
             <thead>
               <tr>
                 <th>Stage</th>
@@ -43,7 +48,8 @@
             </thead>
             <tbody id="cosines"></tbody>
           </table>
-        </div>
+          </div>
+        </figure>
         <p>
           Cosine compares vector directions: 1 means the same direction, 0 means
           perpendicular, −1 means opposite. It is not a confidence score or
@@ -62,19 +68,17 @@
           ><label>Block<select id="layer"></select></label
           ><label>Head<select id="head"></select></label>
         </div>
-        <div
-          class="scroll"
-          tabindex="0"
-          aria-label="Scrollable attention table"
-        >
-          <table id="attention">
-            <caption>
+        <figure>
+          <figcaption id="attention-caption">
               Recorded attention weights; each row sums to approximately one
-            </caption>
+            </figcaption>
+          <div class="scroll" role="region" tabindex="0" aria-labelledby="attention-caption" aria-describedby="table-scroll-help">
+            <table id="attention" aria-labelledby="attention-caption">
             <thead></thead>
             <tbody></tbody>
           </table>
-        </div>
+          </div>
+        </figure>
         <p id="status" role="status"></p>
         <p>
           Heads vary. A bright cell describes one mixing operation; residual
@@ -94,12 +98,13 @@
             </option>
           </select></label
         >
-        <div class="scroll">
-          <table>
-            <caption>
+        <figure>
+          <figcaption id="vector-caption">
               First 12 coordinates of the bank token; full vectors are retained
               in data.json
-            </caption>
+            </figcaption>
+          <div class="scroll" role="region" tabindex="0" aria-labelledby="vector-caption" aria-describedby="table-scroll-help">
+            <table aria-labelledby="vector-caption">
             <thead>
               <tr>
                 <th>Coordinate</th>
@@ -109,7 +114,8 @@
             </thead>
             <tbody id="vectors"></tbody>
           </table>
-        </div>
+          </div>
+        </figure>
         <p>
           Individual coordinates have no assigned human-readable label. This
           table is an inspection view, not a two-dimensional map of meaning.

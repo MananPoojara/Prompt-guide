@@ -10,6 +10,7 @@ This page is the home for reviewed updates to Prompt Guide. Each entry should ex
 
 | Date | Update | What changed |
 |---|---|---|
+| 2026-10-19 | [Readiness audit and mobile tables](2026-10-19-readiness-audit.md) | Requirement-level evidence audit, remaining research/revision case, and keyboard-accessible table regions |
 | 2026-10-19 | [Judge-comparison tooling](2026-10-19-judge-tools.md) | Synthetic confusion/coverage example and split validation; actual human-reference calibration remains pending |
 | 2026-10-19 | [Resumed capstone update](2026-10-19-capstone-update.md) | Four model calls through controlled failure/resume, evidence-linked proposal, and separate scripted review/apply |
 | 2026-10-19 | [Read-only capstone pipeline](2026-10-19-capstone.md) | Integrated filtering, retrieval, packing, generation, and checks; retained failures and scorer limitations |
