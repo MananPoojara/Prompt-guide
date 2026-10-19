@@ -69,3 +69,17 @@ The user clarified that the value must be inspectable real engineering: original
 - X launch copy and a proposed one-day editorial/validation schedule are saved under launch/. They are drafts, not posted content or a claim that a day has elapsed. A fresh Agent Reach check found no active X backend.
 
 The local reproduction uses Codex, not the upstream Claude API configuration. It does not establish universal prompt effectiveness, private employee routines, or superiority over a no-feedback control. The resource makes those boundaries visible next to the examples.
+
+## User-directed revision: a self-contained beginner resource
+
+The user identified another gap: external blog links and short reference notes left too much explanation outside the repository. This revision adds START-HERE.md, nine connected handbook chapters, and a plain-language glossary. The first-time-reader walkthrough is documented in research/reader-review.md; it is an editorial persona review, not independent user testing.
+
+The chapters use a continuous fictional meeting-note example to explain prompts, JSON, uncertainty, model input, retrieval, tools, and verification. They then connect that understanding to the actual saved coding and evaluator cases. A new SVG shows request assembly, model tool selection, runtime execution, returned evidence, and checking. It was rendered and visually inspected. Mermaid diagrams explain retrieval and bounded agent control flow.
+
+A real local MCP example now includes a server, client, dependency pin, and recorded output. The client exercises discovery, a valid lookup, an unknown identifier, and missing arguments. Five asserted properties pass, without calling a model. The pinned SDK is mcp 2.3.0, and the recorded negotiated protocol is 2026-07-28. A separate CI job runs the integration example.
+
+An authored Claude Code plugin contains a complete inspect-evidence skill and manifest. Static validation is recorded separately from execution; a model-driven skill invocation is not claimed. The six upstream originals and prior model outputs remain unchanged.
+
+The new handbook is self-contained for its documented scope, not an exhaustive copy of every linked article or a claim to undisclosed lab practices. Saved historical sections above describe earlier editions; this section records the current expansion.
+
+Validation for this expansion: all local links and six original artifact hashes pass; eight evaluator-case checks and six grader checks pass; the saved extraction comparison remains tied at 4/4 each. The MCP integration passed on Python 3.10.12 and in a clean uv environment on Python 3.12.13. Claude CLI plugin validation passed, with non-blocking marketplace-install advice for the intentionally local-only sample.

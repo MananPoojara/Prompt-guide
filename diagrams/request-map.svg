@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700" role="img" aria-labelledby="title desc">
+<title id="title">From a question to an answer you can check</title>
+<desc id="desc">The user asks about a deadline. The host assembles the request, the model requests a tool, the host executes the tool through MCP, and the returned note supports an answer. Verification compares the answer with the note. Skills provide instructions; plugins package capabilities; the harness manages the loop.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#526171" stroke-width="1.5"/></marker></defs>
+<rect width="1100" height="700" rx="18" fill="#f5f2eb"/>
+<g font-family="Arial, sans-serif" fill="#172c39">
+<text x="45" y="55" font-size="28" font-weight="bold">From a question to an answer you can check</text>
+<text x="45" y="86" font-size="17">An illustrative agent flow • the local MCP demo executes the tool connection only</text>
+<g stroke="#b8c5cb" stroke-width="1.5" fill="#fff">
+<rect x="45" y="125" width="300" height="155" rx="12"/>
+<rect x="400" y="125" width="300" height="155" rx="12"/>
+<rect x="755" y="125" width="300" height="155" rx="12"/>
+<rect x="755" y="345" width="300" height="155" rx="12"/>
+<rect x="400" y="345" width="300" height="155" rx="12"/>
+<rect x="45" y="345" width="300" height="155" rx="12"/>
+</g>
+<g font-size="20" font-weight="bold">
+<text x="65" y="160">1  User question</text><text x="420" y="160">2  Host assembles context</text><text x="775" y="160">3  Model requests a tool</text>
+<text x="775" y="380">4  Host executes via MCP</text><text x="420" y="380">5  Model receives evidence</text><text x="65" y="380">6  Check the answer</text>
+</g>
+<g font-size="17">
+<text x="65" y="200">“Is the dashboard deadline</text><text x="65" y="225">confirmed?”</text>
+<text x="420" y="200">Question + decision rules</text><text x="420" y="225">+ available tool schema</text><text x="420" y="250">+ relevant prior context</text>
+<text x="775" y="200">read_note</text><text x="775" y="225">note_id: dashboard</text><text x="775" y="250">A request, not execution yet</text>
+<text x="775" y="420">Validate arguments</text><text x="775" y="445">Call server → retrieve note</text><text x="775" y="470">Record success or error</text>
+<text x="420" y="420">“Alex proposed November 5.</text><text x="420" y="445">No one accepted ...”</text><text x="420" y="470">Generate an evidence-based answer</text>
+<text x="65" y="420">Does the answer preserve</text><text x="65" y="445">the difference between a</text><text x="65" y="470">proposal and a commitment?</text>
+</g>
+<g fill="none" stroke="#526171" stroke-width="2" marker-end="url(#arrow)">
+<path d="M345 205 H393"/><path d="M700 205 H748"/><path d="M905 280 V338"/>
+<path d="M755 425 H707"/><path d="M400 425 H352"/>
+</g>
+<rect x="45" y="540" width="1010" height="115" rx="12" fill="#e2eae6"/>
+<text x="65" y="572" font-size="18" font-weight="bold">Where the surrounding pieces fit</text>
+<text x="65" y="602" font-size="17">Skill: reusable instructions   •   Plugin: packaged capabilities   •   Memory: stored context loaded when needed</text>
+<text x="65" y="632" font-size="17">Harness: assembles requests, runs tools, records state, handles errors, and enforces stopping conditions</text>
+</g></svg>

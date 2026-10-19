@@ -22,3 +22,13 @@ jobs:
           cp labs/search-fix/test_search.py "$trial_dir/test_search.py"
           cd "$trial_dir"
           python3 -m unittest -v
+
+  mcp-example:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r examples/mcp-notes/requirements.txt
+      - run: python3 examples/mcp-notes/client.py

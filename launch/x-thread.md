@@ -6,7 +6,7 @@ Audience: people building software with AI assistants. Goal: help readers inspec
 
 I’m building Prompt Guide: original public prompts from Anthropic and OpenAI, with the context, tools, and workflows around them.
 
-You can inspect the source, read actual outputs, and see what was—and wasn’t—tested.
+A beginner handbook explains the concepts inside the repo, with diagrams, actual outputs, and a local MCP demo.
 
 A few examples ↓
 

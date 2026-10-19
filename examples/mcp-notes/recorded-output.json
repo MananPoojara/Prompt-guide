@@ -1,0 +1,30 @@
+{
+  "sdk_version": "2.3.0",
+  "protocol_version": "2026-07-28",
+  "tools": [
+    {
+      "name": "read_note",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "note_id": {
+            "title": "Note Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "note_id"
+        ],
+        "title": "read_noteArguments"
+      }
+    }
+  ],
+  "successful_result": {
+    "id": "dashboard",
+    "text": "Alex proposed 2026-11-05. No one accepted ownership or a deadline."
+  },
+  "unknown_note_is_error": true,
+  "missing_argument_is_error": true,
+  "checks_passed": 5,
+  "model_called": false
+}

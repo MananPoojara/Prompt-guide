@@ -4,7 +4,9 @@
 
 A resource for builders who want to see how AI-assisted work actually happens: original public prompts from Anthropic and OpenAI, the context and tools they depend on, workflow diagrams, and recorded examples.
 
-Start with the artifacts—not a list of magic phrases.
+**New to this? [Start here](START-HERE.md).** The connected handbook explains the concepts locally, with complete examples, diagrams, a glossary, and a runnable MCP connection. You do not need to read the linked blogs to follow it.
+
+Already building? Explore the original artifacts and recorded cases below.
 
 ## See what is actually there
 

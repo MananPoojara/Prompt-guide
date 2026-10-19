@@ -31,3 +31,7 @@ All three records subsequently reached `done`. Fresh hosted MCP `get_document` c
 ## Product-framing correction
 
 The user's latest clarification is saved as a separate record, `ecarQK6mzaeUkVdFo3rhZL`, and its complete content was retrieved after processing. See scope-correction.md and receipts.json. It supersedes the earlier lesson-first description: the resource now leads with original public artifacts and observable case studies.
+
+## Self-contained beginner expansion
+
+The user's requirement to learn inside one repository and the resulting handbook/example expansion are saved in `bA5mfeffQRxTVQej4JdHaF`. The record reached `done` and its complete content was retrieved; see [receipts.json](receipts.json). This adds a beginner entry point while keeping original public artifacts and observed results distinct from authored explanations.

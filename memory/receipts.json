@@ -30,5 +30,13 @@
     "status": "done",
     "retrieved_content": "Prompt Guide scope correction from the user, 2026-10-19: this is a public resource showing real AI engineering, not a course, homework, or assignment. Lead with original publicly released prompts, named engineers' documented experiments, diagrams, actual inputs/outputs, and the surrounding skills, plugins, MCP, harnesses, loops, and graphs. Keep our authored templates separate. Never claim access to undisclosed private lab prompting styles. This supersedes the earlier lesson-first framing. Current artifacts: originals/manifest.json pins six licensed Anthropic/OpenAI prompt artifacts; cases/ contains provenance and workflow case studies. An X launch draft exists but is not posted.",
     "retrieval_verified_on": "2026-10-19"
+  },
+  {
+    "topic": "beginner-resource-expansion",
+    "namespace": "sm_project_default",
+    "document_id": "bA5mfeffQRxTVQej4JdHaF",
+    "status": "done",
+    "retrieved_content": "Prompt Guide beginner-resource expansion, 2026-10-19. User wants people with no prior knowledge to learn within one repository, not follow a list of blog links. START-HERE.md now leads to nine connected handbook chapters and a glossary with original explanations, local examples, and diagrams. Six licensed public originals and recorded model cases remain distinct from authored teaching examples. examples/mcp-notes contains a real stdio MCP server/client, mcp 2.3.0, five asserted properties passing on Python 3.10.12 and clean Python 3.12.13, no model call. examples/claude-plugin contains a complete authored evidence-review skill, statically validated; no model-driven invocation claimed. research/reader-review.md records a beginner-persona editorial audit, not independent user testing. Repository https://github.com/MananPoojara/Prompt-guide remains authoritative. This adds a beginner entry point without turning the resource into homework or claiming undisclosed lab access.",
+    "retrieval_verified_on": "2026-10-19"
   }
 ]

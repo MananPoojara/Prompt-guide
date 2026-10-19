@@ -1,0 +1,8 @@
+{
+  "name": "prompt-guide",
+  "version": "0.1.0",
+  "description": "Inspect a claim against saved local evidence. Educational example.",
+  "author": {
+    "name": "Prompt Guide contributors"
+  }
+}

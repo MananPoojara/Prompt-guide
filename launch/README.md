@@ -20,6 +20,8 @@ Six original prompt artifacts are copied with licenses. An engineer’s publishe
 
 The recorded tests cover small synthetic cases, not production applications. Before expanding performance claims, add independent tasks, multiple models, a separate holdout, and end-to-end runtime checks.
 
+The beginner expansion adds a [self-contained start page](../START-HERE.md), nine handbook chapters, a glossary, a working local MCP example, and a complete skill/plugin sample. The MCP integration ran without a model account; the skill has static validation, not a recorded model invocation.
+
 ## Publication status
 
 The repository is public. X copy is a **draft** in [x-thread.md](x-thread.md); no X post has been sent. The current session has no authenticated X posting capability. Publishing a repository and drafting a launch are separate from posting to a social account.

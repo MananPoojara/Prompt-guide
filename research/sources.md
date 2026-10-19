@@ -161,3 +161,19 @@ Limit: not rerun locally, and the comparison changes orchestration rather than i
 Supports: the original attention-based Transformer architecture proposal.
 
 Limit: does not establish the architecture or internal reasoning mechanism of every contemporary proprietary model.
+
+## S21: MCP Python SDK client, version 2 interface
+
+[Primary source](https://py.sdk.modelcontextprotocol.io/client/) · Published/version: Living documentation, example pins mcp 2.3.0 · Checked: 2026-10-19
+
+Supports: Client lifecycle, subprocess transport, tool discovery/calls, and structured results. Local implementation and successful/error cases are independently exercised in examples/mcp-notes/.
+
+Limit: This is an SDK/API source, not evidence of model tool-selection quality. The recorded protocol version is 2026-07-28; older examples can use incompatible APIs.
+
+## S22: Claude Code plugin packaging
+
+[Primary source](https://code.claude.com/docs/en/plugins) · Published/version: Living documentation · Checked: 2026-10-19
+
+Supports: A plugin packages components; the manifest identifies it, skills are namespaced, and local directory loading supports development. Installed CLI help and validation supplement the documentation.
+
+Limit: The local sample is authored here. Static validation does not establish a successful model-driven invocation.

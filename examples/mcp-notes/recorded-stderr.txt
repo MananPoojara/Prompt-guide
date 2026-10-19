@@ -1,0 +1,2 @@
+Tool 'read_note' failed: 'Error executing tool read_note: Unknown note ID: unknown'
+Tool 'read_note' rejected arguments: ['note_id']
