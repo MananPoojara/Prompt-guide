@@ -1,0 +1,47 @@
+### Confirmed decisions
+- Saturday reading club starts 2027-03-06, 14:00–15:00. The approved 14:00 start replaces the proposed 13:00 start. [L1, L5]
+
+### Actions
+- Jordan will reserve the room by 2027-02-25. [L2]
+- Send accessibility requests to the library desk; no contact person has been chosen. [L4]
+
+### Still undecided
+- Priya proposed buying 20 new books; no purchase or budget was approved. [L3]
+- Attendance capacity and registration details remain undecided. [L6]
+
+OpenAI Codex v0.163.0
+--------
+workdir: /tmp/prompt-guide-everyday-7s5j6g8n
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: low
+reasoning summaries: none
+session id: 01a1533f-908f-7302-a107-c26c88112be8
+--------
+user
+Summarize the supplied library meeting notes for a volunteer who missed the meeting. Use three short sections: Confirmed decisions, Actions, and Still undecided. Add the supporting line IDs to each factual bullet. Separate proposals from approvals, preserve the final start time, and do not invent an owner, capacity, budget, or registration process. Use only these notes. Do not use tools.
+
+Supplied input:
+Fictional neighborhood library meeting notes:
+[L1] The group approved a Saturday reading club starting 2027-03-06, from 14:00 to 15:00.
+[L2] Jordan accepted responsibility for reserving the room by 2027-02-25.
+[L3] Priya suggested buying 20 new books. No budget or purchase was approved.
+[L4] Accessibility requests should go to the library desk. The group has not chosen a contact person.
+[L5] The earlier proposed 13:00 start time was explicitly replaced by the approved 14:00 start.
+[L6] Attendance capacity and registration details remain undecided.
+
+codex
+### Confirmed decisions
+- Saturday reading club starts 2027-03-06, 14:00–15:00. The approved 14:00 start replaces the proposed 13:00 start. [L1, L5]
+
+### Actions
+- Jordan will reserve the room by 2027-02-25. [L2]
+- Send accessibility requests to the library desk; no contact person has been chosen. [L4]
+
+### Still undecided
+- Priya proposed buying 20 new books; no purchase or budget was approved. [L3]
+- Attendance capacity and registration details remain undecided. [L6]
+tokens used
+5,870

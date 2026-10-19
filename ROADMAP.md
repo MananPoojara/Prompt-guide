@@ -22,7 +22,9 @@ Understand task, evidence, constraints, examples, missing values, and output sha
 
 Distinguish training from inference, supplied context from learned parameters, and a generated explanation from evidence. A prompt changes the input used during inference; it does not directly rewrite the model's learned parameters.
 
-**Still needed for deeper ML coverage:** executable tokenization examples; controlled demonstrations of sampling and output variability; explanations of embeddings, attention, and decoding grounded in inspectable small-model behavior. Illustrative diagrams must remain distinct from measurements of proprietary models.
+**Demonstrated:** the [model-mechanics lab](labs/model-mechanics/README.md) records seven tokenizations, next-token logits, and 20 greedy/sampled continuations from a pinned DistilGPT2 revision. An offline visual exposes tokens, probabilities, and saved outputs.
+
+**Still needed for deeper ML coverage:** explanations and experiments on embeddings and attention, broader model comparisons, and measured learning outcomes. Illustrative diagrams must remain distinct from measurements of proprietary models.
 
 **Practical judgment:** distinguish missing evidence, ambiguity, model error, and application error rather than blaming every failure on wording.
 
@@ -63,7 +65,7 @@ These tracks include the first available pilot and planned expansions. The next 
 | Track | Addition | Evidence required before calling it demonstrated |
 |---|---|---|
 | 1 | Controlled prompting comparisons — [first pilot available](labs/prompt-comparison/README.md) | Add independent label review and more varied held-out cases; retain the pilot’s tie and setup failure |
-| 2 | Visual ML mechanics | Runnable tokenizer and sampling examples with model/version details; conceptual graphics explicitly labeled |
+| 2 | Visual ML mechanics — [first lab available](labs/model-mechanics/README.md) | Extend into embeddings and attention; retain the measured-versus-conceptual distinction |
 | 3 | Context and retrieval experiments | Known relevant documents, retrieval logs, answer checks, missing/conflicting/adversarial evidence cases |
 | 4 | Complete agent execution | Model requests, tool calls, permission decisions, failures, budgets, and recovery traces |
 | 5 | Evaluation and deployment decisions | Judge agreement checks, uncertainty, cost/latency, regression results, and evidence for choosing prompting, retrieval, or fine-tuning |
@@ -97,13 +99,13 @@ These are delivery milestones, not a promise to finish one every week. A weekly 
 
 | Order | Milestone | Deliverables | Completion evidence |
 |---|---|---|---|
-| 1 | Visual mechanics and everyday entry | Runnable tokenization and sampling demonstrations; plain-language diagrams and text alternatives; complete noncoding examples | Fresh-environment reproduction; recorded package/model versions; illustration labels; readers can follow the explanation without external articles |
+| 1 | Visual mechanics and everyday entry — first delivery available | [Tokenization/sampling lab](labs/model-mechanics/README.md) and [three noncoding cases](everyday/README.md) | Recorded model outputs, versions, data checks, browser checks, and author-reviewed examples; independent reader testing remains open |
 | 2 | Stronger prompt experiments | More natural notes; documented annotation disagreements; frozen development/held-out split; comparisons of examples and decomposition | Independent reviewer attribution when obtained; predeclared rubric; all trials retained; category and paired error reports; uncertainty appropriate to the design |
 | 3 | Context and retrieval | A local document set with known answers; retrieval logs; missing, stale, conflicting, and instruction-like evidence cases | Trace the retrieved material to the answer; compare retrieval and interpretation errors separately; preserve failed answers |
 | 4 | Complete agent workflow | Evolve the notes example into document lookup, extraction, and proposed updates for review; retain a full execution trace | Explicit stop conditions, invalid-call handling, permission decisions, timeout behavior, checkpoint/resume, and independent output checks |
 | 5 | Operational evaluation | Regression set; model-judge calibration; runtime and usage reporting; choosing prompting versus retrieval versus training | Disclose model/settings, billing assumptions, uncertainty, human-review procedure, and cases where an approach is unsuitable |
 
-The first milestone begins with token boundaries and sampling on an inspectable small model. The resulting visual should let a reader change an input or generation setting and see the observed output. It must separate measured behavior from a simplified diagram; it must not imply that an attention visualization reveals a complete explanation of reasoning.
+The first milestone now includes token boundaries and sampling on an inspectable small model. Readers can choose saved inputs/settings in the visual and use the Python recorder for arbitrary text. It must separate measured behavior from a simplified diagram; it must not imply that an attention visualization reveals a complete explanation of reasoning.
 
 The everyday track uses examples such as revising a message for a defined audience, summarizing a supplied document without inventing details, and explaining a concept while checking understanding. Each needs the complete input, a usable request, an output with a provenance label, a check, and a failure case. A blank template alone does not satisfy this milestone.
 

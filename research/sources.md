@@ -177,3 +177,11 @@ Limit: This is an SDK/API source, not evidence of model tool-selection quality. 
 Supports: A plugin packages components; the manifest identifies it, skills are namespaced, and local directory loading supports development. Installed CLI help and validation supplement the documentation.
 
 Limit: The local sample is authored here. Static validation does not establish a successful model-driven invocation.
+
+## S23: DistilGPT2 model and generation mechanics
+
+[Pinned model card](https://huggingface.co/distilbert/distilgpt2/tree/2290a62682d06624634c1f46a6ad5be0f47f38aa) · [Generation reference](https://huggingface.co/docs/transformers/main/en/main_classes/text_generation) · Checked: 2026-10-19
+
+Supports: model identity and licensing; library meanings of temperature, greedy selection, and top-k sampling. The model-mechanics lab independently records actual tokenizer output and CPU generation using a pinned revision and package versions.
+
+Limit: an older text-completion model does not establish behavior of current proprietary chat assistants. The browser visual recalculates probabilities from saved logits and displays recordings; it does not perform inference.

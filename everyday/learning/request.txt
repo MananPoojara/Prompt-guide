@@ -1,0 +1,5 @@
+Explain the learner's fraction mistake in plain language without shaming them. Use one concrete whole divided into equal-sized parts, show the correct calculation, and explain why 2/5 cannot be right by comparing it with 1/2. End with one similar question for the learner to try; place its answer in a separately labeled answer section. Keep the explanation under 250 words. Do not use tools.
+
+Supplied input:
+Learner question:
+"I think 1/2 + 1/3 = 2/5 because I added the top numbers and the bottom numbers. Why is that wrong?"

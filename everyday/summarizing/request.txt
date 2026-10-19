@@ -1,0 +1,10 @@
+Summarize the supplied library meeting notes for a volunteer who missed the meeting. Use three short sections: Confirmed decisions, Actions, and Still undecided. Add the supporting line IDs to each factual bullet. Separate proposals from approvals, preserve the final start time, and do not invent an owner, capacity, budget, or registration process. Use only these notes. Do not use tools.
+
+Supplied input:
+Fictional neighborhood library meeting notes:
+[L1] The group approved a Saturday reading club starting 2027-03-06, from 14:00 to 15:00.
+[L2] Jordan accepted responsibility for reserving the room by 2027-02-25.
+[L3] Priya suggested buying 20 new books. No budget or purchase was approved.
+[L4] Accessibility requests should go to the library desk. The group has not chosen a contact person.
+[L5] The earlier proposed 13:00 start time was explicitly replaced by the approved 14:00 start.
+[L6] Attendance capacity and registration details remain undecided.

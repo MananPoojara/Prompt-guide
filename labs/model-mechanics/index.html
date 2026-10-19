@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>See the model choose · Prompt Guide</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a href="../../README.md">[ &gt;_ ] Prompt Guide</a><span>LAB 01 / MODEL MECHANICS</span></header>
+<main>
+<section class="intro"><div><p class="eyebrow">FROM INPUT TO OUTPUT</p><h1>See text become tokens.<br>Then see a model choose.</h1><p class="lede">One small model. Real recorded numbers. Move the controls to inspect what changes—and what doesn’t.</p></div><aside><strong>Runs offline</strong><p>This page uses saved DistilGPT2 results. It does not call an AI service or run the model in your browser.</p><a href="README.md">Reproduce the experiment ↗</a></aside></section>
+<noscript><p class="notice">This interactive view needs JavaScript. Read README.md and results/recording-2026-10-19/data.json for the same evidence as text.</p></noscript>
+<p id="load-status" role="status">Loading recorded data…</p>
+<section aria-labelledby="tokens-title"><div class="section-heading"><span class="number">01</span><div><h2 id="tokens-title">A token isn’t always a word.</h2><p>Choose a recorded string. Compare case, a leading space, and different writing systems.</p></div></div>
+<label for="text-choice">Recorded input</label><select id="text-choice"></select>
+<div id="input-text" class="input-text"></div><div id="token-pieces" class="token-pieces" aria-live="polite"></div>
+<p id="token-summary" class="caption"></p><p class="explanation">Each chip shows one decoded token fragment and its ID. <code>␠</code> marks a space. A fragment may show <code>�</code> when a Unicode character spans several tokens; decoding the complete ID sequence recovers the original text. Token count is not a measure of understanding.</p>
+<details><summary>Inspect the raw vocabulary pieces</summary><pre id="raw-tokens"></pre></details>
+</section>
+<section aria-labelledby="probabilities-title"><div class="section-heading"><span class="number">02</span><div><h2 id="probabilities-title">Same scores. Different choices.</h2><p>Temperature changes the distribution used to select the next token.</p></div></div>
+<div class="controls"><div><label for="prefix-choice">Recorded prefix</label><select id="prefix-choice"></select></div><div><label for="temperature">Temperature <output id="temperature-label" for="temperature">1.0</output></label><input id="temperature" type="range" min="0.2" max="2" step="0.1" value="1" aria-describedby="temperature-note"></div></div>
+<p id="temperature-note" class="caption">Probabilities are recalculated over the model’s saved top 50 candidates, not the entire vocabulary. Higher temperature flattens this distribution; it does not check facts.</p>
+<div class="probability-layout"><div><div id="bars" class="bars" aria-label="Next-token probabilities"></div><p id="remaining" class="caption"></p></div><aside class="draw-panel"><p class="eyebrow">ONE DRAW FROM SAVED SCORES</p><button id="draw" type="button">Draw a token</button><p id="draw-result" aria-live="polite">No token drawn yet.</p><p class="caption">This is a browser simulation of one selection. It is not a new model response. Each click can select a different candidate.</p></aside></div>
+<details><summary>See all 50 candidates and the calculation</summary><p>For each retained score: subtract the largest score, divide by temperature, exponentiate, then divide by the sum. Subtracting the largest score keeps the calculation stable.</p><div class="table-wrap"><table><caption>Actual saved logits, with recalculated conditional probabilities</caption><thead><tr><th>Token fragment</th><th>ID</th><th>Logit</th><th>Probability</th></tr></thead><tbody id="candidate-table"></tbody></table></div></details>
+</section>
+<section aria-labelledby="generation-title"><div class="section-heading"><span class="number">03</span><div><h2 id="generation-title">One choice changes the next context.</h2><p>Inspect complete continuations recorded with fixed settings. Every generated token becomes input for the next step.</p></div></div>
+<div class="controls"><div><label for="run-temperature">Recorded decoding setting</label><select id="run-temperature"><option value="0">Greedy: choose the highest score</option><option value="0.4">Sample: temperature 0.4</option><option value="1" selected>Sample: temperature 1.0</option><option value="1.6">Sample: temperature 1.6</option></select></div><div><label for="seed">Recorded random seed</label><select id="seed"><option>7</option><option>23</option><option>41</option></select></div></div>
+<div class="recorded-output"><p class="eyebrow">ACTUAL RECORDED CONTINUATION</p><p><span id="output-prefix"></span><mark id="output-continuation"></mark></p></div>
+<p id="run-summary" class="caption" aria-live="polite"></p><p class="explanation">The model is an older English text-completion model, not an instruction-tuned chat assistant. Repetition and incorrect statements are retained. Changing these selectors displays another saved run; it does not generate fresh text.</p>
+<details><summary>Inspect the chosen-token trace</summary><pre id="run-trace"></pre></details>
+</section>
+<section class="takeaway"><p class="eyebrow">WHAT TO TAKE INTO YOUR OWN WORK</p><h2>A plausible continuation<br>isn’t a verified answer.</h2><p>Prompts supply input. Generation settings affect selection. Neither replaces a check against the task and its evidence.</p><a href="../prompt-comparison/README.md">Next: test whether a prompt change actually helps →</a></section>
+<footer><p id="provenance"></p><p><a href="PROTOCOL.md">Protocol</a> · <a href="results/recording-2026-10-19/data.json">Full recorded data</a> · <a href="README.md">Setup and limitations</a></p></footer>
+</main>
+</body></html>

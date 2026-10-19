@@ -6,7 +6,7 @@ A language model generates a response from the input available to it. It does no
 
 ![What a prompt changes: input, tokenization, generation, and verification](../diagrams/prompt-to-model.svg)
 
-This diagram is a conceptual explanation. It does not measure attention, reveal hidden reasoning, or show that one prompt performs better. The [roadmap](../ROADMAP.md) identifies the runnable ML demonstrations still needed.
+This diagram is a conceptual explanation. It does not measure attention, reveal hidden reasoning, or show that one prompt performs better. The [interactive model-mechanics lab](../labs/model-mechanics/README.md) now adds actual token IDs, saved logits, and recorded continuations from a pinned small model. Further ML depth remains on the [roadmap](../ROADMAP.md).
 
 ## Training and answering are different stages
 

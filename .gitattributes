@@ -3,3 +3,7 @@ cases/evaluator-loop/results/** -whitespace
 
 # Preserve exact captured experiment artifacts.
 labs/prompt-comparison/results/** -whitespace
+
+labs/model-mechanics/results/** -whitespace
+everyday/*/response.txt -whitespace
+everyday/*/execution.log -whitespace

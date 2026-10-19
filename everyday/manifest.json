@@ -1,0 +1,80 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "cli": "codex-cli 0.163.0",
+  "recorded_on": "2026-10-19",
+  "trials": [
+    {
+      "case": "writing",
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-everyday-_6c186xv",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/everyday/writing/response.txt",
+        "-"
+      ],
+      "status": 0,
+      "elapsed_seconds": 11.508,
+      "request_sha256": "d7da6a438968cdccdfcd596f1d9bb36e218d43c81f5af9915aeefe766526a651"
+    },
+    {
+      "case": "summarizing",
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-everyday-7s5j6g8n",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/everyday/summarizing/response.txt",
+        "-"
+      ],
+      "status": 0,
+      "elapsed_seconds": 10.166,
+      "request_sha256": "315e59b35ebb0f3916a12297610c5d670b8320486ca736d76b095b85cdff660b"
+    },
+    {
+      "case": "learning",
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-everyday-g8sr4vsz",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/everyday/learning/response.txt",
+        "-"
+      ],
+      "status": 0,
+      "elapsed_seconds": 11.89,
+      "request_sha256": "6f97cfadabde68b8c4aa2a5a2cf4a572c340990dbed20a796a07072238e6e2dd"
+    }
+  ]
+}

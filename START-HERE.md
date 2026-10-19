@@ -14,6 +14,12 @@ A useful prompt must communicate what counts as a correct answer. A useful AI sy
 
 ![From a question to an answer you can check](diagrams/request-map.svg)
 
+## Start with a task you recognize
+
+[Rewrite an email](everyday/writing/README.md), [summarize meeting notes](everyday/summarizing/README.md), or [understand a fraction mistake](everyday/learning/README.md). Each has complete input, an exact prompt, an actual response, and a result check. No coding is required to read them.
+
+For a visual explanation of model behavior, open the [tokenization and sampling lab](labs/model-mechanics/README.md). Its interactive page uses saved data and works offline.
+
 ## Follow one connected explanation
 
 | Read in order | What you will understand by the end |

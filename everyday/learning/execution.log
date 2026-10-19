@@ -1,0 +1,62 @@
+It makes sense to try adding the top and bottom numbers. The tricky part is that the bottom number tells us the size of the pieces, so we need equal-sized pieces before we can add them.
+
+Imagine one chocolate bar divided into **6 equal pieces**:
+
+- **1/2** of the bar is **3 of those pieces**: 1/2 = 3/6.
+- **1/3** of the bar is **2 of those pieces**: 1/3 = 2/6.
+
+Together, that’s 5 pieces out of 6:
+
+**1/2 + 1/3 = 3/6 + 2/6 = 5/6.**
+
+The bottom number stays 6 because we’re still counting sixths. Adding pieces doesn’t change their size.
+
+Here’s another way to check: **2/5 is less than 1/2**, since 2/5 = 4/10 and 1/2 = 5/10. Adding a positive amount to 1/2 must give us more than 1/2, so 2/5 cannot be right.
+
+**Try it:** What is 1/2 + 1/4? Think of one whole divided into 4 equal parts.
+
+**Answer section**
+
+1/2 + 1/4 = 2/4 + 1/4 = **3/4**.
+
+OpenAI Codex v0.163.0
+--------
+workdir: /tmp/prompt-guide-everyday-g8sr4vsz
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: low
+reasoning summaries: none
+session id: 01a1533f-b63b-7c73-a20b-1327d201b344
+--------
+user
+Explain the learner's fraction mistake in plain language without shaming them. Use one concrete whole divided into equal-sized parts, show the correct calculation, and explain why 2/5 cannot be right by comparing it with 1/2. End with one similar question for the learner to try; place its answer in a separately labeled answer section. Keep the explanation under 250 words. Do not use tools.
+
+Supplied input:
+Learner question:
+"I think 1/2 + 1/3 = 2/5 because I added the top numbers and the bottom numbers. Why is that wrong?"
+
+codex
+It makes sense to try adding the top and bottom numbers. The tricky part is that the bottom number tells us the size of the pieces, so we need equal-sized pieces before we can add them.
+
+Imagine one chocolate bar divided into **6 equal pieces**:
+
+- **1/2** of the bar is **3 of those pieces**: 1/2 = 3/6.
+- **1/3** of the bar is **2 of those pieces**: 1/3 = 2/6.
+
+Together, that’s 5 pieces out of 6:
+
+**1/2 + 1/3 = 3/6 + 2/6 = 5/6.**
+
+The bottom number stays 6 because we’re still counting sixths. Adding pieces doesn’t change their size.
+
+Here’s another way to check: **2/5 is less than 1/2**, since 2/5 = 4/10 and 1/2 = 5/10. Adding a positive amount to 1/2 must give us more than 1/2, so 2/5 cannot be right.
+
+**Try it:** What is 1/2 + 1/4? Think of one whole divided into 4 equal parts.
+
+**Answer section**
+
+1/2 + 1/4 = 2/4 + 1/4 = **3/4**.
+tokens used
+5,928

@@ -1,0 +1,40 @@
+Subject: Saturday’s pottery workshop: new time and room
+
+Hi everyone,
+
+Sorry for the change: Saturday’s pottery workshop will start at 11:30 instead of 10:00 because the room needs repairs. We’ll be in the same building, in room 4 instead of room 2.
+
+**If this doesn’t work for you, please reply by Thursday at 18:00.** We can move your booking to another session, but we can’t confirm which session yet.
+
+Thank you for your understanding.
+
+OpenAI Codex v0.163.0
+--------
+workdir: /tmp/prompt-guide-everyday-_6c186xv
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: low
+reasoning summaries: none
+session id: 01a1533f-5fbf-7a80-9c9b-b454a653dadc
+--------
+user
+Rewrite the supplied workshop message as a warm, concise email to attendees. Include a subject line and keep the body under 110 words. Preserve every logistical detail and the Thursday response deadline. Make the requested action easy to spot. Do not invent a refund policy, promise a replacement date, or imply that another session is already confirmed. Use only the supplied message. Do not use tools.
+
+Supplied input:
+Fictional message from a community workshop organizer:
+"Hi. Saturday's pottery workshop is moved from 10:00 to 11:30 because the room needs repairs. Same building, room 4 instead of room 2. If this doesn't work, reply by Thursday 18:00 and we can move your booking to another session. We can't confirm which session yet. Sorry about this."
+
+codex
+Subject: Saturday’s pottery workshop: new time and room
+
+Hi everyone,
+
+Sorry for the change: Saturday’s pottery workshop will start at 11:30 instead of 10:00 because the room needs repairs. We’ll be in the same building, in room 4 instead of room 2.
+
+**If this doesn’t work for you, please reply by Thursday at 18:00.** We can move your booking to another session, but we can’t confirm which session yet.
+
+Thank you for your understanding.
+tokens used
+6,553

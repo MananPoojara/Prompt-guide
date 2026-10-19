@@ -31,7 +31,7 @@
 | Advanced track | What you'll explore | Status |
 |---|---|---|
 | **06 · Prompt experiments** | Zero-shot vs. few-shot, controlled comparisons, held-out cases, and failure analysis | [First lab available](labs/prompt-comparison/README.md) |
-| **07 · Visual ML mechanics** | Runnable tokenization, sampling, and output-variability demonstrations | Coming next |
+| **07 · Visual ML mechanics** | Token boundaries, next-token probabilities, temperature, and recorded continuations | [Interactive lab available](labs/model-mechanics/README.md) |
 | **08 · Retrieval experiments** | RAG, conflicting evidence, context selection, and retrieval failures | Planned |
 | **09 · Agent engineering** | Complete execution traces, tool errors, permissions, checkpoints, and recovery | Planned |
 | **10 · Reliable evaluation** | Judge calibration, uncertainty, regression tracking, cost, and latency | Planned |
@@ -40,7 +40,7 @@
 
 ## Explore
 
-[Original Anthropic & OpenAI prompts](originals/README.md) · [Recorded experiments](cases/README.md) · [Prompt templates](prompts/README.md) · [Skills & MCP toolkit](toolkit/README.md) · [Glossary](handbook/glossary.md)
+[Everyday examples](everyday/README.md) · [Original Anthropic & OpenAI prompts](originals/README.md) · [Recorded experiments](cases/README.md) · [Prompt templates](prompts/README.md) · [Skills & MCP toolkit](toolkit/README.md) · [Glossary](handbook/glossary.md)
 
 Read online with no installation or model account. To run examples locally, follow their setup instructions in [examples](examples/README.md).
 
