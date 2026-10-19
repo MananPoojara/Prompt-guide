@@ -89,6 +89,8 @@ If that version is unavailable, say so.
 
 **Check the result:** verify the selected package/version and run the relevant code check. Retrieved documentation can improve the available evidence; it does not guarantee correct generated code. Documentation queries go to the selected service, so keep them focused on the public API you need.
 
+**Error handling, source-checked 2026-10-19:** Context7 MCP 4.4.3 marks a failed library-resolution search with `isError: true`; an empty successful search remains a normal result. Preserve that distinction in your host. See the [reviewed update](../updates/2026-10-19-context7-errors.md) for the pinned source and execution limits.
+
 ## 5. GitHub MCP Server: repository context and actions
 
 GitHub's server exposes repository, issue, pull-request, and other GitHub operations. Its README describes hosted and local routes, host-specific setup, authentication, and configurable tool access.

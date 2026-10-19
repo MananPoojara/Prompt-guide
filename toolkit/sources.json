@@ -43,12 +43,15 @@
   },
   {
     "repository": "upstash/context7",
-    "commit": "6b636d3c35e051a1a653a236afb7f612c02a1ad3",
+    "commit": "ae4871e9a8cbed00bc0f4a40b0b5b61e2d37378c",
     "archived": false,
     "checked_on": "2026-10-19",
     "validation": "README/source inspected; not installed or executed for this shortlist",
     "source_urls": [
-      "https://github.com/upstash/context7/blob/6b636d3c35e051a1a653a236afb7f612c02a1ad3/README.md"
-    ]
+      "https://github.com/upstash/context7/blob/6b636d3c35e051a1a653a236afb7f612c02a1ad3/README.md",
+      "https://github.com/upstash/context7/compare/6b636d3c35e051a1a653a236afb7f612c02a1ad3...ae4871e9a8cbed00bc0f4a40b0b5b61e2d37378c"
+    ],
+    "previous_commit": "6b636d3c35e051a1a653a236afb7f612c02a1ad3",
+    "incremental_review": "Compared two new commits; inspected changelog and relevant resolve-library-id error handling. Not executed."
   }
 ]
