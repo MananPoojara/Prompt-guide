@@ -1,0 +1,7 @@
+Extract the owner and deadline for each task in the notes below. Return only a JSON array with one object per task, using keys task, owner, deadline.
+
+Notes:
+- Search fix: Priya will do it by 2026-11-03.
+- Export fix: no owner assigned; deadline not decided.
+- Dashboard: Alex proposed 2026-11-05. No one accepted ownership or a deadline.
+- Login bug: Sam owns it. The deadline was 2026-11-04, then explicitly changed to 2026-11-06.

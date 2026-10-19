@@ -1,0 +1,10 @@
+test_empty (test_search.SearchTests) ... ok
+test_normalized_query (test_search.SearchTests) ... ok
+test_order (test_search.SearchTests) ... ok
+test_unknown (test_search.SearchTests) ... ok
+test_whitespace (test_search.SearchTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK

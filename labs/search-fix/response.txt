@@ -1,0 +1,3 @@
+Updated [search.py](/tmp/prompt-guide-search/search.py) to strip query whitespace and use `casefold()` for case-insensitive matching. Product ordering and empty-query behavior are preserved. No dependencies added; tests unchanged.
+
+Ran `python3 -m unittest discover -v`: **all 5 tests passed** (3 failed before the change).

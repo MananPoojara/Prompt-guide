@@ -1,0 +1,22 @@
+name: Repository checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/check_links.py
+      - run: python3 -m unittest discover -s labs/prompt-contract -p 'test_*.py'
+      - run: python3 labs/prompt-contract/grade.py
+      - name: Verify the saved search implementation
+        run: |
+          trial_dir=$(mktemp -d)
+          cp labs/search-fix/after.py "$trial_dir/search.py"
+          cp labs/search-fix/test_search.py "$trial_dir/test_search.py"
+          cd "$trial_dir"
+          python3 -m unittest -v

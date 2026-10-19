@@ -1,0 +1,59 @@
+test_empty (test_search.SearchTests) ... ok
+test_normalized_query (test_search.SearchTests) ... FAIL
+test_order (test_search.SearchTests) ... FAIL
+test_unknown (test_search.SearchTests) ... ok
+test_whitespace (test_search.SearchTests) ... FAIL
+
+======================================================================
+FAIL: test_normalized_query (test_search.SearchTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prompt-guide-search/test_search.py", line 8, in test_normalized_query
+    self.assertEqual(search_products(self.products, '  LAMP '), self.products[:2])
+AssertionError: Lists differ: [] != ['Desk Lamp', 'lamp shade']
+
+Second list contains 2 additional elements.
+First extra element 0:
+'Desk Lamp'
+
+- []
++ ['Desk Lamp', 'lamp shade']
+
+======================================================================
+FAIL: test_order (test_search.SearchTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prompt-guide-search/test_search.py", line 10, in test_order
+    self.assertEqual(search_products(self.products, 'lamp'), self.products[:2])
+AssertionError: Lists differ: ['lamp shade'] != ['Desk Lamp', 'lamp shade']
+
+First differing element 0:
+'lamp shade'
+'Desk Lamp'
+
+Second list contains 1 additional elements.
+First extra element 1:
+'lamp shade'
+
+- ['lamp shade']
++ ['Desk Lamp', 'lamp shade']
+
+======================================================================
+FAIL: test_whitespace (test_search.SearchTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prompt-guide-search/test_search.py", line 16, in test_whitespace
+    self.assertEqual(search_products(self.products, '   '), self.products)
+AssertionError: Lists differ: [] != ['Desk Lamp', 'lamp shade', 'Chair']
+
+Second list contains 3 additional elements.
+First extra element 0:
+'Desk Lamp'
+
+- []
++ ['Desk Lamp', 'lamp shade', 'Chair']
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=3)

@@ -1,0 +1,1 @@
+In search.py, make product search ignore leading/trailing query whitespace and match names without case sensitivity. Inspect the implementation and tests first. Preserve product ordering and empty-query behavior. Use no external dependencies. Do not change the tests. Implement the change, run the test suite, and report the change and actual result.
