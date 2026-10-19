@@ -21,6 +21,10 @@ Build judgment by following the input through an actual system. Each lab include
 
 For coding agents, also inspect the [saved search fix](search-fix/README.md), [evaluator/repair case](../cases/evaluator-loop/README.md), and [executed local MCP connection](../examples/mcp-notes/README.md).
 
+## Work through the labs
+
+Follow the [seven-part practicum](PRACTICUM.md) for predictions, failure investigations, and concrete deliverables. Then use the [capstone specification](CAPSTONE.md) to build an integrated assistant with an explicit evaluation contract. These are hands-on project exercises; the capstone is not a claimed completed experiment.
+
 ## What makes these advanced?
 
 The emphasis is on engineering decisions you can inspect: which evidence reached the model, what the runtime allowed, where a metric can mislead, and whether a change survives a controlled comparison. A more complicated prompt is not automatically a better technique. A successful small experiment is not a deployment guarantee.

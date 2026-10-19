@@ -36,6 +36,8 @@
 | **09 · Agent engineering** | Complete execution traces, tool errors, permissions, checkpoints, and recovery | [First trace available](labs/bounded-agent/README.md) |
 | **10 · Reliable evaluation** | Judge calibration, uncertainty, regression tracking, cost, and latency | [Regression gate available](evaluation/README.md) |
 
+**Start the [advanced developer practicum](labs/PRACTICUM.md).** Inspect real traces, diagnose failures, and work toward an [integrated capstone](labs/CAPSTONE.md).
+
 **More advanced labs are coming.** Foundations and the linked labs are available now; deeper experiments and independent review remain planned. Follow the [full roadmap](ROADMAP.md) for scope and the evidence each addition needs.
 
 ## Explore
