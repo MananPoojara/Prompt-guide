@@ -87,3 +87,7 @@ Validation for this expansion: all local links and six original artifact hashes 
 ## Curated ecosystem entry points
 
 Added toolkit/README.md after the user asked for useful external skills, plugins, and MCP servers that readers can actually try. Five entries are selected by task and include setup routes, authored first-use examples, checks, prerequisites, and relevant effects. toolkit/sources.json records inspected upstream revisions. This is source review, not installed-tool testing or a comparative benchmark. README and START-HERE link to the shortlist; no external tool was installed by this change.
+
+## Minimal roadmap and an honest depth assessment
+
+The user asked whether the resource actually reaches advanced prompt engineering and requested a simpler README. The front page now presents five stages rather than repeating chapter content, demonstrations, and tool descriptions. ROADMAP.md separates existing explanations and small demonstrations from missing advanced work, with evidence requirements for each planned addition. A conceptual model-input diagram was added to the model chapter, rendered, and visually inspected. It is explicitly not an attention measurement or a demonstrated prompt improvement. The current resource is described as foundations plus small engineering demonstrations, not a completed beginner-to-expert path.

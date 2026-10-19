@@ -1,5 +1,7 @@
 # Start with something you can see
 
+[View the full learning roadmap](ROADMAP.md) — foundations available now, advanced gaps stated explicitly.
+
 You can read this repository without a model account, a coding background, or opening the external articles. The explanations below are written here; source links let you check where a claim came from. The original public prompts, selected source files, and recorded outputs are also stored here where redistribution is permitted.
 
 Start with this sentence from a fictional meeting:

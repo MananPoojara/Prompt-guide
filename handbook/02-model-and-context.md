@@ -4,6 +4,10 @@ Previous: [First example](01-first-example.md) · Next: [Original prompts](03-or
 
 A language model generates a response from the input available to it. It does not automatically see your screen, your repository, your private notes, or the article whose title you mentioned. An application must supply that material directly or provide tools through which it can be retrieved.
 
+![What a prompt changes: input, tokenization, generation, and verification](../diagrams/prompt-to-model.svg)
+
+This diagram is a conceptual explanation. It does not measure attention, reveal hidden reasoning, or show that one prompt performs better. The [roadmap](../ROADMAP.md) identifies the runnable ML demonstrations still needed.
+
 ## Training and answering are different stages
 
 During training, optimization changes the model's numerical parameters using training examples and objectives. Those parameters encode learned patterns and capabilities. During an ordinary request, the model uses its existing parameters to process the current input and generate output. That stage is called inference.
