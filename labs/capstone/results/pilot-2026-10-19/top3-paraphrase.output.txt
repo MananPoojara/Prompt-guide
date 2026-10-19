@@ -1,0 +1,1 @@
+{"status":"answered","answer":"45 seconds.","citations":[{"document_id":"timeout","revision":"v1","start":0,"end":65}],"unresolved_reason":null}

@@ -1,0 +1,1 @@
+{"status":"insufficient_evidence","answer":null,"citations":[],"unresolved_reason":"The supplied chunk describes archive backup retention, not how long an inactive connection remains open."}

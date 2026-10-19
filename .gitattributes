@@ -24,3 +24,5 @@ labs/real-docs/results/** -whitespace
 labs/example-design/results/** -whitespace
 labs/trust-boundaries/results/** -whitespace
 everyday/planning-clarification/results/** -whitespace
+
+labs/capstone/results/** -whitespace

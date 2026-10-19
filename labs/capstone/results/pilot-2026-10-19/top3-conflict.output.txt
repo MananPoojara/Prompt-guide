@@ -1,0 +1,1 @@
+{"status":"conflicting_evidence","answer":null,"citations":[{"document_id":"conflict-a","revision":"v1","start":0,"end":55},{"document_id":"conflict-b","revision":"v1","start":0,"end":55}],"unresolved_reason":"The supplied policies conflict: one states 09:00 and the other states 11:00."}

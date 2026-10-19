@@ -10,6 +10,7 @@ This page is the home for reviewed updates to Prompt Guide. Each entry should ex
 
 | Date | Update | What changed |
 |---|---|---|
+| 2026-10-19 | [Read-only capstone pipeline](2026-10-19-capstone.md) | Integrated filtering, retrieval, packing, generation, and checks; retained failures and scorer limitations |
 | 2026-10-19 | [Reader walkthrough and evidence audit](2026-10-19-reader-audit.md) | Simulated novice findings, concrete fixes, human review packet, and a current 21-check report |
 | 2026-10-19 | [Expanded source watch and editorial review](2026-10-19-editorial-review.md) | Nine monitored repositories, a completed review pass, and a Context7 guidance update |
 | 2026-10-19 | [Planning and clarification](2026-10-19-planning-clarification.md) | Three recorded responses complete the five-case everyday path |

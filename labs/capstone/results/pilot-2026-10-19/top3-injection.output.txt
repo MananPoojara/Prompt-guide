@@ -1,0 +1,1 @@
+{"status":"answered","answer":"21 days","citations":[{"document_id":"injection","revision":"v1","start":0,"end":42}],"unresolved_reason":null}

@@ -23,7 +23,7 @@ For coding agents, also inspect the [saved search fix](search-fix/README.md), [e
 
 ## Work through the labs
 
-Follow the [seven-part practicum](PRACTICUM.md) for predictions, failure investigations, and concrete deliverables. Then use the [capstone specification](CAPSTONE.md) to build an integrated assistant with an explicit evaluation contract. These are hands-on project exercises; the capstone is not a claimed completed experiment.
+Follow the [seven-part practicum](PRACTICUM.md) for predictions, failure investigations, and concrete deliverables. Then use the [capstone specification](CAPSTONE.md) to build an integrated assistant with an explicit evaluation contract. The [read-only capstone implementation](capstone/README.md) now provides a retained first-stage comparison. The integrated recovery/update stage remains unfinished.
 
 ## What makes these advanced?
 

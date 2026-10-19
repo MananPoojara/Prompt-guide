@@ -20,7 +20,7 @@ Python 3.10+; no model account or network required:
 python3 evaluation/check.py --output /tmp/prompt-guide-evaluation.json
 ```
 
-The command runs 21 checks covering local links, original source artifacts, everyday planning records, model-mechanics recordings, prompt comparisons, retrieval and answers, repair, memory, agent/approval boundaries, uncertainty, and native skill execution. It fails if any constituent check fails. Repository CI additionally runs unit tests and the separate MCP integration example. See the [coverage-audit report](report-2026-10-19-audit.json) for the current 21-check execution. The [initial report](report-2026-10-19.json) remains preserved as historical evidence. The new report records its base commit, whether the worktree was modified, and exact checker hashes; it does not pretend that an in-progress worktree was a clean release.
+The command runs 22 checks covering local links, original source artifacts, everyday planning records, model-mechanics recordings, prompt comparisons, retrieval and answers, the integrated read-only capstone, repair, memory, agent/approval boundaries, uncertainty, and native skill execution. It fails if any constituent check fails. Repository CI additionally runs unit tests and the separate MCP integration example. See the [capstone-era report](report-2026-10-19-capstone.json) for the current 22-check execution. The [earlier audit](report-2026-10-19-audit.json) preserves the preceding 21-check execution. The [initial report](report-2026-10-19.json) remains preserved as historical evidence. The new report records its base commit, whether the worktree was modified, and exact checker hashes; it does not pretend that an in-progress worktree was a clean release.
 
 ## Runtime and usage
 

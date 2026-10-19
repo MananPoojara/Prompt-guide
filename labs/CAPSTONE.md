@@ -2,7 +2,7 @@
 
 [Practicum](PRACTICUM.md) · [Lab implementations](README.md) · [Evaluation](../evaluation/README.md)
 
-**Status: project specification for learners.** The component labs have saved executions. This integrated capstone has not been implemented or benchmarked in this repository. Completing the reading path does not imply completing this project.
+**Status: first read-only stage implemented.** The [capstone pipeline](capstone/README.md) integrates source filtering, retrieval, request packing, generation, and checks in a retained comparison. Its authored pilot is not an independent benchmark. Integrated tool-loop recovery and reviewed updates remain unfinished; component labs demonstrate those separately. Completing the reading path does not imply completing every stage of this project.
 
 Build a local assistant that answers questions about a small, versioned documentation set and returns evidence or an explicit unresolved result. Begin with read-only tools. Use fictional or openly licensed documents, retaining licenses and revision identifiers.
 

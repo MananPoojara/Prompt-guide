@@ -102,7 +102,7 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 | Agent execution | [Resumed loop](labs/bounded-agent/README.md), [recovery](labs/agent-recovery/README.md), [strategy comparison](labs/workflow-comparison/README.md), [approval](labs/action-approval/README.md), [trust boundaries](labs/trust-boundaries/README.md) | Local teaching hosts; authenticated production review, distributed recovery, and adaptive attack evaluation remain outside these demonstrations |
 | Evaluation | [Regression gate](evaluation/README.md), [uncertainty](labs/eval-uncertainty/README.md), per-lab durations and limits | Human review and judge calibration pending; no invoices, fine-tuning comparison, or production deployment claimed |
 
-A useful addition connects **a question → a technique → an observable run → a check → its limits**. More pages or more links alone do not fill missing evidence. The [practicum](labs/PRACTICUM.md) connects these labs; the [capstone](labs/CAPSTONE.md) is a learner project specification, not a completed integrated benchmark.
+A useful addition connects **a question → a technique → an observable run → a check → its limits**. More pages or more links alone do not fill missing evidence. The [practicum](labs/PRACTICUM.md) connects these labs; the [capstone](labs/CAPSTONE.md) now has a [read-only implementation](labs/capstone/README.md). Integrated recovery and proposed updates remain unfinished, and the authored pilot is not an independent benchmark.
 
 ## How to use the roadmap
 

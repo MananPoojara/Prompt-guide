@@ -15,6 +15,7 @@ CHECKS = [
     "labs/context-budget/check_saved.py",
     "labs/retrieval/check_saved.py",
     "labs/real-docs/check_saved.py",
+    "labs/capstone/check_saved.py",
     "labs/output-repair/check_saved.py",
     "labs/natural-notes/check_saved.py",
     "labs/evidence-grounding/check_saved.py",

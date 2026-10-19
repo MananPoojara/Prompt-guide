@@ -1,0 +1,1 @@
+{"status":"answered","answer":"Archive backups remain available for 28 days before deletion.","citations":[{"document_id":"archive","revision":"v1","start":113,"end":174}],"unresolved_reason":null}
