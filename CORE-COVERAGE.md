@@ -18,7 +18,7 @@ The audit below was performed on 2026-10-19. **Initial** means a local explanati
 | How do I handle untrusted material? | Five controlled attachment conditions, nine direct host probes, and a provenance-only negative control | Initial host boundaries demonstrated; adaptive/multi-turn attacks, trusted ingestion, and production authorization remain extensions |
 | How do I assess changes? | Saved-output regression checks, duration reports, and executable uncertainty illustration | Independent task review and judge calibration; actual cost accounting if billed runs are compared |
 | Can a newcomer follow the guide? | Reading paths, glossary, text alternatives, mobile-tested visuals | Independent beginner and advanced reader feedback; accessibility review beyond automated checks |
-| How does the guide stay current? | Daily five-repository collector and one reviewed finding | Broader primary-source coverage and a demonstrated repeatable weekly editorial pass |
+| How does the guide stay current? | Daily nine-repository collector, scoped baselines, and a completed editorial pass with before/after reports | Initial procedure demonstrated; ongoing weekly continuity and broader website/paper monitoring remain open |
 
 ## Order of work
 

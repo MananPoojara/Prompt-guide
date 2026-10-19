@@ -1,0 +1,49 @@
+[
+  {
+    "repository": "openai/openai-cookbook",
+    "commit": "5bd6cb40b6b84b69b2032d810610aa85064102df",
+    "checked_on": "2026-10-19",
+    "watch_scope": "README overview and latest commit file list; new partner example not executed",
+    "local_pages": [
+      "evaluation/README.md",
+      "labs/skill-execution/README.md"
+    ],
+    "source_url": "https://github.com/openai/openai-cookbook/blob/5bd6cb40b6b84b69b2032d810610aa85064102df/README.md",
+    "readme_sha256": "ed596b962642ea131470fef9aa699606881f218621bae563f4b12c418ef33476"
+  },
+  {
+    "repository": "anthropics/claude-cookbooks",
+    "commit": "a162e0184e71b60290808a43961a6cbc8060123c",
+    "checked_on": "2026-10-19",
+    "watch_scope": "README overview and latest commit file list; security-review notebook not executed",
+    "local_pages": [
+      "labs/trust-boundaries/README.md"
+    ],
+    "source_url": "https://github.com/anthropics/claude-cookbooks/blob/a162e0184e71b60290808a43961a6cbc8060123c/README.md",
+    "readme_sha256": "5d5af555aff7b94e67b38478e20463c09aaa1c6d7202b75d91ee1eb49a262a41"
+  },
+  {
+    "repository": "openai/openai-agents-python",
+    "commit": "9abc9182d06dbd28330af888306031269d57a175",
+    "checked_on": "2026-10-19",
+    "watch_scope": "README overview and two approval-documentation patches; SDK behavior not executed",
+    "local_pages": [
+      "labs/action-approval/README.md",
+      "handbook/07-harnesses-and-loops.md"
+    ],
+    "source_url": "https://github.com/openai/openai-agents-python/blob/9abc9182d06dbd28330af888306031269d57a175/README.md",
+    "readme_sha256": "cf68cb43182d6ea4f79a32421f6723e8ee2cc0f68f97524da7f300e9fc77940b"
+  },
+  {
+    "repository": "modelcontextprotocol/modelcontextprotocol",
+    "commit": "1155ca460e5097019f32769b38dcba194432e2fb",
+    "checked_on": "2026-10-19",
+    "watch_scope": "README overview, repository identity and latest commit file list; historical lab remains pinned",
+    "local_pages": [
+      "handbook/06-tools-and-mcp.md",
+      "labs/real-docs/README.md"
+    ],
+    "source_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/1155ca460e5097019f32769b38dcba194432e2fb/README.md",
+    "readme_sha256": "7e98444c73ed5d923a3b02b1247e9cdf678d31a30cc32b1503bdcd906aa984e2"
+  }
+]

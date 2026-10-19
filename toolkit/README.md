@@ -89,6 +89,8 @@ If that version is unavailable, say so.
 
 **Check the result:** verify the selected package/version and run the relevant code check. Retrieved documentation can improve the available evidence; it does not guarantee correct generated code. Documentation queries go to the selected service, so keep them focused on the public API you need.
 
+**When documentation helps, source-checked 2026-10-19:** porting code between libraries, platforms, or SQL dialects can depend on API details just as new implementation does. Do not exclude a task merely because it is called refactoring or code review; ask whether correct behavior depends on an external API. Pure internal logic or general concepts may not need a documentation lookup. This reflects the [narrowed upstream rule](https://github.com/upstash/context7/blob/5a2b65145b5930d2773e79d3a223fa5fb2b308ad/rules/context7-mcp.md), inspected as source, not executed as a new integration. Existing host configuration may retain an older rule.
+
 **Error handling, source-checked 2026-10-19:** Context7 MCP 4.4.3 marks a failed library-resolution search with `isError: true`; an empty successful search remains a normal result. Preserve that distinction in your host. See the [reviewed update](../updates/2026-10-19-context7-errors.md) for the pinned source and execution limits.
 
 ## 5. GitHub MCP Server: repository context and actions
