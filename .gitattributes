@@ -9,3 +9,5 @@ everyday/*/response.txt -whitespace
 everyday/*/execution.log -whitespace
 
 labs/natural-notes/results/** -whitespace
+
+labs/evidence-grounding/results/** -whitespace

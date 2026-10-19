@@ -32,11 +32,11 @@
 |---|---|---|
 | **06 · Prompt experiments** | Zero-shot vs. few-shot, controlled comparisons, held-out cases, and failure analysis | [First lab available](labs/prompt-comparison/README.md) |
 | **07 · Visual ML mechanics** | Token boundaries, next-token probabilities, temperature, and recorded continuations | [Interactive lab available](labs/model-mechanics/README.md) |
-| **08 · Retrieval experiments** | RAG, conflicting evidence, context selection, and retrieval failures | Planned |
+| **08 · Retrieval experiments** | Missing, stale, conflicting, and untrusted evidence | [Grounding lab available](labs/evidence-grounding/README.md) |
 | **09 · Agent engineering** | Complete execution traces, tool errors, permissions, checkpoints, and recovery | Planned |
 | **10 · Reliable evaluation** | Judge calibration, uncertainty, regression tracking, cost, and latency | Planned |
 
-**More advanced labs are coming.** Foundations and the first controlled experiment are available now; the remaining tracks are planned. Follow the [full roadmap](ROADMAP.md) for scope and the evidence each addition needs.
+**More advanced labs are coming.** Foundations and the linked labs are available now; other tracks remain planned. Follow the [full roadmap](ROADMAP.md) for scope and the evidence each addition needs.
 
 ## Explore
 

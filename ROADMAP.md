@@ -38,7 +38,9 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Also demonstrated:** the [naturalistic-note follow-up](labs/natural-notes/README.md) adds twelve dialogue/context cases and a human-review packet. It also tied; independent annotation remains pending.
 
-**Still needed:** broader comparisons of zero-shot and few-shot requests; example selection and ordering; decomposition; structured-output validation and repair; retrieval failures; contradictory evidence; and prompt-injection cases with explicit trust boundaries.
+**Demonstrated for context:** the [evidence-availability lab](labs/evidence-grounding/README.md) retains ten calls across missing, stale, current, conflicting, and injected evidence conditions. It separates appropriate abstention from question resolution.
+
+**Still needed:** broader prompt comparisons, example selection/order, decomposition, structured-output repair, semantic retrieval, and realistic adversarial evaluation beyond the small authored corpus.
 
 **Practical judgment:** choose whether to change instructions, add examples, retrieve evidence, or fix the surrounding software.
 
@@ -68,7 +70,7 @@ These tracks include the first available pilot and planned expansions. The next 
 |---|---|---|
 | 1 | Controlled prompting comparisons — [first pilot available](labs/prompt-comparison/README.md) | Add independent label review and more varied held-out cases; retain the pilot’s tie and setup failure |
 | 2 | Visual ML mechanics — [first lab available](labs/model-mechanics/README.md) | Extend into embeddings and attention; retain the measured-versus-conceptual distinction |
-| 3 | Context and retrieval experiments | Known relevant documents, retrieval logs, answer checks, missing/conflicting/adversarial evidence cases |
+| 3 | Context and retrieval — [first lab available](labs/evidence-grounding/README.md) | Extend beyond explicit metadata and naive lexical search to representative documents and retrieval methods |
 | 4 | Complete agent execution | Model requests, tool calls, permission decisions, failures, budgets, and recovery traces |
 | 5 | Evaluation and deployment decisions | Judge agreement checks, uncertainty, cost/latency, regression results, and evidence for choosing prompting, retrieval, or fine-tuning |
 

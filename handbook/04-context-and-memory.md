@@ -42,6 +42,12 @@ For our dashboard question, exact lookup by note ID is sufficient. A large seman
 
 If the wrong note is retrieved, investigate retrieval before rewriting answer instructions. If the right note arrives and the model still treats the proposal as confirmed, investigate interpretation and the decision rule. Logging which evidence was supplied makes that distinction possible.
 
+## Inspect a recorded retrieval failure
+
+The [evidence-availability lab](../labs/evidence-grounding/README.md) sends the same three questions with different document sets. A naive keyword retriever ranks a superseded draft first; a current-status filter selects the approved plan. The model correctly abstained with the draft, but could resolve the questions with the current plan.
+
+That distinction matters: a retrieval failure need not produce a hallucination. It can leave a well-behaved model without enough evidence to help. The lab also preserves conflicting-source and instruction-like-comment cases, with all actual outputs and checks.
+
 ## “Memory” names several different mechanisms
 
 Conversation history keeps prior messages available in the current interaction. A repository instruction file can supply persistent project conventions. A saved task summary preserves progress between sessions. A retrieval service can store documents and return selected ones later. These all help continuity, but they have different storage, loading, and freshness rules.

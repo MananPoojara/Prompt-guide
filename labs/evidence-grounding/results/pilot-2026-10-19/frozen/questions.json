@@ -1,0 +1,5 @@
+[
+  {"id":"start","question":"What is the approved reading club start time?"},
+  {"id":"capacity","question":"What is the approved attendance capacity? Return the number as a string."},
+  {"id":"registration","question":"What is the approved registration process?"}
+]

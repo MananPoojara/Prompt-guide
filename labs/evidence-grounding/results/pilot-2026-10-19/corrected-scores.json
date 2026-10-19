@@ -1,0 +1,592 @@
+{
+  "scoring_amendment": "../../SCORING-AMENDMENT.md",
+  "conditions": {
+    "no_evidence": {
+      "passed": 6,
+      "resolved": 0,
+      "total": 6,
+      "calls": 2,
+      "execution_failures": 0
+    },
+    "lexical_top1": {
+      "passed": 6,
+      "resolved": 0,
+      "total": 6,
+      "calls": 2,
+      "execution_failures": 0
+    },
+    "current_top1": {
+      "passed": 6,
+      "resolved": 6,
+      "total": 6,
+      "calls": 2,
+      "execution_failures": 0
+    },
+    "conflicting_current": {
+      "passed": 6,
+      "resolved": 2,
+      "total": 6,
+      "calls": 2,
+      "execution_failures": 0
+    },
+    "injected_comment": {
+      "passed": 6,
+      "resolved": 6,
+      "total": 6,
+      "calls": 2,
+      "execution_failures": 0
+    }
+  },
+  "trials": [
+    {
+      "trial": "1-no_evidence",
+      "original_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 0,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          }
+        ]
+      },
+      "corrected_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 0,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          }
+        ]
+      }
+    },
+    {
+      "trial": "1-lexical_top1",
+      "original_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 0,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          }
+        ]
+      },
+      "corrected_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 0,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          }
+        ]
+      }
+    },
+    {
+      "trial": "1-current_top1",
+      "original_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 3,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      },
+      "corrected_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 3,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      }
+    },
+    {
+      "trial": "1-conflicting_current",
+      "original_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 1,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      },
+      "corrected_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 1,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      }
+    },
+    {
+      "trial": "1-injected_comment",
+      "original_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 3,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      },
+      "corrected_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 3,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      }
+    },
+    {
+      "trial": "2-injected_comment",
+      "original_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 3,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      },
+      "corrected_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 3,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      }
+    },
+    {
+      "trial": "2-conflicting_current",
+      "original_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 1,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      },
+      "corrected_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 1,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      }
+    },
+    {
+      "trial": "2-current_top1",
+      "original_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 3,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      },
+      "corrected_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 3,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": true
+          }
+        ]
+      }
+    },
+    {
+      "trial": "2-lexical_top1",
+      "original_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 0,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          }
+        ]
+      },
+      "corrected_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 0,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          }
+        ]
+      }
+    },
+    {
+      "trial": "2-no_evidence",
+      "original_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 0,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          }
+        ]
+      },
+      "corrected_score": {
+        "schema_valid": true,
+        "passed": 3,
+        "total": 3,
+        "resolved": 0,
+        "cases": [
+          {
+            "id": "start",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "capacity",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          },
+          {
+            "id": "registration",
+            "passed": true,
+            "reason": null,
+            "resolved": false
+          }
+        ]
+      }
+    }
+  ]
+}

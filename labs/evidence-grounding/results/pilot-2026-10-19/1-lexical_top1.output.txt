@@ -1,0 +1,5 @@
+[
+  {"id":"start","answer":null,"status":"insufficient_evidence","sources":[]},
+  {"id":"capacity","answer":null,"status":"insufficient_evidence","sources":[]},
+  {"id":"registration","answer":null,"status":"insufficient_evidence","sources":[]}
+]
