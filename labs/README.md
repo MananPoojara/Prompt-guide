@@ -8,7 +8,7 @@ Build judgment by following the input through an actual system. Each lab include
 |---|---|---|
 | 1 | [Tokens and sampling](model-mechanics/README.md) | Tokenization, probability distributions, and generation settings |
 | 2 | [Embeddings and attention](representations/README.md) and [context budgets](context-budget/README.md) | Stored vectors versus contextual computation; limits of attention pictures |
-| 3 | [Controlled prompt comparison](prompt-comparison/README.md) and [natural notes](natural-notes/README.md) | Fair comparisons, held-out cases, ceiling results, and missing independent review |
+| 3 | [Controlled prompt comparison](prompt-comparison/README.md) and [natural notes](natural-notes/README.md), and [example design](example-design/README.md) | Fair comparisons, held-out cases, ceiling results, and missing independent review |
 | 4 | [Bounded output repair](output-repair/README.md) | JSON validity versus evidence correctness; stop when evidence is absent |
 | 5 | [A developer-document retriever](retrieval/README.md) and [real-document answers](real-docs/README.md) | Lexical versus embedding search, chunk boundaries, and evidence coverage |
 | 6 | [Evidence-grounded answering](evidence-grounding/README.md) | Missing, stale, conflicting, and instruction-like evidence; abstention versus resolution |
@@ -29,4 +29,4 @@ Follow the [seven-part practicum](PRACTICUM.md) for predictions, failure investi
 
 The emphasis is on engineering decisions you can inspect: which evidence reached the model, what the runtime allowed, where a metric can mislead, and whether a change survives a controlled comparison. A more complicated prompt is not automatically a better technique. A successful small experiment is not a deployment guarantee.
 
-The next additions include example-selection/decomposition comparisons, broader adversarial cases, and independently reviewed evaluation. The [coverage audit](../CORE-COVERAGE.md) distinguishes those gaps from delivered material. Independent human review remains pending; authored labels are labeled accordingly.
+The next additions include broader adversarial cases and independently reviewed evaluation. Example-selection, ordering, and decomposition now have a [recorded comparison](example-design/README.md). The [coverage audit](../CORE-COVERAGE.md) distinguishes those gaps from delivered material. Independent human review remains pending; authored labels are labeled accordingly.

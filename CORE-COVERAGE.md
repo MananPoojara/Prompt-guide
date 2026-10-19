@@ -10,7 +10,7 @@ The audit below was performed on 2026-10-19. **Initial** means a local explanati
 |---|---|---|
 | How do I ask for a useful result? | First example, templates, three everyday cases | A complete planning example; ambiguity and clarification examples |
 | What happens to my input? | Linked token/sampling and representation visuals, plus measured context-budget example | Core mechanics path demonstrated; broader architectures and multimodal accounting remain extensions |
-| Which prompt technique should I try? | Original prompts, two controlled extraction pilots, and bounded output repair | Example order/selection and decomposition comparisons |
+| Which prompt technique should I try? | Original prompts, extraction pilots, bounded repair, and a five-condition example/decomposition comparison | Initial technique comparisons demonstrated; broader task difficulty and independent labels remain extensions |
 | How do I supply relevant evidence? | Five evidence conditions, fictional retrieval corpus, and six official specification pages with equal-budget retrieval and twelve answer calls | Initial real-document pipeline demonstrated; broader tasks, repeated generation, and independent evidence labels remain extensions |
 | How should memory work? | Executed SQLite lifecycle, current-context packet, and handoff explanation | Local lifecycle demonstrated; source adjudication and production authorization/deletion are explicitly outside this lab |
 | When should tools or an agent be used? | MCP connection, resumed/faulted agents, twelve strategy-comparison runs, and a scripted exact-action approval demo | Local comparison and approval mechanics demonstrated; authenticated production review and distributed actions remain outside these labs |

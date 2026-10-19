@@ -52,7 +52,9 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Also demonstrated:** an [executed memory lifecycle](labs/memory-lifecycle/README.md), including durable corrections, expired values, and a generated context packet.
 
-**Still needed:** broader prompt comparisons, example selection/order, decomposition, and realistic adversarial evaluation beyond authored corpora.
+**Also demonstrated:** [example selection, ordering, and two-stage decomposition](labs/example-design/README.md), with a frozen five-condition comparison.
+
+**Still needed:** broader task difficulty, independent labels, and realistic adversarial evaluation beyond authored corpora.
 
 **Practical judgment:** choose whether to change instructions, add examples, retrieve evidence, or fix the surrounding software.
 

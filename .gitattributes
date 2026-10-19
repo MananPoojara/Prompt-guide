@@ -21,3 +21,4 @@ labs/skill-execution/results/** -whitespace
 # Unchanged upstream source snapshots and exact model inputs/outputs.
 labs/real-docs/sources/*.mdx -whitespace
 labs/real-docs/results/** -whitespace
+labs/example-design/results/** -whitespace

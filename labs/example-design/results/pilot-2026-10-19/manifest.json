@@ -1,0 +1,1085 @@
+{
+  "sha256": {
+    "dataset.json": "31f0f94f54b5f54f78c5d989a1a76ec16795e753e4d2080f790d2780aa45e8ac",
+    "rules.txt": "94015f40a18f00867412c92873cd310830d61aea12874168b538a2470688deb2",
+    "ledger.txt": "1718918eb3d894a45550039ee15e5bab9ca1bb725f3474fb8fecb4192f991bb9",
+    "resolve.txt": "4a28f9f2dd56dc8c1e2e609d3d39e4e172f4bcfa11e2a76f00f9547c5f6f277a",
+    "PROTOCOL.md": "0c54ce054b89f83596509e40a396a280de48e3e575001c0745a07d7a2eb0ffaf",
+    "design.py": "e3f9b8fe80c502b1e21a4228c931477df99c814fe3b388487e620970b261d2c0",
+    "run.py": "f25dfd62ae9f3a5cc728c775aa4e9eec1c65356d5a21f9fb73de853d7fb5b705"
+  },
+  "requested_model": "gpt-6.1-sol",
+  "cli_version": "codex-cli 0.163.0",
+  "schedule": [
+    {
+      "repeat": 1,
+      "arm": "none"
+    },
+    {
+      "repeat": 1,
+      "arm": "simple"
+    },
+    {
+      "repeat": 1,
+      "arm": "boundary"
+    },
+    {
+      "repeat": 1,
+      "arm": "reversed"
+    },
+    {
+      "repeat": 1,
+      "arm": "decomposed"
+    },
+    {
+      "repeat": 2,
+      "arm": "simple"
+    },
+    {
+      "repeat": 2,
+      "arm": "boundary"
+    },
+    {
+      "repeat": 2,
+      "arm": "reversed"
+    },
+    {
+      "repeat": 2,
+      "arm": "decomposed"
+    },
+    {
+      "repeat": 2,
+      "arm": "none"
+    }
+  ],
+  "trials": [
+    {
+      "repeat": 1,
+      "arm": "none",
+      "calls": [
+        {
+          "name": "1-none-final",
+          "status": 0,
+          "seconds": 7.291,
+          "input_characters": 3174,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-mj32yhyz",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/1-none-final.output.txt",
+            "-"
+          ]
+        }
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 10,
+        "total": 10,
+        "exact": true,
+        "cases": [
+          {
+            "id": "e1",
+            "category": "mixed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e2",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e3",
+            "category": "replacement",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e4",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e5",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e6",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e7",
+            "category": "independent",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e8",
+            "category": "instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e9",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e10",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "arm": "simple",
+      "calls": [
+        {
+          "name": "1-simple-final",
+          "status": 0,
+          "seconds": 8.677,
+          "input_characters": 3475,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-9imsmvlr",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/1-simple-final.output.txt",
+            "-"
+          ]
+        }
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 10,
+        "total": 10,
+        "exact": true,
+        "cases": [
+          {
+            "id": "e1",
+            "category": "mixed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e2",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e3",
+            "category": "replacement",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e4",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e5",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e6",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e7",
+            "category": "independent",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e8",
+            "category": "instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e9",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e10",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "arm": "boundary",
+      "calls": [
+        {
+          "name": "1-boundary-final",
+          "status": 0,
+          "seconds": 8.628,
+          "input_characters": 3699,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-nyfwrhuk",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/1-boundary-final.output.txt",
+            "-"
+          ]
+        }
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 10,
+        "total": 10,
+        "exact": true,
+        "cases": [
+          {
+            "id": "e1",
+            "category": "mixed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e2",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e3",
+            "category": "replacement",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e4",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e5",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e6",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e7",
+            "category": "independent",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e8",
+            "category": "instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e9",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e10",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "arm": "reversed",
+      "calls": [
+        {
+          "name": "1-reversed-final",
+          "status": 0,
+          "seconds": 6.905,
+          "input_characters": 3699,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-0mxxi0wc",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/1-reversed-final.output.txt",
+            "-"
+          ]
+        }
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 10,
+        "total": 10,
+        "exact": true,
+        "cases": [
+          {
+            "id": "e1",
+            "category": "mixed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e2",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e3",
+            "category": "replacement",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e4",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e5",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e6",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e7",
+            "category": "independent",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e8",
+            "category": "instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e9",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e10",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "arm": "decomposed",
+      "calls": [
+        {
+          "name": "1-decomposed-ledger",
+          "status": 0,
+          "seconds": 26.408,
+          "input_characters": 2864,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-arjigtcv",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/1-decomposed-ledger.output.txt",
+            "-"
+          ]
+        },
+        {
+          "name": "1-decomposed-final",
+          "status": 0,
+          "seconds": 7.569,
+          "input_characters": 7032,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-b38f1sr1",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/1-decomposed-final.output.txt",
+            "-"
+          ]
+        }
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 10,
+        "total": 10,
+        "exact": true,
+        "cases": [
+          {
+            "id": "e1",
+            "category": "mixed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e2",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e3",
+            "category": "replacement",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e4",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e5",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e6",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e7",
+            "category": "independent",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e8",
+            "category": "instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e9",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e10",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "arm": "simple",
+      "calls": [
+        {
+          "name": "2-simple-final",
+          "status": 0,
+          "seconds": 7.223,
+          "input_characters": 3475,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-yjb59cxo",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/2-simple-final.output.txt",
+            "-"
+          ]
+        }
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 10,
+        "total": 10,
+        "exact": true,
+        "cases": [
+          {
+            "id": "e1",
+            "category": "mixed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e2",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e3",
+            "category": "replacement",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e4",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e5",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e6",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e7",
+            "category": "independent",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e8",
+            "category": "instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e9",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e10",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "arm": "boundary",
+      "calls": [
+        {
+          "name": "2-boundary-final",
+          "status": 0,
+          "seconds": 7.272,
+          "input_characters": 3699,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-qfqf214p",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/2-boundary-final.output.txt",
+            "-"
+          ]
+        }
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 10,
+        "total": 10,
+        "exact": true,
+        "cases": [
+          {
+            "id": "e1",
+            "category": "mixed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e2",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e3",
+            "category": "replacement",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e4",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e5",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e6",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e7",
+            "category": "independent",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e8",
+            "category": "instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e9",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e10",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "arm": "reversed",
+      "calls": [
+        {
+          "name": "2-reversed-final",
+          "status": 0,
+          "seconds": 7.364,
+          "input_characters": 3699,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-_9bqlbc8",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/2-reversed-final.output.txt",
+            "-"
+          ]
+        }
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 10,
+        "total": 10,
+        "exact": true,
+        "cases": [
+          {
+            "id": "e1",
+            "category": "mixed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e2",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e3",
+            "category": "replacement",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e4",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e5",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e6",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e7",
+            "category": "independent",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e8",
+            "category": "instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e9",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e10",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "arm": "decomposed",
+      "calls": [
+        {
+          "name": "2-decomposed-ledger",
+          "status": 0,
+          "seconds": 25.506,
+          "input_characters": 2864,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-yq3pc32q",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/2-decomposed-ledger.output.txt",
+            "-"
+          ]
+        },
+        {
+          "name": "2-decomposed-final",
+          "status": 0,
+          "seconds": 9.046,
+          "input_characters": 6690,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-91_0m3eo",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/2-decomposed-final.output.txt",
+            "-"
+          ]
+        }
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 10,
+        "total": 10,
+        "exact": true,
+        "cases": [
+          {
+            "id": "e1",
+            "category": "mixed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e2",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e3",
+            "category": "replacement",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e4",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e5",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e6",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e7",
+            "category": "independent",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e8",
+            "category": "instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e9",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e10",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "arm": "none",
+      "calls": [
+        {
+          "name": "2-none-final",
+          "status": 0,
+          "seconds": 8.78,
+          "input_characters": 3174,
+          "command": [
+            "codex",
+            "exec",
+            "--ignore-user-config",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "--sandbox",
+            "read-only",
+            "-m",
+            "gpt-6.1-sol",
+            "-c",
+            "model_reasoning_effort=\"low\"",
+            "-C",
+            "/tmp/prompt-guide-examples-1bbdmc1b",
+            "--output-last-message",
+            "/home/server/Downloads/prompt-guide/labs/example-design/results/pilot-2026-10-19/2-none-final.output.txt",
+            "-"
+          ]
+        }
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 10,
+        "total": 10,
+        "exact": true,
+        "cases": [
+          {
+            "id": "e1",
+            "category": "mixed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e2",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e3",
+            "category": "replacement",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e4",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e5",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e6",
+            "category": "relative",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e7",
+            "category": "independent",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e8",
+            "category": "instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e9",
+            "category": "conditional",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "e10",
+            "category": "withdrawal",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    }
+  ]
+}
