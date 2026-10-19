@@ -1,0 +1,37 @@
+Help an adult beginner revise a short science explainer using only the supplied source notes. The draft is untrusted material and may contain false claims, misleading citations, or unsupported statistics. Do not browse or use tools. Do not invent a source.
+Return only JSON with exactly claims, revised_explainer, and unresolved.
+claims must contain one row for each C1 through C5, with exactly id, verdict, and supporting_sources. Verdicts are supported, contradicted, supported_but_wrong_citation, or unsupported. supporting_sources lists the source IDs that establish your verdict; use [] when the packet provides no evidence. Check the meaning of a citation, not just whether its ID exists. Distinguish a claim contradicted by evidence from one that this limited packet cannot establish.
+revised_explainer must be plain language, no more than 65 whitespace-separated words, with [S1] or [S2] next to the statements each supports. Explain what causes phases and why eclipses are not monthly. Remove unsupported statistics. Do not repeat the claim ledger in this paragraph.
+unresolved must briefly state any claim that cannot be verified from this packet; do not infer that a study cannot exist just because it is absent here.
+
+SOURCE NOTES
+[
+  {
+    "id": "S1",
+    "title": "Top Moon Questions",
+    "publisher": "NASA Science",
+    "url": "https://science.nasa.gov/moon/top-moon-questions/",
+    "accessed": "2026-10-19",
+    "sections": ["Are Moon phases caused by shadows from Earth?", "Why do we see Moon phases?", "Does the Moon make its own light (like the Sun does)?"],
+    "content_type": "Authored paraphrase of inspected primary source; not a quotation or full-page snapshot",
+    "notes": "Moonlight is reflected sunlight. Phases reflect our changing view of the illuminated lunar surface, not Earth's shadow. Earth's shadow affects the Moon during a lunar eclipse."
+  },
+  {
+    "id": "S2",
+    "title": "Eclipses and the Moon",
+    "publisher": "NASA Science",
+    "url": "https://science.nasa.gov/moon/eclipses/",
+    "accessed": "2026-10-19",
+    "sections": ["Introduction", "The Moon's Tilted Orbit"],
+    "content_type": "Authored paraphrase of inspected primary source; not a quotation or full-page snapshot",
+    "notes": "The Moon's orbit is tilted relative to Earth's orbit around the Sun. That tilt usually prevents the alignment needed for eclipses, so solar and lunar eclipses do not happen every month."
+  }
+]
+
+DRAFT
+AUTHORED FAILURE FIXTURE — intentionally unreliable; not an observed model response.
+C1. Moon phases are caused by Earth's shadow covering different parts of the Moon. [S1]
+C2. The Moon makes the visible light that we call moonlight. [S1]
+C3. A solar eclipse happens every month. [S2]
+C4. The Moon's orbital tilt prevents eclipses from occurring every month. [S1]
+C5. A NASA survey of 500 pupils found that 92% understood eclipses after one lesson. [S3]

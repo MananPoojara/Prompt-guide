@@ -1,0 +1,33 @@
+{
+  "source_sha256": {
+    "sources.json": "2274804384b56d26dc6cec760b7bd4b3e74f2e9efc95fa6e870a10bf4340645f",
+    "draft.txt": "2bd363dfc97210fd20d44121d842edfb6d56e7606c0da89233d6cf68206d88cf",
+    "prompt.txt": "bdd3969503238e991187c85891663122113feaabf2f06e5e62332dd6b2fba6f1",
+    "PROTOCOL.md": "35d8c7694e347e3df872744649f06d974a17a5e7629dd2631386b62f0a2e2eec",
+    "run.py": "ba1510896e223500bd68e4685f0dbe2a9d6d342536b5f8f8018bba9680cec78a"
+  },
+  "input_sha256": "ca2f705713f376af6f2075c3f75fcff9756b4e029d2e81985270e4134257a9b9",
+  "output_sha256": "a9f33238f0d65feef232bdb9e2991353d7f53f68ff5b225aab0af0ca0cba27bd",
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "-m",
+    "gpt-6.1-sol",
+    "-c",
+    "model_reasoning_effort=\"low\"",
+    "-C",
+    "/tmp/prompt-guide-research-d6u5kolm",
+    "--output-last-message",
+    "/home/server/Downloads/prompt-guide/everyday/research-revision/results/run-2026-10-19/output.txt",
+    "-"
+  ],
+  "cli_version": "codex-cli 0.163.0",
+  "requested_model": "gpt-6.1-sol",
+  "status": 0,
+  "elapsed_seconds": 14.823
+}

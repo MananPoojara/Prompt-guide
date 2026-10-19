@@ -185,3 +185,11 @@ Limit: The local sample is authored here. Static validation does not establish a
 Supports: model identity and licensing; library meanings of temperature, greedy selection, and top-k sampling. The model-mechanics lab independently records actual tokenizer output and CPU generation using a pinned revision and package versions.
 
 Limit: an older text-completion model does not establish behavior of current proprietary chat assistants. The browser visual recalculates probabilities from saved logits and displays recordings; it does not perform inference.
+
+## S24–S25: NASA sources for the noncoding research/revision case
+
+[Top Moon Questions](https://science.nasa.gov/moon/top-moon-questions/) and [Eclipses and the Moon](https://science.nasa.gov/moon/eclipses/) · Checked: 2026-10-19.
+
+Supports: the limited science claims in the [research/revision example](../everyday/research-revision/README.md). Its local [manifest](../everyday/research-revision/sources.json) records section locators and short authored paraphrases; case-local IDs S1/S2 refer to these two entries, not this ledger's earlier S1/S2.
+
+Limit: the local notes are not full-page snapshots or a literature review. They provide no evidence for the example's invented survey claim. The experimental model did not browse these pages; the author inspected them before the call. These websites are not covered by the nine-repository change collector and need manual source review when relevant.

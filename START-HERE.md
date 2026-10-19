@@ -16,7 +16,7 @@ A useful prompt must communicate what counts as a correct answer. A useful AI sy
 
 ## Start with a task you recognize
 
-[Rewrite an email](everyday/writing/README.md), [summarize meeting notes](everyday/summarizing/README.md), [understand a fraction mistake](everyday/learning/README.md), [make a feasible plan](everyday/planning-clarification/planning.md), or [clarify a vague request](everyday/planning-clarification/clarification.md). Each has complete input, an exact prompt, an actual response, and a result check. No coding is required to read them.
+[Rewrite an email](everyday/writing/README.md), [summarize meeting notes](everyday/summarizing/README.md), [understand a fraction mistake](everyday/learning/README.md), [make a feasible plan](everyday/planning-clarification/planning.md), [clarify a vague request](everyday/planning-clarification/clarification.md), or [research and revise a science explainer](everyday/research-revision/README.md). Each has complete input, an exact prompt, an actual response, and a result check. No coding is required to read them.
 
 For a visual explanation of model behavior, open the [tokenization and sampling lab](labs/model-mechanics/README.md). Its interactive page uses saved data and works offline. Developers can follow the [advanced lab path](labs/README.md) through representations, retrieval, output repair, and agent failures.
 

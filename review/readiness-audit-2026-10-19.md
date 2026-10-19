@@ -45,3 +45,7 @@ Targeted Chromium checks at 320 and 375 pixels confirm all captions fit within t
 4. Complete and retain subsequent weekly editorial reviews as time and new evidence permit. More same-day collector executions cannot satisfy that requirement.
 
 Broader architectures, multimodal accounting, production authorization, distributed actions, and broad adversarial studies remain explicitly identified extensions in the roadmap/core checklist. The listed open requirements above have not been silently reclassified as extensions or completed by this audit.
+
+## Subsequent disposition: research/revision example
+
+The [noncoding research/revision case](../everyday/research-revision/README.md) now supplies the previously missing implementation: two inspected primary sources, complete local notes, an authored failure draft, one actual revised response, a claim ledger, and separate mechanical/author checks. The audit above is preserved as the finding at its stated base commit. This resolves that content gap at demonstration level; it does not resolve independent reader feedback, annotations, actual judge calibration, or weekly continuity.

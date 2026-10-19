@@ -1,0 +1,22 @@
+[
+  {
+    "id": "S1",
+    "title": "Top Moon Questions",
+    "publisher": "NASA Science",
+    "url": "https://science.nasa.gov/moon/top-moon-questions/",
+    "accessed": "2026-10-19",
+    "sections": ["Are Moon phases caused by shadows from Earth?", "Why do we see Moon phases?", "Does the Moon make its own light (like the Sun does)?"],
+    "content_type": "Authored paraphrase of inspected primary source; not a quotation or full-page snapshot",
+    "notes": "Moonlight is reflected sunlight. Phases reflect our changing view of the illuminated lunar surface, not Earth's shadow. Earth's shadow affects the Moon during a lunar eclipse."
+  },
+  {
+    "id": "S2",
+    "title": "Eclipses and the Moon",
+    "publisher": "NASA Science",
+    "url": "https://science.nasa.gov/moon/eclipses/",
+    "accessed": "2026-10-19",
+    "sections": ["Introduction", "The Moon's Tilted Orbit"],
+    "content_type": "Authored paraphrase of inspected primary source; not a quotation or full-page snapshot",
+    "notes": "The Moon's orbit is tilted relative to Earth's orbit around the Sun. That tilt usually prevents the alignment needed for eclipses, so solar and lunar eclipses do not happen every month."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "claims": [
+    {"id":"C1","verdict":"contradicted","supporting_sources":["S1"]},
+    {"id":"C2","verdict":"contradicted","supporting_sources":["S1"]},
+    {"id":"C3","verdict":"contradicted","supporting_sources":["S2"]},
+    {"id":"C4","verdict":"supported_but_wrong_citation","supporting_sources":["S2"]},
+    {"id":"C5","verdict":"unsupported","supporting_sources":[]}
+  ],
+  "revised_explainer": "Moonlight is reflected sunlight. As the Moon orbits Earth, we see different amounts of its sunlit surface, creating phases. Earth's shadow causes lunar eclipses, not phases. [S1] The Moon's orbit is tilted relative to Earth's orbit around the Sun. This usually prevents the alignment needed for solar or lunar eclipses, so eclipses do not happen every month. [S2]",
+  "unresolved": "C5 cannot be verified from this packet: it contains no S3 or evidence for the claimed NASA survey, sample size, or result."
+}

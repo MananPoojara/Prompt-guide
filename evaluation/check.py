@@ -8,6 +8,7 @@ CHECKS = [
     "scripts/check_links.py",
     "evaluation/judge-calibration/check_example.py",
     "everyday/planning-clarification/check_saved.py",
+    "everyday/research-revision/check_saved.py",
     "scripts/check_originals.py",
     "labs/prompt-comparison/check_saved.py",
     "labs/example-design/check_saved.py",

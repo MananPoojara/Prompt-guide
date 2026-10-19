@@ -14,7 +14,7 @@ This roadmap separates material you can read now from work still needed. **Avail
 
 Understand task, evidence, constraints, examples, missing values, and output shape. Follow how a proposed date differs from a confirmed deadline. See the complete inputs and expected answer.
 
-**Also available:** [five complete everyday cases](everyday/README.md), including constrained planning and a scripted clarification exchange.
+**Also available:** [six complete everyday cases](everyday/README.md), including constrained planning and a scripted clarification exchange.
 
 **Demonstrated:** [shorter versus longer extraction prompts](labs/prompt-contract/README.md). Both succeeded in one trial each; this does not show an accuracy improvement.
 
@@ -120,8 +120,8 @@ The aim is one dependable place to learn, practice, and keep up with prompting. 
 
 | Reader | Starting experience | Continue with / remaining evidence |
 |---|---|---|
-| First-time AI user | [One complete prompt](handbook/01-first-example.md), with unfamiliar words explained | [Five everyday examples](everyday/README.md); independent beginner feedback remains open |
-| Writer, student, or researcher | [Templates](prompts/README.md) and [evidence checking](handbook/09-evaluation-and-failures.md) | Complete source-grounded research and revision examples, including fabricated-claim and citation failures |
+| First-time AI user | [One complete prompt](handbook/01-first-example.md), with unfamiliar words explained | [Six everyday examples](everyday/README.md); independent beginner feedback remains open |
+| Writer, student, or researcher | [Templates](prompts/README.md) and [evidence checking](handbook/09-evaluation-and-failures.md) | [Complete research/revision case](everyday/research-revision/README.md), including an authored flawed draft, source-conditioned response, and citation checks; independent reader review remains open |
 | Developer or automation builder | [Coding verification](handbook/08-coding-and-verification.md), [MCP](handbook/06-tools-and-mcp.md), and [toolkit](toolkit/README.md) | [Traced workflow and recovery](labs/bounded-agent/README.md), [host boundaries](labs/trust-boundaries/README.md); independent developer feedback remains open |
 | Advanced experimenter | [Controlled comparison](labs/prompt-comparison/README.md) and its raw artifacts | [Uncertainty](labs/eval-uncertainty/README.md) and per-lab durations; independent labels, harder tasks, and invoice-backed cost comparisons remain open |
 
@@ -133,7 +133,7 @@ These are delivery milestones, not a promise to finish one every week. A weekly 
 
 | Order | Milestone | Deliverables | Completion evidence |
 |---|---|---|---|
-| 1 | Visual mechanics and everyday entry — first delivery available | [Tokenization/sampling lab](labs/model-mechanics/README.md) and [five noncoding cases](everyday/README.md) | Recorded model outputs, versions, data checks, browser checks, and author-reviewed examples; independent reader testing remains open |
+| 1 | Visual mechanics and everyday entry — first delivery available | [Tokenization/sampling lab](labs/model-mechanics/README.md) and [six noncoding cases](everyday/README.md) | Recorded model outputs, versions, data checks, browser checks, and author-reviewed examples; independent reader testing remains open |
 | 2 | Stronger prompt experiments | More natural notes; documented annotation disagreements; frozen development/held-out split; comparisons of examples and decomposition | Independent reviewer attribution when obtained; predeclared rubric; all trials retained; category and paired error reports; uncertainty appropriate to the design |
 | 3 | Context and retrieval | A local document set with known answers; retrieval logs; missing, stale, conflicting, and instruction-like evidence cases | Trace the retrieved material to the answer; compare retrieval and interpretation errors separately; preserve failed answers |
 | 4 | Complete agent workflow — initial integration demonstrated | [Read-only capstone](labs/capstone/README.md) and [resumed update stage](labs/capstone-update/README.md) retain lookup, source extraction, and a proposed update through scripted review | Actual traces, bounded calls, controlled failure/resume, denial/timeout tests, and deterministic output checks; independent human review and production reliability remain open |

@@ -1,0 +1,6 @@
+AUTHORED FAILURE FIXTURE — intentionally unreliable; not an observed model response.
+C1. Moon phases are caused by Earth's shadow covering different parts of the Moon. [S1]
+C2. The Moon makes the visible light that we call moonlight. [S1]
+C3. A solar eclipse happens every month. [S2]
+C4. The Moon's orbital tilt prevents eclipses from occurring every month. [S1]
+C5. A NASA survey of 500 pupils found that 92% understood eclipses after one lesson. [S3]

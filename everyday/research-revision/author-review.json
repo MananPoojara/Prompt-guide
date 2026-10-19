@@ -1,0 +1,10 @@
+{
+  "review_type": "authoring-assistant inspection",
+  "independent_human_review": false,
+  "claims_match_frozen_mapping": true,
+  "paragraph_supported_by_supplied_notes": true,
+  "citations_attached_to_matching_topics": true,
+  "unsupported_statistic_removed": true,
+  "unresolved_statement_limited_to_packet": true,
+  "notes": "Single source-conditioned revision. The author inspected source notes and the actual output; these flags are not independent semantic verification or a comparative result."
+}
