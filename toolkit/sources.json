@@ -1,0 +1,54 @@
+[
+  {
+    "repository": "anthropics/skills",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "archived": false,
+    "checked_on": "2026-10-19",
+    "validation": "README/source inspected; not installed or executed for this shortlist",
+    "source_urls": [
+      "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/README.md"
+    ]
+  },
+  {
+    "repository": "anthropics/claude-plugins-official",
+    "commit": "ea10b213686c90bb1984b2016937310e05336cf3",
+    "archived": false,
+    "checked_on": "2026-10-19",
+    "validation": "README/source inspected; not installed or executed for this shortlist",
+    "source_urls": [
+      "https://github.com/anthropics/claude-plugins-official/blob/ea10b213686c90bb1984b2016937310e05336cf3/README.md",
+      "https://github.com/anthropics/claude-plugins-official/blob/ea10b213686c90bb1984b2016937310e05336cf3/plugins/code-review/README.md",
+      "https://github.com/anthropics/claude-plugins-official/blob/ea10b213686c90bb1984b2016937310e05336cf3/plugins/code-review/commands/code-review.md"
+    ]
+  },
+  {
+    "repository": "microsoft/playwright-mcp",
+    "commit": "b8b4183e099f136cbec0388a6088d4aa2f6b9685",
+    "archived": false,
+    "checked_on": "2026-10-19",
+    "validation": "README/source inspected; not installed or executed for this shortlist",
+    "source_urls": [
+      "https://github.com/microsoft/playwright-mcp/blob/b8b4183e099f136cbec0388a6088d4aa2f6b9685/README.md"
+    ]
+  },
+  {
+    "repository": "github/github-mcp-server",
+    "commit": "e3809fe91c7546633241006bf0b91f23b2595e28",
+    "archived": false,
+    "checked_on": "2026-10-19",
+    "validation": "README/source inspected; not installed or executed for this shortlist",
+    "source_urls": [
+      "https://github.com/github/github-mcp-server/blob/e3809fe91c7546633241006bf0b91f23b2595e28/README.md"
+    ]
+  },
+  {
+    "repository": "upstash/context7",
+    "commit": "6b636d3c35e051a1a653a236afb7f612c02a1ad3",
+    "archived": false,
+    "checked_on": "2026-10-19",
+    "validation": "README/source inspected; not installed or executed for this shortlist",
+    "source_urls": [
+      "https://github.com/upstash/context7/blob/6b636d3c35e051a1a653a236afb7f612c02a1ad3/README.md"
+    ]
+  }
+]

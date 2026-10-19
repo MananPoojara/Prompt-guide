@@ -83,3 +83,7 @@ An authored Claude Code plugin contains a complete inspect-evidence skill and ma
 The new handbook is self-contained for its documented scope, not an exhaustive copy of every linked article or a claim to undisclosed lab practices. Saved historical sections above describe earlier editions; this section records the current expansion.
 
 Validation for this expansion: all local links and six original artifact hashes pass; eight evaluator-case checks and six grader checks pass; the saved extraction comparison remains tied at 4/4 each. The MCP integration passed on Python 3.10.12 and in a clean uv environment on Python 3.12.13. Claude CLI plugin validation passed, with non-blocking marketplace-install advice for the intentionally local-only sample.
+
+## Curated ecosystem entry points
+
+Added toolkit/README.md after the user asked for useful external skills, plugins, and MCP servers that readers can actually try. Five entries are selected by task and include setup routes, authored first-use examples, checks, prerequisites, and relevant effects. toolkit/sources.json records inspected upstream revisions. This is source review, not installed-tool testing or a comparative benchmark. README and START-HERE link to the shortlist; no external tool was installed by this change.

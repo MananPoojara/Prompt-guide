@@ -37,6 +37,10 @@ You do not have to finish this sequence before using the material. Each chapter 
 - “Why did it say the work was done when it was broken?” Follow [the coding evidence](handbook/08-coding-and-verification.md) and [failure diagnosis](handbook/09-evaluation-and-failures.md).
 - “How do longer agents work?” Follow [the loop diagram](handbook/07-harnesses-and-loops.md) and [the recorded evaluator case](cases/evaluator-loop/README.md).
 
+## Ready to use an existing integration?
+
+The [curated toolkit](toolkit/README.md) introduces five useful skill, plugin, and MCP options by task, with setup guidance and a first result to check. Start with one that solves a current need.
+
 ## How much should you trust this resource?
 
 Trust the evidence at the level it supports. The saved note-extraction comparison contains eight task-level observations across two model responses. It cannot establish which prompt is best for everyone. The MCP example establishes that a client can discover and call a tool; it does not establish that a model will choose that tool wisely. The licensed original prompts establish what their publishers released at the recorded revisions; they do not reveal private conversations or every production configuration.

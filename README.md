@@ -79,6 +79,10 @@ Keep the [glossary](handbook/glossary.md) nearby when a term is unfamiliar.
 
 </details>
 
+## Skills, plugins, and MCP servers to try
+
+**[Explore the curated toolkit →](toolkit/README.md)** Five starting points for document work, PR review, browser interaction, library documentation, and GitHub workflows. Each entry explains when to use it, how to get started, and how to check the result. External tools are labeled source-inspected; they have not been benchmarked here.
+
 ## Follow a real run
 
 Anthropic's published evaluator prompt reviewed a small stack implementation with a duplicate-minimum bug. Its feedback was passed to the published generator prompt through our local Codex runtime. The generated revision then received independent behavior checks and a fresh evaluation.
