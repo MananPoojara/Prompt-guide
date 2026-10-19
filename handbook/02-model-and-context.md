@@ -26,6 +26,8 @@ Attention is a mechanism that lets representations at different positions incorp
 
 Think of context as the working packet for a particular request. It can contain instructions, conversation messages, documents, images, tool descriptions, and tool results, depending on the product and model. The context window limits how much can fit. Output also has limits; exact accounting varies by model and API.
 
+The [context-budget lab](../labs/context-budget/README.md) records the exact tokens retained by prefix truncation, suffix truncation, and whole-document packing. It shows a question or its evidence disappearing before inference, without inventing model answers.
+
 Here is an **illustrative** assembled request:
 
 ```text

@@ -9,7 +9,7 @@ The audit below was performed on 2026-10-19. **Initial** means a local explanati
 | Reader decision | Current local coverage | Remaining core work |
 |---|---|---|
 | How do I ask for a useful result? | First example, templates, three everyday cases | A complete planning example; ambiguity and clarification examples |
-| What happens to my input? | Tokens/sampling plus embeddings/attention recordings | Connect the two visuals; explain context limits and truncation with a checked example |
+| What happens to my input? | Linked token/sampling and representation visuals, plus measured context-budget example | Core mechanics path demonstrated; broader architectures and multimodal accounting remain extensions |
 | Which prompt technique should I try? | Original prompts, two controlled extraction pilots, and bounded output repair | Example order/selection and decomposition comparisons |
 | How do I supply relevant evidence? | Five evidence conditions plus lexical/embedding retrieval on ten developer docs | Broader real-document evaluation, equal-context-budget comparisons, and answer generation |
 | How should memory work? | Executed SQLite lifecycle, current-context packet, and handoff explanation | Local lifecycle demonstrated; source adjudication and production authorization/deletion are explicitly outside this lab |

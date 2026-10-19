@@ -28,7 +28,9 @@ Distinguish training from inference, supplied context from learned parameters, a
 
 **Also demonstrated:** [embeddings and attention](labs/representations/README.md), with full recorded vectors, all heads, and an offline visual.
 
-**Still needed for deeper ML coverage:** context-limit demonstrations, broader model comparisons, and measured learning outcomes. Illustrative diagrams must remain distinct from measurements of proprietary models.
+**Also demonstrated:** [context-budget handling](labs/context-budget/README.md), with exact tokenizer measurements and checks for dropped instructions, evidence, and questions.
+
+**Still needed for deeper ML coverage:** broader model comparisons and measured learning outcomes. Illustrative diagrams must remain distinct from measurements of proprietary models.
 
 **Practical judgment:** distinguish missing evidence, ambiguity, model error, and application error rather than blaming every failure on wording.
 
