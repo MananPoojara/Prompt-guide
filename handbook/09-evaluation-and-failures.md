@@ -22,6 +22,12 @@ Repeated trials help reveal variability. More repetitions of one easy example st
 
 The [saved comparison](../labs/prompt-contract/RESULTS.md) has four task records in one response per prompt. Both versions succeeded. That result is useful precisely because it prevents us from telling an unsupported improvement story.
 
+## Follow the larger controlled pilot
+
+The [three-arm extraction lab](../labs/prompt-comparison/README.md) compares a short instruction, explicit rules, and those same rules with four answered examples. It freezes eight development notes and 16 held-out notes before running three repetitions per arm. All nine responses matched all 16 records.
+
+Its report includes category scores, paired case changes, execution failures, and duration observations. The same assistant authored the data and prompts, so the split is not independent human evaluation. This is a ceiling result: the test did not distinguish the variants. The raw evidence is useful even though no variant won.
+
 ## Locate the broken layer
 
 | Symptom | Evidence to inspect first | Likely next action |

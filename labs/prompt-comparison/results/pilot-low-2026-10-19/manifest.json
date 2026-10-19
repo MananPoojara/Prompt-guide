@@ -1,0 +1,279 @@
+{
+  "model": "gpt-6.1-sol",
+  "cli": "codex-cli 0.163.0",
+  "repeats": 3,
+  "timeout_seconds": 180,
+  "reasoning_effort": "low",
+  "sha256": {
+    "dataset.json": "aa6a99bae669f8e9b6f3e5e6688308d8406a5d7ac185b1df09ea0cae3a5a74d3",
+    "PROTOCOL.md": "4a34d65675a0a2103c46cc0e44163f8252e6f8296a81b733f17ca7e37996888e",
+    "prompts/examples.txt": "c7450c701ee674f39b9cef7415c6014defa0aebfa0b432c35891433cb629e5a1",
+    "prompts/rules.txt": "94015f40a18f00867412c92873cd310830d61aea12874168b538a2470688deb2",
+    "prompts/short.txt": "5904af791f5d213f43eac29bab9e1d1844cbc01b35d0afc5094bf9c319a4c54b"
+  },
+  "schedule": [
+    {
+      "repeat": 1,
+      "arm": "short"
+    },
+    {
+      "repeat": 1,
+      "arm": "rules"
+    },
+    {
+      "repeat": 1,
+      "arm": "examples"
+    },
+    {
+      "repeat": 2,
+      "arm": "rules"
+    },
+    {
+      "repeat": 2,
+      "arm": "examples"
+    },
+    {
+      "repeat": 2,
+      "arm": "short"
+    },
+    {
+      "repeat": 3,
+      "arm": "examples"
+    },
+    {
+      "repeat": 3,
+      "arm": "short"
+    },
+    {
+      "repeat": 3,
+      "arm": "rules"
+    }
+  ],
+  "trials": [
+    {
+      "repeat": 1,
+      "arm": "short",
+      "trial": "1-short",
+      "status": 0,
+      "elapsed_seconds": 25.545,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-czfpankm",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/1-short.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 1,
+      "arm": "rules",
+      "trial": "1-rules",
+      "status": 0,
+      "elapsed_seconds": 24.567,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-kxx9t33t",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/1-rules.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 1,
+      "arm": "examples",
+      "trial": "1-examples",
+      "status": 0,
+      "elapsed_seconds": 18.894,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-olhu_yd5",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/1-examples.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 2,
+      "arm": "rules",
+      "trial": "2-rules",
+      "status": 0,
+      "elapsed_seconds": 19.557,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-ovxfodjg",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/2-rules.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 2,
+      "arm": "examples",
+      "trial": "2-examples",
+      "status": 0,
+      "elapsed_seconds": 12.986,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-nwtbvrzq",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/2-examples.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 2,
+      "arm": "short",
+      "trial": "2-short",
+      "status": 0,
+      "elapsed_seconds": 15.502,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-2gy78em7",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/2-short.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 3,
+      "arm": "examples",
+      "trial": "3-examples",
+      "status": 0,
+      "elapsed_seconds": 19.332,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-n6eynptn",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/3-examples.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 3,
+      "arm": "short",
+      "trial": "3-short",
+      "status": 0,
+      "elapsed_seconds": 12.293,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-dwwmmldt",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/3-short.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 3,
+      "arm": "rules",
+      "trial": "3-rules",
+      "status": 0,
+      "elapsed_seconds": 15.455,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-ktew9zqd",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/3-rules.output.txt",
+        "-"
+      ]
+    }
+  ]
+}

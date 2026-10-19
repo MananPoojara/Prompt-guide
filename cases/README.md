@@ -12,3 +12,7 @@ Start with an artifact, trace how it was used, and check the outcome. Every case
 | [A prompt comparison that tied](../labs/prompt-contract/README.md) | Both prompts and actual outputs | More explicit instructions did not improve these four easy cases |
 
 The first two source categories matter: **published** means the original publisher released it; **executed here** means this repository contains our run evidence. Neither label means universally effective.
+
+## Controlled prompt comparison
+
+[Rules, examples, and a ceiling result](../labs/prompt-comparison/README.md): 24 authored notes, 16 held-out cases, three arms, and three repetitions per arm. All variants scored 16/16 in each trial. Includes the protocol, failed setup attempt, raw outputs, scorer tests, and offline verification.

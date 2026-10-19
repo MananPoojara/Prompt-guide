@@ -1,2 +1,5 @@
 # Preserve exact whitespace in archived model inputs and execution logs.
 cases/evaluator-loop/results/** -whitespace
+
+# Preserve exact captured experiment artifacts.
+labs/prompt-comparison/results/** -whitespace

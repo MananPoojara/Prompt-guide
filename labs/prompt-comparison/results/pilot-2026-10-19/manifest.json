@@ -1,0 +1,181 @@
+{
+  "model": "gpt-6.1-sol",
+  "cli": "codex-cli 0.163.0",
+  "repeats": 3,
+  "timeout_seconds": 180,
+  "reasoning_effort": "none",
+  "sha256": {
+    "dataset.json": "aa6a99bae669f8e9b6f3e5e6688308d8406a5d7ac185b1df09ea0cae3a5a74d3",
+    "PROTOCOL.md": "db0d681f4f428275f73c88dbcc9e2388f8258c4aaccaf8fa69ef42daa54ab537",
+    "prompts/examples.txt": "c7450c701ee674f39b9cef7415c6014defa0aebfa0b432c35891433cb629e5a1",
+    "prompts/rules.txt": "94015f40a18f00867412c92873cd310830d61aea12874168b538a2470688deb2",
+    "prompts/short.txt": "5904af791f5d213f43eac29bab9e1d1844cbc01b35d0afc5094bf9c319a4c54b"
+  },
+  "schedule": [
+    {
+      "repeat": 1,
+      "arm": "short"
+    },
+    {
+      "repeat": 1,
+      "arm": "rules"
+    },
+    {
+      "repeat": 1,
+      "arm": "examples"
+    },
+    {
+      "repeat": 2,
+      "arm": "rules"
+    },
+    {
+      "repeat": 2,
+      "arm": "examples"
+    },
+    {
+      "repeat": 2,
+      "arm": "short"
+    },
+    {
+      "repeat": 3,
+      "arm": "examples"
+    },
+    {
+      "repeat": 3,
+      "arm": "short"
+    },
+    {
+      "repeat": 3,
+      "arm": "rules"
+    }
+  ],
+  "trials": [
+    {
+      "repeat": 1,
+      "arm": "short",
+      "trial": "1-short",
+      "status": 1,
+      "elapsed_seconds": 37.097,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"none\"",
+        "-C",
+        "/tmp/prompt-comparison-8irekvbs",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-2026-10-19/1-short.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 1,
+      "arm": "rules",
+      "trial": "1-rules",
+      "status": 1,
+      "elapsed_seconds": 12.921,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"none\"",
+        "-C",
+        "/tmp/prompt-comparison-u9nk414c",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-2026-10-19/1-rules.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 1,
+      "arm": "examples",
+      "trial": "1-examples",
+      "status": 1,
+      "elapsed_seconds": 39.868,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"none\"",
+        "-C",
+        "/tmp/prompt-comparison-wx06x2jd",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-2026-10-19/1-examples.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 2,
+      "arm": "rules",
+      "trial": "2-rules",
+      "status": 1,
+      "elapsed_seconds": 23.28,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"none\"",
+        "-C",
+        "/tmp/prompt-comparison-1j6iofly",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-2026-10-19/2-rules.output.txt",
+        "-"
+      ]
+    },
+    {
+      "repeat": 2,
+      "arm": "examples",
+      "trial": "2-examples",
+      "status": 1,
+      "elapsed_seconds": 25.364,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"none\"",
+        "-C",
+        "/tmp/prompt-comparison-yf1cjbsb",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-2026-10-19/2-examples.output.txt",
+        "-"
+      ]
+    }
+  ],
+  "run_status": "aborted_setup_error",
+  "reason": "Endpoint rejects reasoning effort none; interrupted before successful model output. An input with no trial entry was interrupted."
+}

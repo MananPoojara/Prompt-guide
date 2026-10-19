@@ -1,0 +1,1325 @@
+{
+  "arms": {
+    "short": {
+      "passed": 48,
+      "total": 48,
+      "batch_exact": 3,
+      "trials": 3,
+      "per_trial_passed": [
+        16,
+        16,
+        16
+      ],
+      "schema_failures": 0,
+      "execution_failures": 0,
+      "median_elapsed_seconds": 15.502,
+      "categories": {
+        "confirmed": {
+          "passed": 6,
+          "total": 6
+        },
+        "proposal": {
+          "passed": 6,
+          "total": 6
+        },
+        "correction": {
+          "passed": 6,
+          "total": 6
+        },
+        "revocation": {
+          "passed": 6,
+          "total": 6
+        },
+        "relative_date": {
+          "passed": 6,
+          "total": 6
+        },
+        "conflict": {
+          "passed": 6,
+          "total": 6
+        },
+        "embedded_instruction": {
+          "passed": 6,
+          "total": 6
+        },
+        "partial": {
+          "passed": 6,
+          "total": 6
+        }
+      }
+    },
+    "rules": {
+      "passed": 48,
+      "total": 48,
+      "batch_exact": 3,
+      "trials": 3,
+      "per_trial_passed": [
+        16,
+        16,
+        16
+      ],
+      "schema_failures": 0,
+      "execution_failures": 0,
+      "median_elapsed_seconds": 19.557,
+      "categories": {
+        "confirmed": {
+          "passed": 6,
+          "total": 6
+        },
+        "proposal": {
+          "passed": 6,
+          "total": 6
+        },
+        "correction": {
+          "passed": 6,
+          "total": 6
+        },
+        "revocation": {
+          "passed": 6,
+          "total": 6
+        },
+        "relative_date": {
+          "passed": 6,
+          "total": 6
+        },
+        "conflict": {
+          "passed": 6,
+          "total": 6
+        },
+        "embedded_instruction": {
+          "passed": 6,
+          "total": 6
+        },
+        "partial": {
+          "passed": 6,
+          "total": 6
+        }
+      }
+    },
+    "examples": {
+      "passed": 48,
+      "total": 48,
+      "batch_exact": 3,
+      "trials": 3,
+      "per_trial_passed": [
+        16,
+        16,
+        16
+      ],
+      "schema_failures": 0,
+      "execution_failures": 0,
+      "median_elapsed_seconds": 18.894,
+      "categories": {
+        "confirmed": {
+          "passed": 6,
+          "total": 6
+        },
+        "proposal": {
+          "passed": 6,
+          "total": 6
+        },
+        "correction": {
+          "passed": 6,
+          "total": 6
+        },
+        "revocation": {
+          "passed": 6,
+          "total": 6
+        },
+        "relative_date": {
+          "passed": 6,
+          "total": 6
+        },
+        "conflict": {
+          "passed": 6,
+          "total": 6
+        },
+        "embedded_instruction": {
+          "passed": 6,
+          "total": 6
+        },
+        "partial": {
+          "passed": 6,
+          "total": 6
+        }
+      }
+    }
+  },
+  "paired_case_observations": {
+    "short_to_rules": {
+      "improved": 0,
+      "regressed": 0,
+      "both_pass": 48,
+      "both_fail": 0
+    },
+    "rules_to_examples": {
+      "improved": 0,
+      "regressed": 0,
+      "both_pass": 48,
+      "both_fail": 0
+    }
+  },
+  "trials": [
+    {
+      "repeat": 1,
+      "arm": "short",
+      "trial": "1-short",
+      "status": 0,
+      "elapsed_seconds": 25.545,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-czfpankm",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/1-short.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 16,
+        "total": 16,
+        "exact": true,
+        "cases": [
+          {
+            "id": "h01",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h02",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h03",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h04",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h05",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h06",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h07",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h08",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h09",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h10",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h11",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h12",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h13",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h14",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h15",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h16",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "arm": "rules",
+      "trial": "1-rules",
+      "status": 0,
+      "elapsed_seconds": 24.567,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-kxx9t33t",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/1-rules.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 16,
+        "total": 16,
+        "exact": true,
+        "cases": [
+          {
+            "id": "h01",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h02",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h03",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h04",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h05",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h06",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h07",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h08",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h09",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h10",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h11",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h12",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h13",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h14",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h15",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h16",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "arm": "examples",
+      "trial": "1-examples",
+      "status": 0,
+      "elapsed_seconds": 18.894,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-olhu_yd5",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/1-examples.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 16,
+        "total": 16,
+        "exact": true,
+        "cases": [
+          {
+            "id": "h01",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h02",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h03",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h04",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h05",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h06",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h07",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h08",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h09",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h10",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h11",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h12",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h13",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h14",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h15",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h16",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "arm": "rules",
+      "trial": "2-rules",
+      "status": 0,
+      "elapsed_seconds": 19.557,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-ovxfodjg",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/2-rules.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 16,
+        "total": 16,
+        "exact": true,
+        "cases": [
+          {
+            "id": "h01",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h02",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h03",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h04",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h05",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h06",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h07",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h08",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h09",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h10",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h11",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h12",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h13",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h14",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h15",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h16",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "arm": "examples",
+      "trial": "2-examples",
+      "status": 0,
+      "elapsed_seconds": 12.986,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-nwtbvrzq",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/2-examples.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 16,
+        "total": 16,
+        "exact": true,
+        "cases": [
+          {
+            "id": "h01",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h02",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h03",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h04",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h05",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h06",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h07",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h08",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h09",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h10",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h11",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h12",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h13",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h14",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h15",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h16",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "arm": "short",
+      "trial": "2-short",
+      "status": 0,
+      "elapsed_seconds": 15.502,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-2gy78em7",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/2-short.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 16,
+        "total": 16,
+        "exact": true,
+        "cases": [
+          {
+            "id": "h01",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h02",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h03",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h04",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h05",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h06",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h07",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h08",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h09",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h10",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h11",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h12",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h13",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h14",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h15",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h16",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "arm": "examples",
+      "trial": "3-examples",
+      "status": 0,
+      "elapsed_seconds": 19.332,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-n6eynptn",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/3-examples.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 16,
+        "total": 16,
+        "exact": true,
+        "cases": [
+          {
+            "id": "h01",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h02",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h03",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h04",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h05",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h06",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h07",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h08",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h09",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h10",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h11",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h12",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h13",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h14",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h15",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h16",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "arm": "short",
+      "trial": "3-short",
+      "status": 0,
+      "elapsed_seconds": 12.293,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-dwwmmldt",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/3-short.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 16,
+        "total": 16,
+        "exact": true,
+        "cases": [
+          {
+            "id": "h01",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h02",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h03",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h04",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h05",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h06",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h07",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h08",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h09",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h10",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h11",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h12",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h13",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h14",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h15",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h16",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "arm": "rules",
+      "trial": "3-rules",
+      "status": 0,
+      "elapsed_seconds": 15.455,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-comparison-ktew9zqd",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/prompt-comparison/results/pilot-low-2026-10-19/3-rules.output.txt",
+        "-"
+      ],
+      "score": {
+        "schema_valid": true,
+        "passed": 16,
+        "total": 16,
+        "exact": true,
+        "cases": [
+          {
+            "id": "h01",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h02",
+            "category": "confirmed",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h03",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h04",
+            "category": "proposal",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h05",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h06",
+            "category": "correction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h07",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h08",
+            "category": "revocation",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h09",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h10",
+            "category": "relative_date",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h11",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h12",
+            "category": "conflict",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h13",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h14",
+            "category": "embedded_instruction",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h15",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          },
+          {
+            "id": "h16",
+            "category": "partial",
+            "passed": true,
+            "wrong_fields": []
+          }
+        ]
+      }
+    }
+  ]
+}
