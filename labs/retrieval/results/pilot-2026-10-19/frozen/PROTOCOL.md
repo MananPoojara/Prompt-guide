@@ -1,0 +1,9 @@
+# Developer retrieval pilot — 2026-10-19
+
+Before execution: freeze ten authored fictional Lumen documents (1,714 whitespace-separated words), twelve questions, and exact reference evidence spans. Two questions are development examples and ten are designated evaluation questions; all were authored by the same agent and have no independent review. Do not claim a blinded or representative benchmark. No threshold/model/chunk-size tuning after viewing scores.
+
+Compare BM25 and normalized mean-pooled MiniLM embeddings on 48- and 128-token windows, each with 16-token overlap. Use the MiniLM tokenizer to define windows for both methods. Index document text only; do not insert the reference answer or question. A fifth condition encodes each document's first 254 tokens (plus two special tokens), exposing a deliberate naive whole-document truncation baseline. Keep the omitted suffix identifiable; the baseline does not represent all long-document techniques.
+
+Model: sentence-transformers/all-MiniLM-L6-v2 revision 1110a243fdf4706b3f48f1d95db1a4f5529b4d41, CPU, evaluation mode, two threads. Mean pool token states with the attention mask, then L2 normalize. Assert no chunk/query exceeds 256 input tokens including special tokens. Dense score is the vector dot product; BM25 uses k1=1.2, b=.75, lowercase word tokens, no stemming or stopword removal. Stable ties sort by chunk ID.
+
+Retain every chunk's source character offsets, actual vectors, full rankings and scores. Report document hit and complete reference-span coverage at top 1 and top 3 separately. Coverage can combine touching/overlapping chunks from the correct document. Also report retrieved character volume because equal k does not imply equal context budget. Report the ten evaluation questions separately from the two development questions. No generated answer, answer accuracy, human review, cost advantage, or statistical significance is inferred. Retain all results, including losses and ties.

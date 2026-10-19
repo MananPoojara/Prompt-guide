@@ -32,7 +32,7 @@
 |---|---|---|
 | **06 · Prompt experiments** | Zero-shot vs. few-shot, controlled comparisons, held-out cases, and failure analysis | [First lab available](labs/prompt-comparison/README.md) |
 | **07 · Visual ML mechanics** | Token boundaries, next-token probabilities, temperature, and recorded continuations | [Interactive lab available](labs/model-mechanics/README.md) |
-| **08 · Retrieval experiments** | Missing, stale, conflicting, and untrusted evidence | [Grounding lab available](labs/evidence-grounding/README.md) |
+| **08 · Retrieval experiments** | Chunking, lexical/embedding search, and evidence failures | [Retrieval lab available](labs/retrieval/README.md) |
 | **09 · Agent engineering** | Complete execution traces, tool errors, permissions, checkpoints, and recovery | [First trace available](labs/bounded-agent/README.md) |
 | **10 · Reliable evaluation** | Judge calibration, uncertainty, regression tracking, cost, and latency | [Regression gate available](evaluation/README.md) |
 
@@ -40,7 +40,7 @@
 
 ## Explore
 
-[Everyday examples](everyday/README.md) · [Original Anthropic & OpenAI prompts](originals/README.md) · [Recorded experiments](cases/README.md) · [Prompt templates](prompts/README.md) · [Skills & MCP toolkit](toolkit/README.md) · [Glossary](handbook/glossary.md)
+[Everyday examples](everyday/README.md) · [Original Anthropic & OpenAI prompts](originals/README.md) · [Developer labs](labs/README.md) · [Recorded experiments](cases/README.md) · [Prompt templates](prompts/README.md) · [Skills & MCP toolkit](toolkit/README.md) · [Glossary](handbook/glossary.md)
 
 Read online with no installation or model account. To run examples locally, follow their setup instructions in [examples](examples/README.md).
 

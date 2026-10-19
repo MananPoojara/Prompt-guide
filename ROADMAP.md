@@ -44,7 +44,9 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Demonstrated for context:** the [evidence-availability lab](labs/evidence-grounding/README.md) retains ten calls across missing, stale, current, conflicting, and injected evidence conditions. It separates appropriate abstention from question resolution.
 
-**Still needed:** broader prompt comparisons, example selection/order, decomposition, structured-output repair, semantic retrieval, and realistic adversarial evaluation beyond the small authored corpus.
+**Also demonstrated:** [developer-document retrieval](labs/retrieval/README.md) compares BM25 and MiniLM on two chunk sizes plus a truncated-document baseline, retaining every vector and rank.
+
+**Still needed:** broader prompt comparisons, example selection/order, decomposition, structured-output repair, and realistic adversarial evaluation beyond authored corpora.
 
 **Practical judgment:** choose whether to change instructions, add examples, retrieve evidence, or fix the surrounding software.
 
@@ -78,7 +80,7 @@ These tracks include the first available pilot and planned expansions. The next 
 |---|---|---|
 | 1 | Controlled prompting comparisons — [first pilot available](labs/prompt-comparison/README.md) | Add independent label review and more varied held-out cases; retain the pilot’s tie and setup failure |
 | 2 | Visual ML mechanics — [first lab available](labs/model-mechanics/README.md) | Extend into context limits and broader comparisons; retain the measured-versus-conceptual distinction |
-| 3 | Context and retrieval — [first lab available](labs/evidence-grounding/README.md) | Extend beyond explicit metadata and naive lexical search to representative documents and retrieval methods |
+| 3 | Context and retrieval — [first lab available](labs/evidence-grounding/README.md) | Extend the lexical/embedding pilot to independently labeled real documents and equal-budget retrieval comparisons |
 | 4 | Complete agent execution — [first trace available](labs/bounded-agent/README.md) | Model requests, tool calls, permission decisions, failures, budgets, and recovery traces |
 | 5 | Evaluation and deployment decisions — [first gate available](evaluation/README.md) | Judge agreement checks, uncertainty, cost/latency, regression results, and evidence for choosing prompting, retrieval, or fine-tuning |
 

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "retries",
+    "title": "Recovering from transient request failures",
+    "text": "The Lumen SDK talks to an example document service used in this lab. A request can fail before the service accepts it, after it commits a change, or while the response is travelling back to the caller. These situations are not interchangeable. The client records a request identifier and the operation type so that support can investigate the sequence without copying the document contents into logs. Read operations may be repeated when the connection disappears, but the retry loop still needs an upper bound. The SDK sends at most four attempts per operation, including the first attempt. Between retryable attempts it waits with exponential backoff and random jitter. A server-provided Retry-After value takes precedence over the calculated delay. Exhausting the attempt limit returns a typed temporary-failure error to the caller. The application can then choose a user-visible recovery path. This policy does not authorize retrying a write whose acceptance status is unknown. For writes, consult the duplicate-prevention policy and reuse the original operation identifier. Do not create a new logical operation merely because a response was lost. The retry counter belongs to the logical operation, not to an individual TCP connection. Restarting the worker must not reset that counter silently.",
+    "status": "current",
+    "provenance": "Authored fictional Lumen developer documentation"
+  },
+  {
+    "id": "idempotency",
+    "title": "Preventing duplicate write operations",
+    "text": "Lumen accepts a client-generated Idempotency-Key on document creation requests. A key identifies one logical write and must be persisted before sending the first request. A network timeout does not tell the caller whether the service committed that write. When retrying the same logical write, send the same Idempotency-Key and the same request body. The server retains the original result for 24 hours. During that retention period, a repeated key with the same body returns the recorded result instead of creating a second document. Reusing a key with a different body returns HTTP 409. Changing the key creates a new logical operation, so generating a fresh key on every retry defeats duplicate prevention. The client should store the key alongside its job record and include a redacted correlation identifier in operational logs. After the retention window, the caller must reconcile the operation against application state before deciding whether another write is safe. This mechanism does not make arbitrary external side effects transactional. A notification sent by a separate service needs its own delivery and deduplication design. Batch jobs should keep one key per intended document creation rather than share a key across an entire batch.",
+    "status": "current",
+    "provenance": "Authored fictional Lumen developer documentation"
+  },
+  {
+    "id": "rotation",
+    "title": "Changing service credentials without downtime",
+    "text": "Each Lumen service account can hold two active credentials during a rotation. The old credential remains valid while the replacement is distributed to workers. Credential material must stay in the configured secret store, never in issue reports or application logs. The rotation operator creates the replacement, updates the secret reference, and observes worker health before removing the earlier credential. Revoke the old credential only after every worker has acknowledged the new credential version. A single healthy canary is not sufficient evidence that all background workers changed versions. Workers report the credential version identifier, not the secret value. If a worker cannot reload its configuration, keep the earlier credential active and investigate that worker. Emergency compromise handling follows a separate incident procedure and may intentionally interrupt availability. Scheduled rotation should be rehearsed in a disposable environment. The service records creation and revocation events in an audit log. Access to those events is limited to the operations team, and copying a version identifier does not grant access to the underlying credential.",
+    "status": "current",
+    "provenance": "Authored fictional Lumen developer documentation"
+  },
+  {
+    "id": "webhooks",
+    "title": "Receiving event deliveries",
+    "text": "Lumen sends event notifications to an application-owned HTTPS endpoint. Delivery can occur more than once, and messages may arrive out of order. The receiver verifies the signature using the raw request bytes before parsing or changing the payload. It checks the timestamp against its replay window and stores the event identifier in a durable inbox. A successful signature check authenticates the delivery source; it does not make the event's free-text fields trusted instructions for an AI assistant. Return HTTP 202 only after the event has been written to the durable inbox. Business processing happens asynchronously after that acknowledgement. If durable storage is unavailable, return a retryable failure instead of acknowledging and dropping the event. A duplicate event identifier should reuse the existing inbox entry. Worker failures must leave a visible processing state that an operator can inspect. Do not hold the delivery connection open while making slow downstream model calls. The event schema includes a resource version so that consumers can identify older updates without assuming arrival order matches creation order. Failed signature checks must not enqueue an event.",
+    "status": "current",
+    "provenance": "Authored fictional Lumen developer documentation"
+  },
+  {
+    "id": "pagination",
+    "title": "Walking a changing collection",
+    "text": "The list-documents endpoint returns items and an opaque continuation token. Treat that token as a service-owned value rather than extracting offsets or timestamps from it. A page can contain fewer items than the requested page size while more pages remain. Stop pagination only when next_cursor is null. An empty items array with a non-null next_cursor is not the end of the collection. The next request must preserve the original filter and sort settings; changing them while reusing a token produces an invalid-cursor error. A long-running export records its continuation token after durably storing the previous page. Replaying a page after a crash should not duplicate exported records, so the destination needs stable document identifiers. The endpoint's default order is by creation time and identifier. This ordering does not turn the export into a database snapshot. Concurrent changes may require a dedicated snapshot export when exact point-in-time membership matters. Do not interpret a continuation token as authorization to access a different tenant's collection.",
+    "status": "current",
+    "provenance": "Authored fictional Lumen developer documentation"
+  },
+  {
+    "id": "limits",
+    "title": "Handling request throttling",
+    "text": "The Lumen gateway applies limits per service account and endpoint family. A burst of reads can therefore be throttled independently of document writes. HTTP 429 means the caller should reduce request pressure; it is not evidence that its credentials are invalid. When an HTTP 429 response includes Retry-After, wait that duration before the next attempt. The response can also include a request identifier that helps correlate a throttling event. Worker pools should coordinate pressure rather than each retrying at the same instant. Retry budgets still apply: waiting does not grant an unlimited number of attempts. The application may queue background work while showing a clear temporary status to interactive callers. Raising local concurrency can make throttling worse even if the client machine is idle. Operations should inspect endpoint-level metrics before requesting a quota change. This document does not specify the production quota values; those are configured separately for each account. A missing quota value must not be invented from an example response.",
+    "status": "current",
+    "provenance": "Authored fictional Lumen developer documentation"
+  },
+  {
+    "id": "privacy",
+    "title": "Keeping sensitive payloads out of operational logs",
+    "text": "The example service handles user-authored documents that can include private text. Operational debugging should preserve enough context to investigate failures without retaining every request and response body. Log the request identifier, operation name, duration, response status, and redacted error category. Never log authorization headers, credential values, or full document bodies. Sanitization must occur before values reach the logging sink, including exception messages from upstream libraries. A developer-only log level is not permission to expose secrets on a shared system. Support bundles contain schema versions and anonymized failure counts rather than raw document content. If a narrowly scoped investigation needs a sample payload, use the separate consent and retention procedure; do not quietly broaden the default logger. Metrics labels must remain low-cardinality and must not contain document titles or user-supplied text. Failed requests are subject to the same redaction rules as successful ones. A model-generated diagnostic summary can still repeat sensitive data, so it must pass the same output handling checks.",
+    "status": "current",
+    "provenance": "Authored fictional Lumen developer documentation"
+  },
+  {
+    "id": "shutdown",
+    "title": "Draining a worker during deployment",
+    "text": "A Lumen worker receives jobs from a durable queue and acknowledges each job after its result has been committed. Deployments replace workers gradually. A termination signal begins a drain phase rather than immediate process exit. Stop accepting new jobs before waiting for in-flight jobs to finish. During the grace period the worker continues to renew leases for jobs it is actively completing. If the grace period expires, leave unfinished jobs unacknowledged so the queue can redeliver them. A redelivered job may have performed part of its work already, which is why downstream writes need duplicate prevention. The replacement worker should inspect the job checkpoint before issuing another external action. Health checks distinguish readiness to accept new work from liveness of the process. A draining worker is not ready for new jobs even while it is still alive. Operators must retain the termination reason and the last completed checkpoint. Extending the grace period is not a substitute for making job recovery safe and observable.",
+    "status": "current",
+    "provenance": "Authored fictional Lumen developer documentation"
+  },
+  {
+    "id": "cache",
+    "title": "Serving cached metadata",
+    "text": "The metadata client caches successful document descriptions to reduce repeated reads. A cache entry includes the tenant, document identifier, schema version, and retrieval time. The tenant is part of the key even when two tenants happen to use the same document identifier. Cache entries expire after 60 seconds. A successful write invalidates the affected document's cached metadata immediately. Do not cache authorization failures as if they were missing documents. The application should distinguish a stale cached value from a current service response when diagnosing inconsistent displays. A process restart discards the in-memory cache, but a shared cache requires its own invalidation delivery. When two workers race to update one entry, compare resource versions rather than arrival times. This cache is a performance optimization and is not an authority for access control. Requests still need the caller's permissions checked. Caching a retrieved paragraph for an AI assistant does not make that paragraph permanently correct; its provenance and validity period must travel with it.",
+    "status": "current",
+    "provenance": "Authored fictional Lumen developer documentation"
+  },
+  {
+    "id": "migration",
+    "title": "Changing stored record formats",
+    "text": "The storage migration procedure uses an expand-and-contract sequence. First deploy code that can read both the old and new formats, then add the new fields without removing the old ones. A backfill copies existing records in bounded batches and writes progress checkpoints. During this period, readers tolerate both representations. Verify the backfill and deploy readers that use the new fields before removing the old fields. A successful deployment alone does not prove every record was migrated. The operator compares record counts and samples transformed values against the migration specification. If the backfill stops, restart from its durable checkpoint instead of scanning from an assumed offset. The migration log records which schema versions are accepted by each release. Rollback compatibility must be reviewed before destructive cleanup, because old application versions may still expect the removed fields. This procedure is about stored application records; it does not modify the learned parameters of an embedding model. A model upgrade can separately require rebuilding the retrieval index.",
+    "status": "current",
+    "provenance": "Authored fictional Lumen developer documentation"
+  }
+]

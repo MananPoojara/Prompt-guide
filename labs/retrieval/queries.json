@@ -1,0 +1,86 @@
+[
+  {
+    "id": "retry-count",
+    "split": "development",
+    "question": "How many times can one operation be attempted?",
+    "document_id": "retries",
+    "evidence": "The SDK sends at most four attempts per operation, including the first attempt."
+  },
+  {
+    "id": "cache-expiry",
+    "split": "development",
+    "question": "How long does cached metadata stay valid?",
+    "document_id": "cache",
+    "evidence": "Cache entries expire after 60 seconds."
+  },
+  {
+    "id": "double-write",
+    "split": "evaluation",
+    "question": "The response disappeared after creating a document. How do I avoid creating it twice?",
+    "document_id": "idempotency",
+    "evidence": "When retrying the same logical write, send the same Idempotency-Key and the same request body."
+  },
+  {
+    "id": "key-conflict",
+    "split": "evaluation",
+    "question": "What happens if I send different content under an already used operation key?",
+    "document_id": "idempotency",
+    "evidence": "Reusing a key with a different body returns HTTP 409."
+  },
+  {
+    "id": "old-secret",
+    "split": "evaluation",
+    "question": "When is it safe to disable the previous service password during a rollout?",
+    "document_id": "rotation",
+    "evidence": "Revoke the old credential only after every worker has acknowledged the new credential version."
+  },
+  {
+    "id": "event-ack",
+    "split": "evaluation",
+    "question": "Can I acknowledge an incoming notification before saving it?",
+    "document_id": "webhooks",
+    "evidence": "Return HTTP 202 only after the event has been written to the durable inbox."
+  },
+  {
+    "id": "empty-page",
+    "split": "evaluation",
+    "question": "The list response has no records but still has a continuation value. Should the export stop?",
+    "document_id": "pagination",
+    "evidence": "An empty items array with a non-null next_cursor is not the end of the collection."
+  },
+  {
+    "id": "throttle-delay",
+    "split": "evaluation",
+    "question": "The gateway says I am sending requests too quickly and supplies a waiting time. What should I do?",
+    "document_id": "limits",
+    "evidence": "When an HTTP 429 response includes Retry-After, wait that duration before the next attempt."
+  },
+  {
+    "id": "safe-logs",
+    "split": "evaluation",
+    "question": "Which request details must be excluded from diagnostic output?",
+    "document_id": "privacy",
+    "evidence": "Never log authorization headers, credential values, or full document bodies."
+  },
+  {
+    "id": "worker-exit",
+    "split": "evaluation",
+    "question": "How should a process begin shutting down while jobs are still running?",
+    "document_id": "shutdown",
+    "evidence": "Stop accepting new jobs before waiting for in-flight jobs to finish."
+  },
+  {
+    "id": "remove-fields",
+    "split": "evaluation",
+    "question": "When can the obsolete columns be deleted after a data-format upgrade?",
+    "document_id": "migration",
+    "evidence": "Verify the backfill and deploy readers that use the new fields before removing the old fields."
+  },
+  {
+    "id": "cache-write",
+    "split": "evaluation",
+    "question": "A document was edited but the UI still shows the previous metadata. What should the cache do after a successful update?",
+    "document_id": "cache",
+    "evidence": "A successful write invalidates the affected document's cached metadata immediately."
+  }
+]
