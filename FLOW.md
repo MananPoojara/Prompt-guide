@@ -32,7 +32,7 @@ Source review date: 2026-10-19. Official OpenAI documentation tools and web retr
 | Honest evaluation | Lab READMEs and RESULTS.md | Limits and confounds stated; no superiority claim |
 | Maintainability | CONTRIBUTING.md; GitHub Actions workflow | Offline link, grader, and saved-code checks configured |
 | Memory management | memory/ | Focused local records; remote receipts tracked in memory/README.md |
-| Public publication | Requested GitHub origin | Remote commit and CI verification pending at this checkpoint |
+| Public publication | Requested GitHub origin | Initial commit 2f501b6 verified on origin/main; GitHub Actions run 39208827349 passed |
 
 ## Checks performed
 
@@ -46,6 +46,10 @@ Source review date: 2026-10-19. Official OpenAI documentation tools and web retr
 
 ## Supermemory
 
-Browser OAuth succeeded. Direct API and hosted MCP identity checks succeeded with `NODE_USE_SYSTEM_CA=1`; this uses trusted system certificates without disabling TLS verification. Three focused records were accepted in the server's default namespace `sm_project_default`. Search initially returned no results while ingestion was queued. Retrieval verification is tracked separately; an accepted write alone is not a searchable-memory claim. The configured automatic recall project container differs from this hosted default, so automatic recall is not assumed.
+Browser OAuth succeeded. Direct API and hosted MCP identity checks succeeded with `NODE_USE_SYSTEM_CA=1`; this uses trusted system certificates without disabling TLS verification. Three focused records were accepted in the server's default namespace `sm_project_default`. Search initially returned no results while ingestion was queued. All three reached done and complete contents were retrieved via get_document; see memory/receipts.json. Semantic-search recall is not claimed. The configured automatic recall project container differs from this hosted default, so automatic recall is not assumed.
 
 This file records decisions, evidence, and next actions; it is not a private internal reasoning transcript. Future research and new examples are ongoing maintenance, not evidence that these initial experiments generalize.
+
+## Publication verification
+
+Published to [MananPoojara/Prompt-guide](https://github.com/MananPoojara/Prompt-guide). The initial content commit passed [GitHub Actions](https://github.com/MananPoojara/Prompt-guide/actions/runs/39208827349). Remote branch hash matched the local content commit. This final documentation update records the completed memory readbacks and publication evidence.

@@ -1,0 +1,26 @@
+[
+  {
+    "topic": "project",
+    "namespace": "sm_project_default",
+    "document_id": "b2WSLYTyVk431wUpxL2Bb8",
+    "status": "done",
+    "retrieved_content": "Prompt Guide project record, reviewed 2026-10-19. Repository https://github.com/MananPoojara/Prompt-guide teaches practical prompting and agentic coding with eight source-backed guides, twelve original prompt templates, diagrams, source and claim ledgers, and reproducible labs. FLOW.md tracks decisions and evidence. Validate using python3 scripts/check_links.py and python3 labs/prompt-contract/grade.py. Repository files are authoritative; memory summaries can be stale. No affiliation or private lab access is claimed.",
+    "retrieval_verified_on": "2026-10-19"
+  },
+  {
+    "topic": "research",
+    "namespace": "sm_project_default",
+    "document_id": "BZznc2z4G3fPmLq1fabfqD",
+    "status": "done",
+    "retrieved_content": "Prompt Guide research record, reviewed 2026-10-19. Public practices support explicit outcomes, relevant context, clear tools, and outcome verification. Sources: https://developers.openai.com/api/docs/guides/prompting and https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents . Bloom https://www.anthropic.com/research/bloom documents automated behavioral evaluation, not guaranteed self-certification. Historical context-position and intrinsic self-correction papers establish scoped results, not universal current-model laws. Claims of universal internal Obsidian workflows remain unverified. Full provenance and limitations: research/sources.md and research/claims.md in https://github.com/MananPoojara/Prompt-guide .",
+    "retrieval_verified_on": "2026-10-19"
+  },
+  {
+    "topic": "results",
+    "namespace": "sm_project_default",
+    "document_id": "jjX2V4pEWjaJsBEUJsXxXu",
+    "status": "done",
+    "retrieved_content": "Prompt Guide measured results, executed 2026-10-19 with Codex CLI 0.163.0, gpt-6.1-sol, reasoning effort none. Extraction pilot: one attempt per variant, four synthetic notes per attempt; baseline and candidate both matched 4/4 records, a tie. No evidence of candidate superiority, repeated-run reliability, or generalization. Coding demonstration: search normalization changed 3 failures in 5 tests into 5 passes, confirmed independently with unchanged tests. One small demonstration, not a benchmark. Evidence: labs/prompt-contract and labs/search-fix in https://github.com/MananPoojara/Prompt-guide .",
+    "retrieval_verified_on": "2026-10-19"
+  }
+]

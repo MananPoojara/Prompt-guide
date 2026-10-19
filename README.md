@@ -39,7 +39,7 @@ These are original templates derived from public practices. They are **not leake
 - [Research ledger](research/sources.md): what each source supports, its limits, and when it was checked.
 - [Claim checks](research/claims.md): documented practices versus unverified stories.
 - [FLOW.md](FLOW.md): scope, research decisions, validation, and remaining dependencies.
-- [Memory handoff](memory/README.md): durable notes and the pending Supermemory integration.
+- [Memory handoff](memory/README.md): durable notes and verified Supermemory storage receipts.
 - [Contribute](CONTRIBUTING.md): add examples with evidence, including negative results.
 
 Source review date: **2026-10-19**. Version-sensitive product details need rechecking before use. This is a maintained learning repository, not a live news feed.

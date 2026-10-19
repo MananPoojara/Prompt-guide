@@ -8,13 +8,13 @@ Each record should include a stable topic, claim or decision, scope, source path
 
 ## Connection evidence
 
-Browser OAuth completed on 2026-10-19. The direct API status check returned HTTP 200 with Node system certificate trust enabled. The hosted MCP `whoAmI` call also succeeded. These establish authentication and reachability, not successful storage of the research. Write and retrieval receipts will be recorded after those operations succeed.
+Browser OAuth completed on 2026-10-19. The direct API status check returned HTTP 200 with Node system certificate trust enabled. The hosted MCP `whoAmI` call also succeeded. These establish authentication and reachability, not successful storage of the research. Three writes and complete document readbacks are verified in [receipts.json](receipts.json).
 
 ## Resume procedure
 
 Read FLOW.md, verify current files and Git state, retrieve relevant memory records, and reconcile conflicts using the actual artifacts and cited sources. A retrieved summary can be stale.
 
-## Accepted write receipts
+## Verified storage receipts
 
 Hosted MCP returned `success: true` and `status: queued` for three records in `sm_project_default`:
 
@@ -25,3 +25,5 @@ Hosted MCP returned `success: true` and `status: queued` for three records in `s
 | Measured results | `jjX2V4pEWjaJsBEUJsXxXu` |
 
 The first semantic search returned zero results while ingestion was queued. This default hosted namespace differs from the plugin's automatic project recall container; do not assume automatic recall reads it. Explicit retrieval should specify the namespace. No credentials are stored here.
+
+All three records subsequently reached `done`. Fresh hosted MCP `get_document` calls returned their complete contents with `contentTruncated: false`; see receipts.json. This verifies storage and explicit document retrieval. Semantic-search recall and automatic project-hook recall are separate capabilities and are not claimed as verified.
