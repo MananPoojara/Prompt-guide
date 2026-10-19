@@ -7,11 +7,16 @@
 | Agent | A system that can choose actions and continue using their results | Inspect code, edit it, run tests, then report |
 | API | A defined interface through which programs request operations | Send a model request or query a service |
 | Artifact | A saved item you can inspect | Prompt file, raw response, test log |
+| Attention | A weighted mixing operation over allowed token positions | A causal decoder cannot attend to future tokens |
+| BM25 | A lexical ranking formula using query-term frequency and document-length normalization | Rank chunks containing words from a question |
 | Benchmark | A defined collection of tasks and scoring rules | A fixed set of extraction cases with expected answers |
+| Checkpoint | Saved execution state used to continue or inspect work | Remaining call budget and completed tool results |
+| Chunk | A bounded piece of a document used for retrieval or processing | 128 tokenizer tokens with source offsets |
+| Cosine similarity | A comparison of vector directions | Rank normalized retrieval embeddings by their dot product |
 | Compaction | Condensing conversation state for continuation | Preserve decisions and unfinished work in a shorter summary |
 | Context | Material available for a particular model request | Instructions, notes, messages, tool results |
 | Context window | The request's supported token capacity under the model's accounting | Limits how much material can be processed together |
-| Embedding | Numerical representation useful for comparing items | Retrieve passages similar to a question |
+| Embedding | A learned numerical representation of a token or input; retrieval embeddings are designed for comparison | A token-table row, or a vector used to search passages |
 | Evaluation / eval | A procedure for judging performance against criteria | Compare extracted owners against expected values |
 | Fixture | A deliberately prepared input used for testing | The stack implementation with a known duplicate-minimum bug |
 | Frontmatter | Metadata at the start of a document | A skill's name and description between `---` lines |
@@ -19,6 +24,7 @@
 | Grounding | Connecting an answer to supplied or retrieved evidence | Cite the note that says a date is only proposed |
 | Harness | Runtime software around model calls | Assemble context, execute tools, track state, stop the loop |
 | Hook | Code triggered by a specified runtime event | Check evidence before allowing a completion-related write |
+| Idempotency key | An identifier used to recognize repeated attempts at one logical operation | Retry a document creation without creating a second document |
 | Inference | Using an existing model to produce a result | Generate an answer from the current request |
 | JSON | A structured text format for data | `{"owner": null}` |
 | Latency | Time until a response or operation completes | Time spent retrieving a note and answering |
