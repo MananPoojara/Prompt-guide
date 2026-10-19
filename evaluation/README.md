@@ -32,7 +32,7 @@ Dollar cost is `null`: billing records were not collected. CLI usage counters ar
 
 The natural-note pilot has a [human review packet](../labs/natural-notes/review/blank.json). Independent review remains pending. A model grading another model does not fill that gap. Once reviewed labels exist, compare judge decisions with human decisions, retain the disagreement table and failure types, and evaluate on separate calibration and test sets.
 
-The repeated questions share prompts and calls, so treating each answer as an independent sample would overstate precision. We report observed counts rather than attach a misleading confidence interval. A future comparison should predeclare the unit of analysis and use paired tasks across conditions; resample at the independent task/cluster level where appropriate.
+The repeated questions share prompts and calls, so treating each answer as an independent sample would overstate precision. We report observed counts rather than attach a misleading confidence interval. A future comparison should predeclare the unit of analysis and use paired tasks across conditions; resample at the independent task/cluster level where appropriate. The [uncertainty worked example](../labs/eval-uncertainty/README.md) demonstrates paired cluster resampling and hypothetical Wilson intervals while making the authored-data assumptions explicit.
 
 For a model or prompt revision, preserve this baseline, run a new frozen experiment, and compare task-level failures, abstentions, resolution, durations, and accounted usage. Regrading old outputs is a software regression check, not a fresh model evaluation.
 

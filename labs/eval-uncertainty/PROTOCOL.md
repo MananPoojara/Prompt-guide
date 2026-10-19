@@ -1,0 +1,7 @@
+# Exploratory uncertainty worked example — 2026-10-19
+
+This analysis is defined after the retrieval results were observed; it is explicitly exploratory, not a preregistered hypothesis test. Reuse the saved BM25-128 and dense-128 top-three reference-span coverage results on ten authored evaluation questions. Pair by question and cluster by reference document ID. Resample nine document clusters with replacement 10,000 times using Python Random seed 42, preserving every question and both method outcomes within each drawn cluster. Compute the question-weighted mean difference in each resample and report linearly interpolated 2.5th/97.5th percentiles plus the distribution histogram.
+
+The cluster structure addresses one known dependency only. It does not make authored documents a random sample, remove model/prompt shared effects, or validate labels. Call the result an illustrative resampling interval conditional on this empirical set, not a justified general-population confidence statement or proof of superiority.
+
+Separately calculate 95% Wilson intervals for hypothetical independent binomial trials with 10/10 and 100/100 successes. Do not apply those independent-trial assumptions to repeated questions here. Show a degenerate paired bootstrap with identical outcomes to explain why absence of empirical variation is not certainty. No model calls or new evaluation labels are created. Freeze analysis code, source-data hash, and the numerical report.

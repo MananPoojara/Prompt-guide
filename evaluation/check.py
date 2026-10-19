@@ -2,7 +2,7 @@
 import argparse,json,statistics,subprocess,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-CHECKS=['scripts/check_links.py','scripts/check_originals.py','labs/prompt-comparison/check_saved.py','labs/model-mechanics/check_recording.py','labs/representations/check_saved.py','labs/context-budget/check_saved.py','labs/retrieval/check_saved.py','labs/output-repair/check_saved.py','labs/natural-notes/check_saved.py','labs/evidence-grounding/check_saved.py','labs/bounded-agent/check_saved.py','labs/agent-recovery/check_saved.py','labs/memory-lifecycle/check_saved.py','labs/workflow-comparison/check_saved.py','labs/action-approval/check_saved.py']
+CHECKS=['scripts/check_links.py','scripts/check_originals.py','labs/prompt-comparison/check_saved.py','labs/model-mechanics/check_recording.py','labs/representations/check_saved.py','labs/context-budget/check_saved.py','labs/retrieval/check_saved.py','labs/output-repair/check_saved.py','labs/natural-notes/check_saved.py','labs/evidence-grounding/check_saved.py','labs/bounded-agent/check_saved.py','labs/agent-recovery/check_saved.py','labs/memory-lifecycle/check_saved.py','labs/workflow-comparison/check_saved.py','labs/action-approval/check_saved.py','labs/eval-uncertainty/check_saved.py']
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,required=True);a=p.parse_args()

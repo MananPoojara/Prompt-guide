@@ -16,7 +16,7 @@ The audit below was performed on 2026-10-19. **Initial** means a local explanati
 | When should tools or an agent be used? | MCP connection, resumed/faulted agents, twelve strategy-comparison runs, and a scripted exact-action approval demo | Local comparison and approval mechanics demonstrated; authenticated production review and distributed actions remain outside these labs |
 | How do skills and plugins change behavior? | Public artifacts and source-inspected shortlist | An executed local skill/plugin comparison with a compatible host |
 | How do I handle untrusted material? | Quoted-instruction explanation and one injection case | Broader attack/failure cases and explicit host-side boundaries |
-| How do I assess changes? | Saved-output regression checks and descriptive duration reports | Independent task review, uncertainty worked example, judge calibration; actual cost accounting if billed runs are compared |
+| How do I assess changes? | Saved-output regression checks, duration reports, and executable uncertainty illustration | Independent task review and judge calibration; actual cost accounting if billed runs are compared |
 | Can a newcomer follow the guide? | Reading paths, glossary, text alternatives, mobile-tested visuals | Independent beginner and advanced reader feedback; accessibility review beyond automated checks |
 | How does the guide stay current? | Daily five-repository collector and one reviewed finding | Broader primary-source coverage and a demonstrated repeatable weekly editorial pass |
 

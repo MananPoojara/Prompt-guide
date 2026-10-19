@@ -78,7 +78,9 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Available now:** an [offline regression gate and runtime report](evaluation/README.md), with explicit evidence levels and remaining review gates.
 
-**Still needed:** independently written held-out tasks, repeated trials, paired comparisons, uncertainty estimates, error categories, judge calibration against human review, and cost/latency measurement. Model and prompt revisions need regression tracking.
+**Also available:** an [uncertainty worked example](labs/eval-uncertainty/README.md), with paired document-cluster resampling and explicit limits on interpreting authored data.
+
+**Still needed:** independently written held-out tasks, broader repeated/paired comparisons, uncertainty estimates supported by representative study design, judge calibration against human review, and actual billing-cost measurement. Model and prompt revisions need regression tracking.
 
 **Practical judgment:** distinguish “worked once,” “improved on this evaluation,” and “reliable enough for this use.” An evaluator saying PASS is one observation, not a universal correctness proof.
 

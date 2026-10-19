@@ -10,6 +10,7 @@ This page is the home for reviewed updates to Prompt Guide. Each entry should ex
 
 | Date | Update | What changed |
 |---|---|---|
+| 2026-10-19 | [Evaluation uncertainty](2026-10-19-uncertainty.md) | Paired cluster resampling, perfect-score limits, and explicit study assumptions |
 | 2026-10-19 | [Strategy comparison and action approval](2026-10-19-workflows-and-approval.md) | Twelve task runs and one exact-proposal gate demonstration |
 | 2026-10-19 | [Context budgets](2026-10-19-context-budget.md) | Token-level truncation and packing show which required segments survive |
 | 2026-10-19 | [Memory lifecycle](2026-10-19-memory.md) | Durable corrections and expiry without stale-value resurrection |
