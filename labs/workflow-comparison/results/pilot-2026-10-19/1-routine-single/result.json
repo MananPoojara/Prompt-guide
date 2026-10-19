@@ -1,0 +1,116 @@
+{
+  "id": "1-routine-single",
+  "repeat": 1,
+  "task": "routine",
+  "strategy": "single",
+  "calls": [
+    {
+      "status": 0,
+      "elapsed_seconds": 17.268,
+      "request_characters": 2072,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-workflow-vxvfpqz3",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/workflow-comparison/results/pilot-2026-10-19/1-routine-single/1.output.txt",
+        "-"
+      ],
+      "parsed": [
+        {
+          "id": "start",
+          "answer": "14:00",
+          "status": "supported",
+          "sources": [
+            "current-plan"
+          ]
+        },
+        {
+          "id": "capacity",
+          "answer": "20",
+          "status": "supported",
+          "sources": [
+            "current-plan"
+          ]
+        },
+        {
+          "id": "registration",
+          "answer": null,
+          "status": "undecided",
+          "sources": [
+            "current-plan"
+          ]
+        }
+      ]
+    }
+  ],
+  "trace": [],
+  "answers": [
+    {
+      "id": "start",
+      "answer": "14:00",
+      "status": "supported",
+      "sources": [
+        "current-plan"
+      ]
+    },
+    {
+      "id": "capacity",
+      "answer": "20",
+      "status": "supported",
+      "sources": [
+        "current-plan"
+      ]
+    },
+    {
+      "id": "registration",
+      "answer": null,
+      "status": "undecided",
+      "sources": [
+        "current-plan"
+      ]
+    }
+  ],
+  "score": {
+    "schema_valid": true,
+    "passed": 3,
+    "total": 3,
+    "resolved": 3,
+    "cases": [
+      {
+        "id": "start",
+        "passed": true,
+        "reason": null,
+        "resolved": true
+      },
+      {
+        "id": "capacity",
+        "passed": true,
+        "reason": null,
+        "resolved": true
+      },
+      {
+        "id": "registration",
+        "passed": true,
+        "reason": null,
+        "resolved": true
+      }
+    ]
+  },
+  "metrics": {
+    "calls": 1,
+    "process_successes": 1,
+    "sum_call_seconds": 17.268,
+    "request_characters": 2072
+  }
+}

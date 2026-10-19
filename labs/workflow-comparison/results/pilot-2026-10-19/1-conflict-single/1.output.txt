@@ -1,0 +1,5 @@
+[
+  {"id":"start","answer":null,"status":"conflict","sources":["current-plan","alternate-current"]},
+  {"id":"capacity","answer":null,"status":"conflict","sources":["current-plan","alternate-current"]},
+  {"id":"registration","answer":null,"status":"undecided","sources":["current-plan","alternate-current"]}
+]

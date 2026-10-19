@@ -1,0 +1,1 @@
+{"target":"plan.txt","before_sha256":"3948cc1433c1e9173a8e0c22cad7403d20899cd05cc008f2de3736d2f84017fe","content":"Start: 14:00\nCapacity: 20\n"}

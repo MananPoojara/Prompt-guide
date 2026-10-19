@@ -1,0 +1,129 @@
+{
+  "limit": 6,
+  "calls": 4,
+  "read": [
+    "current-plan"
+  ],
+  "history": [
+    {
+      "decision": {
+        "action": "search",
+        "query": "reading club approved start time capacity registration"
+      },
+      "result": {
+        "documents": [
+          {
+            "id": "draft-plan",
+            "status": "superseded",
+            "authority": "historical draft; not a current decision",
+            "updated": "2027-02-01"
+          },
+          {
+            "id": "current-plan",
+            "status": "current",
+            "authority": "approved coordinator decision",
+            "updated": "2027-03-01"
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "action": "read",
+        "id": "current-plan"
+      },
+      "result": {
+        "document": {
+          "id": "current-plan",
+          "status": "current",
+          "authority": "approved coordinator decision",
+          "updated": "2027-03-01",
+          "text": "Cedar library reading club: the approved start time is 14:00 and the approved attendance capacity is 20. Registration details have not been approved and remain undecided. This is the current plan, replacing prior drafts."
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "search",
+        "query": "reading club current approved coordinator decision start time capacity registration"
+      },
+      "result": {
+        "documents": [
+          {
+            "id": "draft-plan",
+            "status": "superseded",
+            "authority": "historical draft; not a current decision",
+            "updated": "2027-02-01"
+          },
+          {
+            "id": "current-plan",
+            "status": "current",
+            "authority": "approved coordinator decision",
+            "updated": "2027-03-01"
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "action": "final",
+        "answers": [
+          {
+            "id": "start",
+            "answer": "14:00",
+            "status": "supported",
+            "sources": [
+              "current-plan"
+            ]
+          },
+          {
+            "id": "capacity",
+            "answer": "20",
+            "status": "supported",
+            "sources": [
+              "current-plan"
+            ]
+          },
+          {
+            "id": "registration",
+            "answer": null,
+            "status": "undecided",
+            "sources": [
+              "current-plan"
+            ]
+          }
+        ]
+      },
+      "result": {
+        "accepted": true,
+        "answers": [
+          {
+            "id": "start",
+            "answer": "14:00",
+            "status": "supported",
+            "sources": [
+              "current-plan"
+            ]
+          },
+          {
+            "id": "capacity",
+            "answer": "20",
+            "status": "supported",
+            "sources": [
+              "current-plan"
+            ]
+          },
+          {
+            "id": "registration",
+            "answer": null,
+            "status": "undecided",
+            "sources": [
+              "current-plan"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "done": true
+}

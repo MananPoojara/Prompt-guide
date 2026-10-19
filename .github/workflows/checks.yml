@@ -37,6 +37,10 @@ jobs:
       - run: python3 labs/agent-recovery/check_saved.py
       - run: python3 -m unittest discover -s labs/memory-lifecycle -p 'test_*.py'
       - run: python3 labs/memory-lifecycle/check_saved.py
+      - run: python3 -m unittest discover -s labs/workflow-comparison -p 'test_*.py'
+      - run: python3 labs/workflow-comparison/check_saved.py
+      - run: python3 -m unittest discover -s labs/action-approval -p 'test_*.py'
+      - run: python3 labs/action-approval/check_saved.py
       - run: python3 -m unittest discover -s scripts -p 'test_source_watch.py'
       - run: python3 evaluation/check.py --output /tmp/evaluation.json
       - name: Verify the saved search implementation

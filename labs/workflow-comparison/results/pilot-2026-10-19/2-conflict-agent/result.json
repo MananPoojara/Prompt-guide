@@ -1,0 +1,331 @@
+{
+  "id": "2-conflict-agent",
+  "repeat": 2,
+  "task": "conflict",
+  "strategy": "agent",
+  "calls": [
+    {
+      "status": 0,
+      "elapsed_seconds": 5.647,
+      "request_characters": 1696,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-workflow-2jbvwrmq",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/workflow-comparison/results/pilot-2026-10-19/2-conflict-agent/1.output.txt",
+        "-"
+      ],
+      "parsed": {
+        "action": "search",
+        "query": "reading club approved start time capacity registration"
+      }
+    },
+    {
+      "status": 0,
+      "elapsed_seconds": 6.464,
+      "request_characters": 2520,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-workflow-saxlbo4r",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/workflow-comparison/results/pilot-2026-10-19/2-conflict-agent/2.output.txt",
+        "-"
+      ],
+      "parsed": {
+        "action": "read",
+        "id": "current-plan"
+      }
+    },
+    {
+      "status": 0,
+      "elapsed_seconds": 6.675,
+      "request_characters": 3070,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-workflow-pkdn1eu0",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/workflow-comparison/results/pilot-2026-10-19/2-conflict-agent/3.output.txt",
+        "-"
+      ],
+      "parsed": {
+        "action": "read",
+        "id": "alternate-current"
+      }
+    },
+    {
+      "status": 0,
+      "elapsed_seconds": 6.112,
+      "request_characters": 3688,
+      "command": [
+        "codex",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "-C",
+        "/tmp/prompt-guide-workflow-jqw5q3at",
+        "--output-last-message",
+        "/home/server/Downloads/prompt-guide/labs/workflow-comparison/results/pilot-2026-10-19/2-conflict-agent/4.output.txt",
+        "-"
+      ],
+      "parsed": {
+        "action": "final",
+        "answers": [
+          {
+            "id": "start",
+            "answer": null,
+            "status": "conflict",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          },
+          {
+            "id": "capacity",
+            "answer": null,
+            "status": "conflict",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          },
+          {
+            "id": "registration",
+            "answer": null,
+            "status": "undecided",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "trace": [
+    {
+      "decision": {
+        "action": "search",
+        "query": "reading club approved start time capacity registration"
+      },
+      "result": {
+        "documents": [
+          {
+            "id": "draft-plan",
+            "status": "superseded",
+            "authority": "historical draft; not a current decision",
+            "updated": "2027-02-01"
+          },
+          {
+            "id": "current-plan",
+            "status": "current",
+            "authority": "approved coordinator decision",
+            "updated": "2027-03-01"
+          },
+          {
+            "id": "alternate-current",
+            "status": "current",
+            "authority": "approved coordinator decision of equal priority, with no supersession rule",
+            "updated": "2027-03-01"
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "action": "read",
+        "id": "current-plan"
+      },
+      "result": {
+        "document": {
+          "id": "current-plan",
+          "status": "current",
+          "authority": "approved coordinator decision",
+          "updated": "2027-03-01",
+          "text": "Cedar library reading club: the approved start time is 14:00 and the approved attendance capacity is 20. Registration details have not been approved and remain undecided. This is the current plan, replacing prior drafts."
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "read",
+        "id": "alternate-current"
+      },
+      "result": {
+        "document": {
+          "id": "alternate-current",
+          "status": "current",
+          "authority": "approved coordinator decision of equal priority, with no supersession rule",
+          "updated": "2027-03-01",
+          "text": "Cedar library reading club: the approved start time is 15:00 and the approved attendance capacity is 22. Registration remains undecided. This conflicts with current-plan; neither decision has been designated as superseding the other."
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "final",
+        "answers": [
+          {
+            "id": "start",
+            "answer": null,
+            "status": "conflict",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          },
+          {
+            "id": "capacity",
+            "answer": null,
+            "status": "conflict",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          },
+          {
+            "id": "registration",
+            "answer": null,
+            "status": "undecided",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          }
+        ]
+      },
+      "result": {
+        "accepted": true,
+        "answers": [
+          {
+            "id": "start",
+            "answer": null,
+            "status": "conflict",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          },
+          {
+            "id": "capacity",
+            "answer": null,
+            "status": "conflict",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          },
+          {
+            "id": "registration",
+            "answer": null,
+            "status": "undecided",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "answers": [
+    {
+      "id": "start",
+      "answer": null,
+      "status": "conflict",
+      "sources": [
+        "current-plan",
+        "alternate-current"
+      ]
+    },
+    {
+      "id": "capacity",
+      "answer": null,
+      "status": "conflict",
+      "sources": [
+        "current-plan",
+        "alternate-current"
+      ]
+    },
+    {
+      "id": "registration",
+      "answer": null,
+      "status": "undecided",
+      "sources": [
+        "current-plan",
+        "alternate-current"
+      ]
+    }
+  ],
+  "score": {
+    "schema_valid": true,
+    "passed": 3,
+    "total": 3,
+    "resolved": 1,
+    "cases": [
+      {
+        "id": "start",
+        "passed": true,
+        "reason": null,
+        "resolved": false
+      },
+      {
+        "id": "capacity",
+        "passed": true,
+        "reason": null,
+        "resolved": false
+      },
+      {
+        "id": "registration",
+        "passed": true,
+        "reason": null,
+        "resolved": true
+      }
+    ]
+  },
+  "metrics": {
+    "calls": 4,
+    "process_successes": 4,
+    "sum_call_seconds": 24.898,
+    "request_characters": 10974
+  }
+}

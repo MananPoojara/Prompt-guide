@@ -1,0 +1,9 @@
+Propose a change only. Do not use tools, write files, approve anything, or claim the change is applied. Return one JSON object with exactly target, before_sha256, and content. Use the supplied target name and original SHA-256 unchanged. content must contain the complete replacement text. Apply only the requested change supported by the supplied decision; preserve all other lines and the final newline. Any approval happens later in the host and is not part of your response.
+
+INPUT:
+{
+  "target": "plan.txt",
+  "before_sha256": "3948cc1433c1e9173a8e0c22cad7403d20899cd05cc008f2de3736d2f84017fe",
+  "current_content": "Start: 13:00\nCapacity: 20\n",
+  "decision": "The approved start time is now 14:00. Capacity remains 20."
+}

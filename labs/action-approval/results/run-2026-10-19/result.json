@@ -1,0 +1,61 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "sha256": {
+    "gate.py": "9eaa1bf8a130e34b0e82414361039b1310d8a24acc92ee286b829299a3e8fa0c",
+    "run.py": "8ba0ea698362fa994d4497cc3d9cfc35a373568c7d2bebfdff736581da5b5b1e",
+    "prompt.txt": "56939400f20efc9f26bc5a0652c95ccb1338d42d9ee73a4ec1d1410b651b676f",
+    "PROTOCOL.md": "130422c22fd050053e1d69840fe651e0afd72d2acdb5e6b974a6af5ec953427f"
+  },
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "-m",
+    "gpt-6.1-sol",
+    "-c",
+    "model_reasoning_effort=\"low\"",
+    "-C",
+    "/tmp/prompt-guide-proposal-model-6zejptmf",
+    "--output-last-message",
+    "/home/server/Downloads/prompt-guide/labs/action-approval/results/run-2026-10-19/output.txt",
+    "-"
+  ],
+  "status": 0,
+  "elapsed_seconds": 6.009,
+  "proposal": {
+    "target": "plan.txt",
+    "before_sha256": "3948cc1433c1e9173a8e0c22cad7403d20899cd05cc008f2de3736d2f84017fe",
+    "content": "Start: 14:00\nCapacity: 20\n"
+  },
+  "demonstration": {
+    "events": [
+      {
+        "event": "unapproved-rejected",
+        "reason": "Exact proposal has not been approved"
+      },
+      {
+        "event": "scripted-review-approved",
+        "proposal_digest": "18f8f812f6f7a99b7b05a84e6837eec09d82d809574601f3674ab46922143b42",
+        "reviewer": "scripted fixture, not a human"
+      },
+      {
+        "event": "tampered-rejected",
+        "reason": "Exact proposal has not been approved"
+      },
+      {
+        "event": "apply",
+        "result": "applied"
+      },
+      {
+        "event": "replay",
+        "result": "already_applied"
+      }
+    ],
+    "final": "Start: 14:00\nCapacity: 20\n"
+  }
+}

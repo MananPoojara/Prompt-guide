@@ -13,7 +13,7 @@ The audit below was performed on 2026-10-19. **Initial** means a local explanati
 | Which prompt technique should I try? | Original prompts, two controlled extraction pilots, and bounded output repair | Example order/selection and decomposition comparisons |
 | How do I supply relevant evidence? | Five evidence conditions plus lexical/embedding retrieval on ten developer docs | Broader real-document evaluation, equal-context-budget comparisons, and answer generation |
 | How should memory work? | Executed SQLite lifecycle, current-context packet, and handoff explanation | Local lifecycle demonstrated; source adjudication and production authorization/deletion are explicitly outside this lab |
-| When should tools or an agent be used? | Local MCP connection, resumed agent, and two controlled-failure traces | Comparable single-call/workflow/agent tasks and proposed-action approval demonstrations |
+| When should tools or an agent be used? | MCP connection, resumed/faulted agents, twelve strategy-comparison runs, and a scripted exact-action approval demo | Local comparison and approval mechanics demonstrated; authenticated production review and distributed actions remain outside these labs |
 | How do skills and plugins change behavior? | Public artifacts and source-inspected shortlist | An executed local skill/plugin comparison with a compatible host |
 | How do I handle untrusted material? | Quoted-instruction explanation and one injection case | Broader attack/failure cases and explicit host-side boundaries |
 | How do I assess changes? | Saved-output regression checks and descriptive duration reports | Independent task review, uncertainty worked example, judge calibration; actual cost accounting if billed runs are compared |

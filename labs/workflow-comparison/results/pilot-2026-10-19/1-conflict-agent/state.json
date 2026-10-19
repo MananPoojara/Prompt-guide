@@ -1,0 +1,135 @@
+{
+  "limit": 6,
+  "calls": 4,
+  "read": [
+    "current-plan",
+    "alternate-current"
+  ],
+  "history": [
+    {
+      "decision": {
+        "action": "search",
+        "query": "reading club approved start time capacity registration"
+      },
+      "result": {
+        "documents": [
+          {
+            "id": "draft-plan",
+            "status": "superseded",
+            "authority": "historical draft; not a current decision",
+            "updated": "2027-02-01"
+          },
+          {
+            "id": "current-plan",
+            "status": "current",
+            "authority": "approved coordinator decision",
+            "updated": "2027-03-01"
+          },
+          {
+            "id": "alternate-current",
+            "status": "current",
+            "authority": "approved coordinator decision of equal priority, with no supersession rule",
+            "updated": "2027-03-01"
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "action": "read",
+        "id": "current-plan"
+      },
+      "result": {
+        "document": {
+          "id": "current-plan",
+          "status": "current",
+          "authority": "approved coordinator decision",
+          "updated": "2027-03-01",
+          "text": "Cedar library reading club: the approved start time is 14:00 and the approved attendance capacity is 20. Registration details have not been approved and remain undecided. This is the current plan, replacing prior drafts."
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "read",
+        "id": "alternate-current"
+      },
+      "result": {
+        "document": {
+          "id": "alternate-current",
+          "status": "current",
+          "authority": "approved coordinator decision of equal priority, with no supersession rule",
+          "updated": "2027-03-01",
+          "text": "Cedar library reading club: the approved start time is 15:00 and the approved attendance capacity is 22. Registration remains undecided. This conflicts with current-plan; neither decision has been designated as superseding the other."
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "final",
+        "answers": [
+          {
+            "id": "start",
+            "answer": null,
+            "status": "conflict",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          },
+          {
+            "id": "capacity",
+            "answer": null,
+            "status": "conflict",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          },
+          {
+            "id": "registration",
+            "answer": null,
+            "status": "undecided",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          }
+        ]
+      },
+      "result": {
+        "accepted": true,
+        "answers": [
+          {
+            "id": "start",
+            "answer": null,
+            "status": "conflict",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          },
+          {
+            "id": "capacity",
+            "answer": null,
+            "status": "conflict",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          },
+          {
+            "id": "registration",
+            "answer": null,
+            "status": "undecided",
+            "sources": [
+              "current-plan",
+              "alternate-current"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "done": true
+}

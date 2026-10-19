@@ -82,3 +82,7 @@ For repository work, saved diffs, test logs, and a concise handoff make recovery
 The [bounded-agent lab](../labs/bounded-agent/README.md) retains all three model calls, tool results, and a deliberate checkpoint/resume. Inspect the host budget and read-only dispatcher alongside the model decisions. Simulated failure tests are labeled separately from the live trace.
 
 The [controlled-failure extension](../labs/agent-recovery/README.md) records a model retrying a temporary read error and abstaining after a permission denial. The host injects and enforces the failure; the model chooses its response within the remaining budget.
+
+## Compare the simpler workflow and review exact actions
+
+The [strategy comparison](../labs/workflow-comparison/README.md) runs the same tasks through a single call, a fixed host rule, and an agent loop. All tied on the small reference set; the agent used more calls. The [action-approval lab](../labs/action-approval/README.md) then demonstrates an exact-proposal gate with a scripted reviewer, stale-target checks, and an explicit trusted-host boundary.

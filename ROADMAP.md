@@ -66,7 +66,9 @@ Follow how evidence enters a request and how summaries preserve or lose state. I
 
 **Also demonstrated:** [controlled tool failures](labs/agent-recovery/README.md), with actual model responses to a transient read error and a permission denial.
 
-**Still needed:** broader adversarial and real-outage evidence, external-action approval, and measured comparisons of a single call, a fixed workflow, and an agent loop. The sample plugin currently has static validation only.
+**Also demonstrated:** [twelve strategy-comparison runs](labs/workflow-comparison/README.md) and [exact-action approval mechanics](labs/action-approval/README.md), with scripted review explicitly distinguished from human authorization.
+
+**Still needed:** broader adversarial and real-outage evidence, authenticated review integrations, and comparisons on more varied tasks. The sample plugin currently has static validation only.
 
 **Practical judgment:** explain which decisions the model makes, which rules the runtime enforces, and why the process stops.
 

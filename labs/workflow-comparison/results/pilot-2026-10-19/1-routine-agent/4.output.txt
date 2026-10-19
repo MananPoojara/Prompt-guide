@@ -1,0 +1,1 @@
+{"action":"final","answers":[{"id":"start","answer":"14:00","status":"supported","sources":["current-plan"]},{"id":"capacity","answer":"20","status":"supported","sources":["current-plan"]},{"id":"registration","answer":null,"status":"undecided","sources":["current-plan"]}]}
