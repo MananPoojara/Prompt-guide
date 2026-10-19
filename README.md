@@ -33,8 +33,18 @@
 
 Read online with no installation or model account. To run examples locally, follow their setup instructions in [examples](examples/README.md).
 
-## Evidence and reuse
+## Evidence
 
 Published originals, authors' reported experiments, local runs, and our explanations are labeled separately. See the [sources](research/sources.md) and [claim checks](research/claims.md). This project is independent of OpenAI and Anthropic.
 
-Original files retain their [upstream licenses](originals/README.md). A repository-wide license for the authored material has not yet been selected.
+## Contributing
+
+Corrections, clearer examples, and reproducible experiments are welcome. Read the [contribution guide](CONTRIBUTING.md), then [open an issue](https://github.com/MananPoojara/Prompt-guide/issues) or submit a pull request.
+
+## License
+
+Authored code and documentation are available under the [MIT License](LICENSE). Third-party artifacts retain their [upstream licenses and notices](originals/README.md).
+
+---
+
+**⭐ If Prompt Guide helped you understand or improve a prompt, give the repo a star.**

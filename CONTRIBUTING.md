@@ -25,3 +25,7 @@ Prefer publisher-owned repositories or a named engineer's first-person account. 
 A strong case includes the original prompt, assembled input, tool/runtime conditions, observed output, verification artifact, and a diagram of the relevant flow. A source-inspected artifact may be useful without a local reproduction; label that status plainly. Keep source bytes unchanged and adaptations separate.
 
 Archived model inputs and logs retain their original whitespace. The results directory's Git whitespace attribute prevents formatting checks from encouraging edits to historical evidence; source and authored documentation still use normal checks.
+
+## License
+
+Submit original contributions under the project's [MIT License](LICENSE). For third-party material, identify its source and retain its applicable license and notices; do not relicense it as your own contribution.
